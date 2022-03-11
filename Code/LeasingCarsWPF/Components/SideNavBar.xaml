@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="LeasingCarsWPF.Components.SideNavBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LeasingCarsWPF.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="300"
+             MinWidth="300">
+    <Border Background="Transparent">
+        <Grid>
+            <Border 
+                Grid.Row="1"
+                Background="{StaticResource PrimaryColorBrush}"
+                CornerRadius="10">
+                <StackPanel>
+                    <Label 
+                        Content="{Binding Title}"
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource MainLabel}"
+                        Foreground="{StaticResource BackgroundColorBrush}"/>
+                    <Label 
+                        Content="{Binding EmployeeFullName}"
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource MainLabel}"
+                        Foreground="{StaticResource BackgroundColorBrush}"/>
+                    <ListView Grid.Row="1"
+                        ItemsSource="{Binding Items}"
+                        Background="Transparent" 
+                        BorderThickness="0"
+                        ItemContainerStyle="{StaticResource ListViewItemNav}"
+                        Margin="0,50,0,0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <RadioButton
+                                    GroupName="NavItems"
+                                    Content="{Binding Name}" 
+                                    Style="{StaticResource RadioButtonNav}"
+                                    Command="{Binding NavigateCommand}"
+                                    CommandParameter="{Binding Name}"
+                                    IsChecked="{Binding IsChecked}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="LeasingCarsWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LeasingCarsWPF"
+        xmlns:vms="clr-namespace:LeasingCarsWPF.ViewModels"
+        xmlns:views="clr-namespace:LeasingCarsWPF.Views" 
+        xmlns:components="clr-namespace:LeasingCarsWPF.Components"
+        mc:Ignorable="d"
+        Title="Прокат автомобилей" Height="650" Width="1200" MinHeight="650" MinWidth="1200"
+        WindowStartupLocation="CenterScreen"
+        Background="{StaticResource BackgroundColorBrush}">
+    <Window.DataContext>
+        <vms:MainVM/>
+    </Window.DataContext>
+    <Grid>
+        <UserControl Content="{Binding CurrentVM}">
+            <UserControl.Resources>
+                <DataTemplate DataType="{x:Type vms:ListingCarsVM}">
+                    <views:ListingCarsView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vms:OrderVM}">
+                    <views:OrderView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vms:OrderSpareVM}">
+                    <views:OrderSpareView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vms:ChangeCarStatusVM}">
+                    <views:ChangeCarStatusView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vms:StatisticsVM}">
+                    <views:StatisticsView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vms:LoginVM}">
+                    <views:LoginView/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vms:SideNavBarVM}">
+                    <components:SideNavBar/>
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type vms:LayoutVM}">
+                    <components:Layout/>
+                </DataTemplate>
+            </UserControl.Resources>
+        </UserControl>
+    </Grid>
+</Window>

@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="LeasingCarsWPF.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LeasingCarsWPF.Views"
+             xmlns:dataTypes="clr-namespace:LeasingCarsWPF.DataTypes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="{StaticResource BackgroundColorBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label 
+            Grid.Row="0"
+            Content="Окно входа" 
+            Style="{StaticResource MainLabel}" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Center"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label 
+            Grid.Row="1"
+            Content="Логин"
+            Style="{StaticResource InputLabel}"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+
+            <TextBox
+                Grid.Column="1"
+                Style="{StaticResource PrettyTextBox}"
+                Text="{Binding Username}"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label 
+            Grid.Row="1"
+            Content="Пароль"
+            Style="{StaticResource InputLabel}"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"/>
+
+            <TextBox
+                Grid.Column="1"
+                Style="{StaticResource PrettyTextBox}"
+                Text="{Binding Password}"/>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel
+                Grid.Column="0"
+                HorizontalAlignment="Left"
+                Margin="20,0,0,0">
+                <Button
+                    Margin="0,10,0,0"
+                    Style="{StaticResource PrettyButtonStyle}"
+                    Content="Администратор"
+                    Command="{Binding AdminLoginCommand}"
+                    CommandParameter="{Binding AdminPosition}"/>
+                <Button
+                    Margin="0,10,0,0"
+                    Style="{StaticResource PrettyButtonStyle}"
+                    Content="Механик"
+                    Command="{Binding MechaLoginCommand}"
+                    CommandParameter="{Binding MechaPosition}"/>
+                <Button
+                    Margin="0,10,0,0"
+                    Style="{StaticResource PrettyButtonStyle}"
+                    Content="Менеджер"
+                    Command="{Binding HrLoginCommand}"
+                    CommandParameter="{Binding HrPosition}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

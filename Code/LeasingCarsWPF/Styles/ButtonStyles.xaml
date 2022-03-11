@@ -1,0 +1,81 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="PrettyRadioButton" TargetType="RadioButton">
+        <Setter Property="FontFamily" Value="{DynamicResource Roboto-Regular}"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Foreground" Value="{DynamicResource FluentWhiteBrush}"/>
+        <Setter Property="Background" Value="{DynamicResource BackgroundColorBrush}"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <Border
+                        x:Name="Border"
+                        CornerRadius="6"
+                        Background="{TemplateBinding Property=Background}"
+                        BorderBrush="{DynamicResource PrimaryColorBrush}"
+                        BorderThickness="1">
+                        <TextBlock
+                            Text="{TemplateBinding Property=Content}"
+                            Margin="20,0,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource PrimaryColorBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource BackgroundColorBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource PrimaryColorBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource BackgroundColorBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseCaptured" Value="True">
+                            <Setter Property="Width" Value="190"/>
+                            <Setter Property="Height" Value="16"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="PrettyButtonStyle" TargetType="Button">
+        <Setter Property="Background" Value="{DynamicResource PrimaryColorBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource BackgroundColorBrush}"/>
+        <Setter Property="FontFamily" Value="{DynamicResource Roboto-Regular}"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Height" Value="20"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                        x:Name="Border"
+                        CornerRadius="6"
+                        Background="{TemplateBinding Property=Background}"
+                        Height="{TemplateBinding Property=Height}"
+                        Width="{TemplateBinding Property=Width}">
+                        <TextBlock
+                            Text="{TemplateBinding Property=Content}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Foreground="{TemplateBinding Property=Foreground}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource CoolBlueBrightBrush}"/>
+                            <Setter Property="Foreground" Value="{DynamicResource BackgroundColorBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseCaptured" Value="True">
+                            <Setter Property="Width" Value="190"/>
+                            <Setter Property="Height" Value="16"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
