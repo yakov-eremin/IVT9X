@@ -2,7 +2,7 @@
 
 1. Необходимо скачать полностью данную папку. 
 2. Установить на компьютер .NET 6.0. <a href = "https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?cid=getdotnetcore" > Ссылка </a>
-3. Установить на компьютер PostgresSQL. <a href = "https://www.postgresql.org/download/" > Ссылка</a> <br>3.1. С помощью Stack Builder установить pgAgen.
+3. Установить на компьютер PostgresSQL. <a href = "https://www.postgresql.org/download/" > Ссылка</a> <br>3.1. С помощью Stack Builder установить pgAgen. <br>
 ![alt text](./Screenshots_for_readme/Stack_builder.jpg)
 4. Восстановить базу данных (С помощью pgAdmin4)<br>
 4.1. Необходимо создать пустую базу данных <br>
