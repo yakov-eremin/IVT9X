@@ -1,4 +1,4 @@
-#Как запустить программу?
+# Как запустить программу?
 
 1. Необходимо скачать полностью данную папку. 
 2. Установить на компьютер .NET 6.0. <a href = "https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?cid=getdotnetcore" > Ссылка </a>
