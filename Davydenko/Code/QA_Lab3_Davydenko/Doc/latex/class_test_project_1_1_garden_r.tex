@@ -1,0 +1,73 @@
+\hypertarget{class_test_project_1_1_garden_r}{}\doxysection{Класс Test\+Project.\+GardenR}
+\label{class_test_project_1_1_garden_r}\index{TestProject.GardenR@{TestProject.GardenR}}
+
+
+Класс для реализации робота-\/садовода  
+
+
+Граф наследования\+:Test\+Project.\+GardenR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_test_project_1_1_garden_r}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_test_project_1_1_garden_r_ae14992a758c53d6072f186e00d986fab}{Init}} (\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} \mbox{\hyperlink{class_test_project_1_1_robot_ac8c3bc8d5e4f091f70f541aedd4eb416}{left\+\_\+instrument}}, \mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} \mbox{\hyperlink{class_test_project_1_1_robot_adb67b2f7ecaf4300e509d17cd46a4faa}{right\+\_\+instrument}}, \mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}} energy\+Generator)
+\begin{DoxyCompactList}\small\item\em Метод для инициализации полей объекта \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_test_project_1_1_garden_r_a99aa40d2353d29a954e960699b94ab02}{Amount\+Of\+Seeds}} (double lenght, double width)
+\begin{DoxyCompactList}\small\item\em Вычисление количества семян на данную площадь. Формула вычислений $\frac{x*y}{4}$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+Класс для реализации робота-\/садовода 
+
+Дочерний класс для описания робота-\/строителя. Имеет метод для вычисления нужного количества семян на площадь, чтобы они не конфликтовали. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_test_project_1_1_garden_r_a99aa40d2353d29a954e960699b94ab02}\label{class_test_project_1_1_garden_r_a99aa40d2353d29a954e960699b94ab02}} 
+\index{TestProject.GardenR@{TestProject.GardenR}!AmountOfSeeds@{AmountOfSeeds}}
+\index{AmountOfSeeds@{AmountOfSeeds}!TestProject.GardenR@{TestProject.GardenR}}
+\doxysubsubsection{\texorpdfstring{AmountOfSeeds()}{AmountOfSeeds()}}
+{\footnotesize\ttfamily int Test\+Project.\+Garden\+R.\+Amount\+Of\+Seeds (\begin{DoxyParamCaption}\item[{double}]{lenght,  }\item[{double}]{width }\end{DoxyParamCaption})}
+
+
+
+Вычисление количества семян на данную площадь. Формула вычислений $\frac{x*y}{4}$ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em lenght} & Длинна участка\\
+\hline
+{\em width} & Ширина участка\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Максимальное количество семян
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_project_1_1_garden_r_ae14992a758c53d6072f186e00d986fab}\label{class_test_project_1_1_garden_r_ae14992a758c53d6072f186e00d986fab}} 
+\index{TestProject.GardenR@{TestProject.GardenR}!Init@{Init}}
+\index{Init@{Init}!TestProject.GardenR@{TestProject.GardenR}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Test\+Project.\+Garden\+R.\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}}}]{left\+\_\+instrument,  }\item[{\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}}}]{right\+\_\+instrument,  }\item[{\mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}}}]{energy\+Generator }\end{DoxyParamCaption})}
+
+
+
+Метод для инициализации полей объекта 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em left\+\_\+instrument} & Инструмент левой руки\\
+\hline
+{\em right\+\_\+instrument} & Инструмент правой руки\\
+\hline
+{\em energy\+Generator} & Используемый генератор\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anton/source/repos/\+Project\+For\+Test/\+Project\+For\+Test/\mbox{\hyperlink{_program_8cs}{Program.\+cs}}\end{DoxyCompactItemize}

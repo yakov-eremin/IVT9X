@@ -1,0 +1,203 @@
+\hypertarget{class_test_project_1_1_robot}{}\doxysection{Класс Test\+Project.\+Robot}
+\label{class_test_project_1_1_robot}\index{TestProject.Robot@{TestProject.Robot}}
+
+
+Класс для реализации робота.  
+
+
+Граф наследования\+:Test\+Project.\+Robot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_test_project_1_1_robot}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_test_project_1_1_robot_a7158e3ba0f11da0f8845ca15844f420c}{install\+\_\+instrument\+\_\+left}} (\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} instrument)
+\begin{DoxyCompactList}\small\item\em Метод, устанавливающий левый инстумент для робота. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_project_1_1_robot_aedb04ebe10685f897ccb2d6c51d4033e}{install\+\_\+instrument\+\_\+right}} (\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} instrument)
+\begin{DoxyCompactList}\small\item\em Метод, устанавливающий правый инстумент для робота. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_project_1_1_robot_aa82061cebc7a6b67a1629e5d6b11cea0}{install\+\_\+generator}} (\mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}} energy\+Generator)
+\begin{DoxyCompactList}\small\item\em Метод, устанавливающий генератор для робота. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_project_1_1_robot_acb3b6f11dbe731b5387affcd30cb8825}{Init}} (\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} \mbox{\hyperlink{class_test_project_1_1_robot_ac8c3bc8d5e4f091f70f541aedd4eb416}{left\+\_\+instrument}}, \mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} \mbox{\hyperlink{class_test_project_1_1_robot_adb67b2f7ecaf4300e509d17cd46a4faa}{right\+\_\+instrument}}, \mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}} energy\+Generator)
+\begin{DoxyCompactList}\small\item\em Метод для инициализации всех полей объекта \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_project_1_1_robot_a50c00e7ec1f711fc119b09228f9787d2}{Use}} ()
+\begin{DoxyCompactList}\small\item\em Метод, реализующий задачу, соотвествующую заданной команде. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_project_1_1_robot_a9b50cfe47b41751f20a62de24d3c83c0}{Reload}} ()
+\begin{DoxyCompactList}\small\item\em Метод, обновляющий состояния состовных объектов. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_project_1_1_robot_afa6005eafb7d5c1ed89290748d384df1}{Next\+Com}} ()
+\begin{DoxyCompactList}\small\item\em Метод, переключающий команду на следующую. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_project_1_1_robot_a881b4b2f9a31d0c3964efdd8bae6ab4c}{Prev\+Com}} ()
+\begin{DoxyCompactList}\small\item\em Метод, переключающий команду на предыдущую. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_test_project_1_1_robot_aceff5491ecf8f0e7d85ed2d3e1c75853}{command}}
+\begin{DoxyCompactList}\small\item\em Текущая команда. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} \mbox{\hyperlink{class_test_project_1_1_robot_ac8c3bc8d5e4f091f70f541aedd4eb416}{left\+\_\+instrument}}
+\begin{DoxyCompactList}\small\item\em Инструмет левой руки. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} \mbox{\hyperlink{class_test_project_1_1_robot_adb67b2f7ecaf4300e509d17cd46a4faa}{right\+\_\+instrument}}
+\begin{DoxyCompactList}\small\item\em Инструмет правой руки. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}} \mbox{\hyperlink{class_test_project_1_1_robot_ad56bba6f45be6650b782955fb33fa495}{energy\+\_\+generator}}
+\begin{DoxyCompactList}\small\item\em Тип генератрора \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для реализации робота. 
+
+Описывает робота, включающий в себя два объекта, реализующих интерфейс инструментов, и один объект, реализующий генератор. Так же имеет поле для комманды. Робот имеет следующую структуру\+:  
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_test_project_1_1_robot_acb3b6f11dbe731b5387affcd30cb8825}\label{class_test_project_1_1_robot_acb3b6f11dbe731b5387affcd30cb8825}} 
+\index{TestProject.Robot@{TestProject.Robot}!Init@{Init}}
+\index{Init@{Init}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Test\+Project.\+Robot.\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}}}]{left\+\_\+instrument,  }\item[{\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}}}]{right\+\_\+instrument,  }\item[{\mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}}}]{energy\+Generator }\end{DoxyParamCaption})}
+
+
+
+Метод для инициализации всех полей объекта 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em left\+\_\+instrument} & Объект, реализующий интерфейс инструмента, левой руки.\\
+\hline
+{\em right\+\_\+instrument} & Объект, реализующий интерфейс инструмента, правой руки.\\
+\hline
+{\em energy\+Generator} & Объект, реализующий интерфейс генератора.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_test_project_1_1_robot_aa82061cebc7a6b67a1629e5d6b11cea0}\label{class_test_project_1_1_robot_aa82061cebc7a6b67a1629e5d6b11cea0}} 
+\index{TestProject.Robot@{TestProject.Robot}!install\_generator@{install\_generator}}
+\index{install\_generator@{install\_generator}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{install\_generator()}{install\_generator()}}
+{\footnotesize\ttfamily void Test\+Project.\+Robot.\+install\+\_\+generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}}}]{energy\+Generator }\end{DoxyParamCaption})}
+
+
+
+Метод, устанавливающий генератор для робота. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em energy\+Generator} & Объект, реализующий интерфейс генератора.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_test_project_1_1_robot_a7158e3ba0f11da0f8845ca15844f420c}\label{class_test_project_1_1_robot_a7158e3ba0f11da0f8845ca15844f420c}} 
+\index{TestProject.Robot@{TestProject.Robot}!install\_instrument\_left@{install\_instrument\_left}}
+\index{install\_instrument\_left@{install\_instrument\_left}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{install\_instrument\_left()}{install\_instrument\_left()}}
+{\footnotesize\ttfamily void Test\+Project.\+Robot.\+install\+\_\+instrument\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}}}]{instrument }\end{DoxyParamCaption})}
+
+
+
+Метод, устанавливающий левый инстумент для робота. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em instrument} & Объект, реализующий интерфейс инструмента.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_test_project_1_1_robot_aedb04ebe10685f897ccb2d6c51d4033e}\label{class_test_project_1_1_robot_aedb04ebe10685f897ccb2d6c51d4033e}} 
+\index{TestProject.Robot@{TestProject.Robot}!install\_instrument\_right@{install\_instrument\_right}}
+\index{install\_instrument\_right@{install\_instrument\_right}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{install\_instrument\_right()}{install\_instrument\_right()}}
+{\footnotesize\ttfamily void Test\+Project.\+Robot.\+install\+\_\+instrument\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}}}]{instrument }\end{DoxyParamCaption})}
+
+
+
+Метод, устанавливающий правый инстумент для робота. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em instrument} & Объект, реализующий интерфейс инструмента.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_test_project_1_1_robot_afa6005eafb7d5c1ed89290748d384df1}\label{class_test_project_1_1_robot_afa6005eafb7d5c1ed89290748d384df1}} 
+\index{TestProject.Robot@{TestProject.Robot}!NextCom@{NextCom}}
+\index{NextCom@{NextCom}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{NextCom()}{NextCom()}}
+{\footnotesize\ttfamily void Test\+Project.\+Robot.\+Next\+Com (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод, переключающий команду на следующую. 
+
+\mbox{\Hypertarget{class_test_project_1_1_robot_a881b4b2f9a31d0c3964efdd8bae6ab4c}\label{class_test_project_1_1_robot_a881b4b2f9a31d0c3964efdd8bae6ab4c}} 
+\index{TestProject.Robot@{TestProject.Robot}!PrevCom@{PrevCom}}
+\index{PrevCom@{PrevCom}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{PrevCom()}{PrevCom()}}
+{\footnotesize\ttfamily void Test\+Project.\+Robot.\+Prev\+Com (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод, переключающий команду на предыдущую. 
+
+\mbox{\Hypertarget{class_test_project_1_1_robot_a9b50cfe47b41751f20a62de24d3c83c0}\label{class_test_project_1_1_robot_a9b50cfe47b41751f20a62de24d3c83c0}} 
+\index{TestProject.Robot@{TestProject.Robot}!Reload@{Reload}}
+\index{Reload@{Reload}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{Reload()}{Reload()}}
+{\footnotesize\ttfamily void Test\+Project.\+Robot.\+Reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод, обновляющий состояния состовных объектов. 
+
+\mbox{\Hypertarget{class_test_project_1_1_robot_a50c00e7ec1f711fc119b09228f9787d2}\label{class_test_project_1_1_robot_a50c00e7ec1f711fc119b09228f9787d2}} 
+\index{TestProject.Robot@{TestProject.Robot}!Use@{Use}}
+\index{Use@{Use}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{Use()}{Use()}}
+{\footnotesize\ttfamily void Test\+Project.\+Robot.\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод, реализующий задачу, соотвествующую заданной команде. 
+
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_test_project_1_1_robot_aceff5491ecf8f0e7d85ed2d3e1c75853}\label{class_test_project_1_1_robot_aceff5491ecf8f0e7d85ed2d3e1c75853}} 
+\index{TestProject.Robot@{TestProject.Robot}!command@{command}}
+\index{command@{command}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{command}{command}}
+{\footnotesize\ttfamily int Test\+Project.\+Robot.\+command\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Текущая команда. 
+
+\mbox{\Hypertarget{class_test_project_1_1_robot_ad56bba6f45be6650b782955fb33fa495}\label{class_test_project_1_1_robot_ad56bba6f45be6650b782955fb33fa495}} 
+\index{TestProject.Robot@{TestProject.Robot}!energy\_generator@{energy\_generator}}
+\index{energy\_generator@{energy\_generator}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{energy\_generator}{energy\_generator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}} Test\+Project.\+Robot.\+energy\+\_\+generator\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Тип генератрора 
+
+\mbox{\Hypertarget{class_test_project_1_1_robot_ac8c3bc8d5e4f091f70f541aedd4eb416}\label{class_test_project_1_1_robot_ac8c3bc8d5e4f091f70f541aedd4eb416}} 
+\index{TestProject.Robot@{TestProject.Robot}!left\_instrument@{left\_instrument}}
+\index{left\_instrument@{left\_instrument}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{left\_instrument}{left\_instrument}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} Test\+Project.\+Robot.\+left\+\_\+instrument\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Инструмет левой руки. 
+
+\mbox{\Hypertarget{class_test_project_1_1_robot_adb67b2f7ecaf4300e509d17cd46a4faa}\label{class_test_project_1_1_robot_adb67b2f7ecaf4300e509d17cd46a4faa}} 
+\index{TestProject.Robot@{TestProject.Robot}!right\_instrument@{right\_instrument}}
+\index{right\_instrument@{right\_instrument}!TestProject.Robot@{TestProject.Robot}}
+\doxysubsubsection{\texorpdfstring{right\_instrument}{right\_instrument}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} Test\+Project.\+Robot.\+right\+\_\+instrument\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Инструмет правой руки. 
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anton/source/repos/\+Project\+For\+Test/\+Project\+For\+Test/\mbox{\hyperlink{_program_8cs}{Program.\+cs}}\end{DoxyCompactItemize}

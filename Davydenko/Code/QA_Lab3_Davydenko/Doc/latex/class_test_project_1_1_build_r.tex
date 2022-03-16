@@ -1,0 +1,75 @@
+\hypertarget{class_test_project_1_1_build_r}{}\doxysection{Класс Test\+Project.\+BuildR}
+\label{class_test_project_1_1_build_r}\index{TestProject.BuildR@{TestProject.BuildR}}
+
+
+Класс для реализации робота-\/строителя  
+
+
+Граф наследования\+:Test\+Project.\+BuildR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_test_project_1_1_build_r}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_test_project_1_1_build_r_ac49655350d7c0f221a76009deedb57f9}{Init}} (\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} \mbox{\hyperlink{class_test_project_1_1_robot_ac8c3bc8d5e4f091f70f541aedd4eb416}{left\+\_\+instrument}}, \mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}} \mbox{\hyperlink{class_test_project_1_1_robot_adb67b2f7ecaf4300e509d17cd46a4faa}{right\+\_\+instrument}}, \mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}} energy\+Generator)
+\begin{DoxyCompactList}\small\item\em Метод для инициализации полей объекта \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_test_project_1_1_build_r_a57909707fee6b2d9ccc3466b7a4b72ae}{Amount\+Of\+Cement}} (double lenght, double width, double height)
+\begin{DoxyCompactList}\small\item\em Вычисление необходимого количества цемента на данный объем. Формула вычислений $x*y*z*1.1$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+Класс для реализации робота-\/строителя 
+
+Дочерний класс для описания робота-\/строителя. Имеет метод для вычисления нужного объема цемента. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_test_project_1_1_build_r_a57909707fee6b2d9ccc3466b7a4b72ae}\label{class_test_project_1_1_build_r_a57909707fee6b2d9ccc3466b7a4b72ae}} 
+\index{TestProject.BuildR@{TestProject.BuildR}!AmountOfCement@{AmountOfCement}}
+\index{AmountOfCement@{AmountOfCement}!TestProject.BuildR@{TestProject.BuildR}}
+\doxysubsubsection{\texorpdfstring{AmountOfCement()}{AmountOfCement()}}
+{\footnotesize\ttfamily double Test\+Project.\+Build\+R.\+Amount\+Of\+Cement (\begin{DoxyParamCaption}\item[{double}]{lenght,  }\item[{double}]{width,  }\item[{double}]{height }\end{DoxyParamCaption})}
+
+
+
+Вычисление необходимого количества цемента на данный объем. Формула вычислений $x*y*z*1.1$ 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em lenght} & Длинна участка\\
+\hline
+{\em width} & Ширина участка\\
+\hline
+{\em height} & Высота участка\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_test_project_1_1_build_r_ac49655350d7c0f221a76009deedb57f9}\label{class_test_project_1_1_build_r_ac49655350d7c0f221a76009deedb57f9}} 
+\index{TestProject.BuildR@{TestProject.BuildR}!Init@{Init}}
+\index{Init@{Init}!TestProject.BuildR@{TestProject.BuildR}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Test\+Project.\+Build\+R.\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}}}]{left\+\_\+instrument,  }\item[{\mbox{\hyperlink{interface_test_project_1_1_i_instrument}{IInstrument}}}]{right\+\_\+instrument,  }\item[{\mbox{\hyperlink{interface_test_project_1_1_i_energy_generator}{IEnergy\+Generator}}}]{energy\+Generator }\end{DoxyParamCaption})}
+
+
+
+Метод для инициализации полей объекта 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em left\+\_\+instrument} & Инструмент левой руки\\
+\hline
+{\em right\+\_\+instrument} & Инструмент правой руки\\
+\hline
+{\em energy\+Generator} & Используемый генератор\\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Anton/source/repos/\+Project\+For\+Test/\+Project\+For\+Test/\mbox{\hyperlink{_program_8cs}{Program.\+cs}}\end{DoxyCompactItemize}
