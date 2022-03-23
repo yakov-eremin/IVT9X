@@ -4,9 +4,8 @@
 
 namespace LeasingCarsWPF.Models
 {
-    public partial class OrderedSparse
+    public partial class OrderedSparse : BaseModel
     {
-        public long Id { get; set; }
         public string SparseName { get; set; }
         public int Count { get; set; }
         public long? EmployeeId { get; set; }
@@ -23,16 +22,6 @@ namespace LeasingCarsWPF.Models
         public OrderedSparse()
         {
 
-        }
-
-        public void AddOrderedSpare(OrderedSparse orderedSpare)
-        {
-            using (var context = new LeasingCarsDbContext())
-            {
-                orderedSpare.Id = context.OrderedSparses.ToList().Max(o => o.Id) + 1;
-                context.OrderedSparses.Add(orderedSpare);
-                context.SaveChanges();
-            }
         }
     }
 }

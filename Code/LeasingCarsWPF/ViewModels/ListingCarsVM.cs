@@ -1,12 +1,14 @@
 ﻿using LeasingCarsWPF.Models;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
+using LeasingCarsWPF.Services.Data;
 
 namespace LeasingCarsWPF.ViewModels
 {
     public class ListingCarsVM : BaseVM
     {
-        IEnumerable<ListingCarsVM>? _items;
+        ObservableCollection<ListingCarsVM>? _items;
         private long _id;
         private string _name;
         private double _mileage;
@@ -14,16 +16,21 @@ namespace LeasingCarsWPF.ViewModels
         private string _status;
         private string _type;
         private Car _model;
+        private IDataService<Car> _dataService;
 
-        public ListingCarsVM()
+        public ListingCarsVM(IDataService<Car> dataService)
         {
+            _dataService = dataService;
             Initialize();
         }
 
-        private void Initialize()
+        private async void Initialize()
         {
             _model = new Car();
-            _items = new List<ListingCarsVM>(_model.GetCars().Select(c => new ListingCarsVM(c)));
+            
+            Items = new ObservableCollection<ListingCarsVM>((await _dataService
+                .GetWithInclude(c => c.Status, c => c.Type))
+                .Select(c => new ListingCarsVM(c)));
         }
 
         public ListingCarsVM(Car car)
@@ -42,6 +49,15 @@ namespace LeasingCarsWPF.ViewModels
         public string Number => _number;
         public string Status => _status;
         public string Type => _type;
-        public IEnumerable<ListingCarsVM> Items => _items;
+
+        public ObservableCollection<ListingCarsVM> Items
+        {
+            get => _items;
+            set
+            {
+                _items = value;
+                OnPropertyChanged();
+            }
+        }
     }
 }

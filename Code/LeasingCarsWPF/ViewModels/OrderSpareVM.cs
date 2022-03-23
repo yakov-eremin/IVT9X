@@ -1,6 +1,7 @@
 ﻿using LeasingCarsWPF.Commands;
 using LeasingCarsWPF.Models;
 using System.Windows.Input;
+using LeasingCarsWPF.Services.Data;
 
 namespace LeasingCarsWPF.ViewModels
 {
@@ -8,10 +9,12 @@ namespace LeasingCarsWPF.ViewModels
     {
         private Employee _employee;
         private OrderedSparse _model;
+        private IDataService<OrderedSparse> _dataService;
 
-        public OrderSpareVM(Employee employee)
+        public OrderSpareVM(Employee employee, IDataService<OrderedSparse> dataService)
         {
             _employee = employee;
+            _dataService = dataService;
             Initialize();
         }
 
@@ -30,7 +33,7 @@ namespace LeasingCarsWPF.ViewModels
         private void addOrderedSpare()
         {
             OrderedSparse orderedSparse = new OrderedSparse(SpareName, SpareCount, _employee.Id);
-            _model.AddOrderedSpare(orderedSparse);
+            _dataService.Add(orderedSparse);
         }
     }
 }

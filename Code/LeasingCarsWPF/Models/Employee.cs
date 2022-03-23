@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows;
 
 #nullable disable
 
 namespace LeasingCarsWPF.Models
 {
-    public partial class Employee
+    public partial class Employee : BaseModel
     {
         public Employee()
         {
@@ -15,7 +16,6 @@ namespace LeasingCarsWPF.Models
             Stats = new HashSet<Stat>();
         }
 
-        public long Id { get; set; }
         public string FirstName { get; set; }
         public long PositionId { get; set; }
         public string SecondName { get; set; }
@@ -27,18 +27,5 @@ namespace LeasingCarsWPF.Models
         public virtual ICollection<OrderedSparse> OrderedSparses { get; set; }
         public virtual ICollection<Order> Orders { get; set; }
         public virtual ICollection<Stat> Stats { get; set; }
-
-        public async Task<Employee?> GetEmployeeAsync(string username, string password, int positionId)
-        {
-            Employee? employee = null;
-            using (var context = new LeasingCarsDbContext())
-            {
-                employee = await Task.Run(() =>
-                    context.Employees.ToList().FirstOrDefault(x => x.Username == username &&
-                    x.Password == password &&
-                    x.PositionId == positionId));
-            }
-            return employee;
-        }
     }
 }

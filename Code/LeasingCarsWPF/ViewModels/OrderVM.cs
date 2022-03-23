@@ -2,6 +2,7 @@
 using LeasingCarsWPF.Models;
 using System;
 using System.Collections.Generic;
+using LeasingCarsWPF.Services.Data;
 
 namespace LeasingCarsWPF.ViewModels
 {
@@ -11,19 +12,25 @@ namespace LeasingCarsWPF.ViewModels
         private Car _selectedCar;
         private IEnumerable<Car> _cars;
         private Employee _employee;
+        private readonly IDataService<Order> _dataService;
+        private readonly IDataService<Car> _carDataService;
 
-        public OrderVM()
+        public OrderVM(IDataService<Order> dataService, IDataService<Car> carDataService)
         {
+            _dataService = dataService;
+            _carDataService = carDataService;
             Initialize();
         }
 
-        public OrderVM(Employee employee)
+        public OrderVM(Employee employee, IDataService<Order> dataService, IDataService<Car> carDataService)
         {
             _employee = employee;
+            _dataService = dataService;
+            _carDataService = carDataService;
             Initialize();
         }
 
-        public void Initialize()
+        public async void Initialize()
         {
             FirstName = string.Empty;
             SecondName = string.Empty;
@@ -36,7 +43,7 @@ namespace LeasingCarsWPF.ViewModels
             IsDeliveryNeeded = false;
             _model = new Order();
             _selectedCar = new Car();
-            _cars = _selectedCar.GetCars();
+            _cars = await _carDataService.GetWithInclude(c => c.Status, c => c.Type);
         }
 
         public long Id { get; set; }
@@ -59,7 +66,7 @@ namespace LeasingCarsWPF.ViewModels
         public IEnumerable<Car> Cars => _cars;
 
         public RelayCommand AddOrderCommand => new RelayCommand(AddOrder);
-        private void AddOrder()
+        private async void AddOrder()
         {
             Order newOrder = new Order(
                 FirstName,
@@ -73,7 +80,7 @@ namespace LeasingCarsWPF.ViewModels
                 IsDeliveryNeeded, 
                 _employee.Id,
                 _selectedCar.Id);
-            _model.AddOrder(newOrder);
+            await _dataService.Add(newOrder);
         }
     }
 }

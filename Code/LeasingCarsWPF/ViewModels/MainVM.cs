@@ -2,6 +2,8 @@
 using LeasingCarsWPF.Services;
 using LeasingCarsWPF.Stores;
 using System.Collections.Generic;
+using LeasingCarsWPF.Services.Authentification;
+using LeasingCarsWPF.Services.Data;
 
 namespace LeasingCarsWPF.ViewModels
 {
@@ -27,7 +29,10 @@ namespace LeasingCarsWPF.ViewModels
             NavigationService<Employee> hrNavigationService = new NavigationService<Employee>(_navigationStore,
                 (hr) => CreateHRsLayoutVM(hr));
             _isLogout = true;
-            return new LoginVM(adminNavigationService, mechaNavigationService, hrNavigationService);
+            return new LoginVM(adminNavigationService, 
+                mechaNavigationService, 
+                hrNavigationService, 
+                new AuthService(new DataService<Employee>(new LeasingCarsDbContextFactory())));
         }
 
         private LayoutVM CreateAdminLayoutVM(Employee admin)
@@ -48,7 +53,7 @@ namespace LeasingCarsWPF.ViewModels
                 _sideNavBarVM.Title = "Администратор";
                 _isLogout = false;
             }
-            return new LayoutVM(new ListingCarsVM(), _sideNavBarVM);
+            return new LayoutVM(new ListingCarsVM(new DataService<Car>(new LeasingCarsDbContextFactory())), _sideNavBarVM);
         }
 
         private LayoutVM CreateAdminLayoutVM(BaseVM vM)
@@ -76,9 +81,11 @@ namespace LeasingCarsWPF.ViewModels
             switch (param)
             {
                 case "Просмотр автомобилей":
-                    return CreateAdminLayoutVM(new ListingCarsVM());
+                    return CreateAdminLayoutVM(new ListingCarsVM(new DataService<Car>(new LeasingCarsDbContextFactory())));
                 case "Оформить заказ":
-                    return CreateAdminLayoutVM(new OrderVM(employee));
+                    return CreateAdminLayoutVM(new OrderVM(employee, 
+                        new DataService<Order>(new LeasingCarsDbContextFactory()), 
+                        new DataService<Car>(new LeasingCarsDbContextFactory())));
                 default:
                     return CreateLoginVM();
             }
@@ -102,7 +109,7 @@ namespace LeasingCarsWPF.ViewModels
                 _sideNavBarVM.EmployeeFullName = $"{mecha.FirstName} {mecha.MiddleName} {mecha.SecondName}";
                 _sideNavBarVM.Title = "Механик";
             }
-            return new LayoutVM(new OrderSpareVM(mecha), _sideNavBarVM);
+            return new LayoutVM(new OrderSpareVM(mecha, new DataService<OrderedSparse>(new LeasingCarsDbContextFactory())), _sideNavBarVM);
         }
 
         private BaseVM CreateMechaLayoutVM(BaseVM vM)
@@ -131,9 +138,11 @@ namespace LeasingCarsWPF.ViewModels
             switch (param)
             {
                 case "Сделать заказ детали":
-                    return CreateMechaLayoutVM(new OrderSpareVM(mecha));
+                    return CreateMechaLayoutVM(new OrderSpareVM(mecha, new DataService<OrderedSparse>(new LeasingCarsDbContextFactory())));
                 case "Сменить статус автомобиля":
-                    return CreateMechaLayoutVM(new ChangeCarStatusVM());
+                    return
+                        CreateMechaLayoutVM(new ChangeCarStatusVM(new DataService<Car>(new LeasingCarsDbContextFactory()),
+                            new DataService<Status>(new LeasingCarsDbContextFactory())));
                 default:
                     return CreateLoginVM();
             }
@@ -155,7 +164,7 @@ namespace LeasingCarsWPF.ViewModels
                 _isLogout = false;
                 _sideNavBarVM.Title = "Менеджер";
             }
-            return new LayoutVM(new StatisticsVM(), _sideNavBarVM);
+            return new LayoutVM(new StatisticsVM(new DataService<Stat>(new LeasingCarsDbContextFactory())), _sideNavBarVM);
         }
 
         private BaseVM CreateHRsLayoutVM(BaseVM vM)
@@ -182,7 +191,7 @@ namespace LeasingCarsWPF.ViewModels
             switch (param)
             {
                 case "Просмотреть отзывы":
-                    return CreateMechaLayoutVM(new StatisticsVM());
+                    return CreateMechaLayoutVM(new StatisticsVM(new DataService<Stat>(new LeasingCarsDbContextFactory())));
                 default:
                     return CreateLoginVM();
             }

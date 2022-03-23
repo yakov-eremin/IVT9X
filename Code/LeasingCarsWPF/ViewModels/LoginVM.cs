@@ -2,6 +2,7 @@
 using LeasingCarsWPF.Models;
 using LeasingCarsWPF.Services;
 using System.Windows.Input;
+using LeasingCarsWPF.Services.Authentification;
 
 namespace LeasingCarsWPF.ViewModels
 {
@@ -12,14 +13,15 @@ namespace LeasingCarsWPF.ViewModels
 
         public LoginVM(NavigationService<Employee> adminNavigationService,
             NavigationService<Employee> mechaNavigationService,
-            NavigationService<Employee> hrNavigationService)
+            NavigationService<Employee> hrNavigationService,
+            IAuthService authService)
         {
             _username = string.Empty;
             _password = string.Empty;
 
-            AdminLoginCommand = new LoginCommand<Employee>(this, adminNavigationService);
-            MechaLoginCommand = new LoginCommand<Employee>(this, mechaNavigationService);
-            HrLoginCommand = new LoginCommand<Employee>(this, hrNavigationService);
+            AdminLoginCommand = new LoginCommand<Employee>(this, adminNavigationService, authService);
+            MechaLoginCommand = new LoginCommand<Employee>(this, mechaNavigationService, authService);
+            HrLoginCommand = new LoginCommand<Employee>(this, hrNavigationService, authService);
         }
 
         public LoginVM()

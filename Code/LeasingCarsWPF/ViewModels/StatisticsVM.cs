@@ -1,15 +1,18 @@
 ﻿using LeasingCarsWPF.Models;
 using System.Collections.Generic;
 using System.Linq;
+using LeasingCarsWPF.Services.Data;
 
 namespace LeasingCarsWPF.ViewModels
 {
     public class StatisticsVM : BaseVM
     {
         private Stat _model;
+        private readonly IDataService<Stat> _dataService;
 
-        public StatisticsVM()
+        public StatisticsVM(IDataService<Stat> dataService)
         {
+            _dataService = dataService;
             Initialize();
         }
 
@@ -21,10 +24,10 @@ namespace LeasingCarsWPF.ViewModels
             OrderId = stat.OrderId;
         }
 
-        public void Initialize()
+        public async void Initialize()
         {
             _model = new Stat();
-            Items = new List<StatisticsVM>(_model.GetStats().Select(s => new StatisticsVM(s)));
+            Items = new List<StatisticsVM>((await _dataService.GetAll()).Select(s => new StatisticsVM(s)));
         }
 
 

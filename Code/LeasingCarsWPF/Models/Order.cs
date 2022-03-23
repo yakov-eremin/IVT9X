@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace LeasingCarsWPF.Models
 {
-    public partial class Order
+    public partial class Order : BaseModel
     {
         public Order()
         {
@@ -39,7 +39,6 @@ namespace LeasingCarsWPF.Models
             CarId = carId;
         }
 
-        public long Id { get; set; }
         public string FirstName { get; set; }
         public string SecondName { get; set; }
         public string MiddleName { get; set; }
@@ -55,15 +54,5 @@ namespace LeasingCarsWPF.Models
         public virtual Car Car { get; set; }
         public virtual Employee Employee { get; set; }
         public virtual ICollection<Stat> Stats { get; set; }
-
-        public void AddOrder(Order order)
-        {
-            using (var context = new LeasingCarsDbContext())
-            {
-                order.Id = context.Orders.ToList().Max(o => o.Id) + 1;
-                context.Orders.Add(order);
-                context.SaveChanges();
-            }
-        }
     }
 }
