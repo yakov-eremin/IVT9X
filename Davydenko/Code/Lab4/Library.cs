@@ -8,9 +8,10 @@ namespace Lab4
 {
     public class Library
     {
-        public string _answer = "Answer";
-        public string _question = "Question";
+        private string _answer = "Answer";
+        private string _question = "Question";
 
-
+        public string Answer { get => _answer; set => _answer = value; }
+        public string Question { get => _question; set => _question = value; }
     }
 }

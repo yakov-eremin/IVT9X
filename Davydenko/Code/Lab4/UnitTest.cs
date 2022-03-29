@@ -19,13 +19,13 @@ namespace TestProject
         public void ReturnAnswerTest()
         {
             string _answer = "Answer";
-            Assert.AreEqual(library._answer, _answer);             
+            Assert.AreEqual(library.Answer, _answer);             
         }
         [TestMethod]
         public void ReturnQuestionTest()
         {
             string _questions = "Question";
-            Assert.AreEqual(library._question, _questions);
+            Assert.AreEqual(library.Question, _questions);
         }
     }
 }
