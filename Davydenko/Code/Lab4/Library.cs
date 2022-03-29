@@ -8,6 +8,9 @@ namespace Lab4
 {
     public class Library
     {
+        public string _answer = "Answer";
+        public string _question = "Question";
+
 
     }
 }
