@@ -5,7 +5,7 @@ using Lab4;
 namespace TestProject
 {
     [TestClass]
-    public class LibraryTest
+    public class LibraryTests
     {
         Library library;
 
@@ -38,28 +38,24 @@ namespace TestProject
         }
 
         [TestMethod]
-        public void GetRandomPuzzleTestForQuestion()
-        {
-            string _question;
-            string _answer;
-            Library.GetRandomPuzzle(out _question, out _answer);
-            Assert.IsTrue(library.Question.Contains(_question));
-        }
-        [TestMethod]
-        public void GetRandomPuzzleTestForAnswer()
-        {
-            string _question;
-            string _answer;
-            Library.GetRandomPuzzle(out _question, out _answer);
-            Assert.IsTrue(library.Answer.Contains(_answer));
-        }
-        [TestMethod]
         public void GetRandomPuzzleTestAccordance()
         {
             string _question;
             string _answer;
             Library.GetRandomPuzzle(out _question, out _answer);
             Assert.AreEqual(library.Question.IndexOf(_question), library.Answer.IndexOf(_answer));
+        }
+    }
+
+    [TestClass]
+    public class PlayerTests
+    {
+
+        [TestMethod]
+        public void PlayerInitializeTest()
+        {
+            Player player = new Player();
+            Assert.IsNotNull(player);
         }
     }
 }
