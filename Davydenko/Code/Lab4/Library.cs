@@ -9,8 +9,8 @@ namespace Lab4
 {
     public class Library
     {
-        private List<string> _answer;
-        private List<string> _question;
+        private static List<string> _answer;
+        private static List<string> _question;
 
         public List<string> Answer { get => _answer; set => _answer = value; }
         public List<string> Question { get => _question; set => _question = value; }
@@ -36,6 +36,14 @@ namespace Lab4
                     }
                 }
             }
+        }
+
+        public static void GetRandomPuzzle(out string question, out string answer )
+        {
+            var random = new Random();
+            int index = random.Next(0, _question.Count);
+            question = _question[index];
+            answer = _answer[index];
         }
     }
 }

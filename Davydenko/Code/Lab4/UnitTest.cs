@@ -34,8 +34,32 @@ namespace TestProject
             for (int i = 0; i < _questions.Count; i++)
             {
                 Assert.AreEqual(library.Question[i], _questions[i]);
-            }
-            
+            }            
+        }
+
+        [TestMethod]
+        public void GetRandomPuzzleTestForQuestion()
+        {
+            string _question;
+            string _answer;
+            Library.GetRandomPuzzle(out _question, out _answer);
+            Assert.IsTrue(library.Question.Contains(_question));
+        }
+        [TestMethod]
+        public void GetRandomPuzzleTestForAnswer()
+        {
+            string _question;
+            string _answer;
+            Library.GetRandomPuzzle(out _question, out _answer);
+            Assert.IsTrue(library.Answer.Contains(_answer));
+        }
+        [TestMethod]
+        public void GetRandomPuzzleTestAccordance()
+        {
+            string _question;
+            string _answer;
+            Library.GetRandomPuzzle(out _question, out _answer);
+            Assert.AreEqual(library.Question.IndexOf(_question), library.Answer.IndexOf(_answer));
         }
     }
 }
