@@ -16,5 +16,9 @@ namespace Lab4
             _word = word.ToCharArray();
         }
 
+        public bool TryGuessLetter()
+        {
+            return true;
+        }
     }
 }

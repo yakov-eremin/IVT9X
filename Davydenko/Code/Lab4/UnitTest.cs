@@ -99,6 +99,11 @@ namespace TestProject
             _hiddenWord = new HiddenWord("Hello");
             Assert.IsNotNull(_hiddenWord);
         }
-        
+        [TestMethod]
+        public void TryGuessLetterTest()
+        {
+            bool actual = _hiddenWord.TryGuessLetter();
+            Assert.AreEqual(true, actual);
+        }
     }
 }
