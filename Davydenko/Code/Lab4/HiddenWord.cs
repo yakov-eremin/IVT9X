@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Lab4
 {
@@ -16,7 +14,7 @@ namespace Lab4
             _word = word.ToCharArray();
         }
 
-        public bool TryGuessLetter(char letter, ref List<int> index)
+        public bool TryGuessLetter(char letter, List<int> index)
         {
             if(Array.IndexOf(_word, letter) != -1)
             {
