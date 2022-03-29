@@ -103,9 +103,9 @@ namespace TestProject
         public void TryGuessLetterTest()
         {
             char _letter = 'l';
-            int _index = -1;
+            List<int> _index = new List<int>();
             bool actual = _hiddenWord.TryGuessLetter(_letter, ref _index);
-            if (actual == true && _index == -1)
+            if (actual == true && _index.Count == 0)
                 actual = false;
             Assert.AreEqual(true, actual);
         }
