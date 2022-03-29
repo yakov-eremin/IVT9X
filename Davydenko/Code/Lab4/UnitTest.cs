@@ -21,13 +21,21 @@ namespace TestProject
         public void ReturnAnswerTest()
         {
             List<string> _answer = new List<string> { "Жупа", "Чихание" };
-            Assert.AreEqual(library.Answer, _answer);             
+            for (int i = 0; i < _answer.Count; i++)
+            {
+                Assert.AreEqual(library.Answer[i], _answer[i]);
+            }
+                         
         }
         [TestMethod]
         public void ReturnQuestionTest()
         {
-            List<string> _questions = new List<string> { "Жупа", "Чихание" };
-            Assert.AreEqual(library.Question, _questions);
+            List<string> _questions = new List<string> { "Как у западных", "Человеческие способности" };
+            for (int i = 0; i < _questions.Count; i++)
+            {
+                Assert.AreEqual(library.Question[i], _questions[i]);
+            }
+            
         }
     }
 }
