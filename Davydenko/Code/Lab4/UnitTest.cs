@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using Lab4;
 
 namespace TestProject
@@ -11,20 +12,21 @@ namespace TestProject
         [TestInitialize]
         public void LibraryInitializeTest()
         {
-            library = new Library();
+            string path = "TestXmlFile.xml";
+            library = new Library(path);
             Assert.IsNotNull(library);
         }
 
         [TestMethod]
         public void ReturnAnswerTest()
         {
-            string _answer = "Answer";
+            List<string> _answer = new List<string> { "Жупа", "Чихание" };
             Assert.AreEqual(library.Answer, _answer);             
         }
         [TestMethod]
         public void ReturnQuestionTest()
         {
-            string _questions = "Question";
+            List<string> _questions = new List<string> { "Жупа", "Чихание" };
             Assert.AreEqual(library.Question, _questions);
         }
     }
