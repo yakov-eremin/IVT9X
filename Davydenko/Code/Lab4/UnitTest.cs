@@ -7,14 +7,14 @@ namespace TestProject
     [TestClass]
     public class LibraryTests
     {
-        Library library;
+        Library _library;
 
         [TestInitialize]
         public void LibraryInitializeTest()
         {
             string path = "TestXmlFile.xml";
-            library = new Library(path);
-            Assert.IsNotNull(library);
+            _library = new Library(path);
+            Assert.IsNotNull(_library);
         }
 
         [TestMethod]
@@ -23,7 +23,7 @@ namespace TestProject
             List<string> _answer = new List<string> { "Жупа", "Чихание" };
             for (int i = 0; i < _answer.Count; i++)
             {
-                Assert.AreEqual(library.Answer[i], _answer[i]);
+                Assert.AreEqual(_library.Answer[i], _answer[i]);
             }
                          
         }
@@ -33,7 +33,7 @@ namespace TestProject
             List<string> _questions = new List<string> { "Как у западных", "Человеческие способности" };
             for (int i = 0; i < _questions.Count; i++)
             {
-                Assert.AreEqual(library.Question[i], _questions[i]);
+                Assert.AreEqual(_library.Question[i], _questions[i]);
             }            
         }
 
@@ -43,50 +43,60 @@ namespace TestProject
             string _question;
             string _answer;
             Library.GetRandomPuzzle(out _question, out _answer);
-            Assert.AreEqual(library.Question.IndexOf(_question), library.Answer.IndexOf(_answer));
+            Assert.AreEqual(_library.Question.IndexOf(_question), _library.Answer.IndexOf(_answer));
         }
     }
 
     [TestClass]
     public class PlayerTests
     {
-        Player player;
+        Player _player;
         [TestInitialize]
         public void PlayerInitializeTest()
         {
-            player = new Player();
-            Assert.IsNotNull(player);
+            _player = new Player();
+            Assert.IsNotNull(_player);
         }
         [TestMethod]
         public void PlayerSetNameTest()
         {
-            player.Name = "Player1";
-            Assert.AreEqual("Player1", player.Name);
+            _player.Name = "Player1";
+            Assert.AreEqual("Player1", _player.Name);
         }
         [TestMethod]
         public void PlayerSetPointsTest()
         {
-            player.Points = 10;
-            Assert.AreEqual(10, player.Points);
+            _player.Points = 10;
+            Assert.AreEqual(10, _player.Points);
         }
 
         [TestMethod]
         public void IncreasePointsPositiveTest()
         {
-            player.IncreasePoints(800);
-            Assert.AreEqual(800, player.Points);
+            _player.IncreasePoints(800);
+            Assert.AreEqual(800, _player.Points);
         }
         [TestMethod]
         public void IncreasePointsNegativeTest()
         {
-            player.IncreasePoints(-800);
-            Assert.AreEqual(0, player.Points);
+            _player.IncreasePoints(-800);
+            Assert.AreEqual(0, _player.Points);
         }
         [TestMethod]
         public void ResetPointsTest()
         {
-            player.ResetPoints();
-            Assert.AreEqual(0, player.Points);
+            _player.ResetPoints();
+            Assert.AreEqual(0, _player.Points);
+        }
+    }
+    [TestClass]
+    public class HiddenWordTests
+    {
+        [TestMethod]
+        public void HiddenWordInitializeTest()
+        {
+            HiddenWord hiddenWord = new HiddenWord();
+            Assert.IsNotNull(hiddenWord);
         }
     }
 }
