@@ -50,12 +50,24 @@ namespace TestProject
     [TestClass]
     public class PlayerTests
     {
-
-        [TestMethod]
+        Player player;
+        [TestInitialize]
         public void PlayerInitializeTest()
         {
-            Player player = new Player();
+            player = new Player();
             Assert.IsNotNull(player);
+        }
+        [TestMethod]
+        public void PlayerSetNameTest()
+        {
+            player.Name = "Player1";
+            Assert.AreEqual("Player1", player.Name);
+        }
+        [TestMethod]
+        public void PlayerSetPointsTest()
+        {
+            player.Points = 10;
+            Assert.AreEqual(10, player.Points);
         }
     }
 }
