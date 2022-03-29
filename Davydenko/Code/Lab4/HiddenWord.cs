@@ -30,5 +30,10 @@ namespace Lab4
                 return false;
             }
         }
+        public bool TryGuessWord(string word)
+        {
+            string _temp  = new string(_word);
+            return word.Equals(_temp);
+        }
     }
 }

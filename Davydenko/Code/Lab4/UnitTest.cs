@@ -104,8 +104,8 @@ namespace TestProject
         {
             char _letter = 'l';
             List<int> _index = new List<int>();
-            bool actual = _hiddenWord.TryGuessLetter(_letter, _index);
-            Assert.AreEqual(true, actual);
+            bool _actual = _hiddenWord.TryGuessLetter(_letter, _index);
+            Assert.AreEqual(true, _actual);
         }
         [TestMethod]
         public void TryGuessLetterForAmountTest()
@@ -114,6 +114,13 @@ namespace TestProject
             List<int> _index = new List<int>();
             bool actual = _hiddenWord.TryGuessLetter(_letter, _index);
             Assert.AreEqual(2, _index.Count);
+        }
+        [TestMethod]
+        public void TryGuessWordTest()
+        {
+            string _word = "Hello";
+            bool _actual = _hiddenWord.TryGuessWord(_word);
+            Assert.AreEqual(true, _actual);
         }
     }
 }
