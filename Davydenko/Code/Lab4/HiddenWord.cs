@@ -10,5 +10,11 @@ namespace Lab4
     {
         private char[] _word;
         public char[] Word { get => _word; set => _word = value; }
+
+        public HiddenWord(string word)
+        {
+            _word = word.ToCharArray();
+        }
+
     }
 }
