@@ -100,14 +100,20 @@ namespace TestProject
             Assert.IsNotNull(_hiddenWord);
         }
         [TestMethod]
-        public void TryGuessLetterTest()
+        public void TryGuessLetterForExistenceTest()
         {
             char _letter = 'l';
             List<int> _index = new List<int>();
-            bool actual = _hiddenWord.TryGuessLetter(_letter, ref _index);
-            if (actual == true && _index.Count == 0)
-                actual = false;
+            bool actual = _hiddenWord.TryGuessLetter(_letter, _index);
             Assert.AreEqual(true, actual);
+        }
+        [TestMethod]
+        public void TryGuessLetterForAmountTest()
+        {
+            char _letter = 'l';
+            List<int> _index = new List<int>();
+            bool actual = _hiddenWord.TryGuessLetter(_letter, _index);
+            Assert.AreEqual(2, _index.Count);
         }
     }
 }
