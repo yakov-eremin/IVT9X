@@ -102,7 +102,8 @@ namespace TestProject
         [TestMethod]
         public void TryGuessLetterTest()
         {
-            bool actual = _hiddenWord.TryGuessLetter();
+            char _letter = 'l';
+            bool actual = _hiddenWord.TryGuessLetter(_letter);
             Assert.AreEqual(true, actual);
         }
     }
