@@ -69,5 +69,24 @@ namespace TestProject
             player.Points = 10;
             Assert.AreEqual(10, player.Points);
         }
+
+        [TestMethod]
+        public void IncreasePointsPositiveTest()
+        {
+            player.IncreasePoints(800);
+            Assert.AreEqual(800, player.Points);
+        }
+        [TestMethod]
+        public void IncreasePointsNegativeTest()
+        {
+            player.IncreasePoints(-800);
+            Assert.AreEqual(0, player.Points);
+        }
+        [TestMethod]
+        public void ResetPointsTest()
+        {
+            player.ResetPoints();
+            Assert.AreEqual(0, player.Points);
+        }
     }
 }
