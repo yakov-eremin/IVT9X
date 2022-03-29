@@ -92,11 +92,19 @@ namespace TestProject
     [TestClass]
     public class HiddenWordTests
     {
-        [TestMethod]
+        HiddenWord _hiddenWord;
+        [TestInitialize]
         public void HiddenWordInitializeTest()
         {
-            HiddenWord hiddenWord = new HiddenWord();
-            Assert.IsNotNull(hiddenWord);
+            _hiddenWord = new HiddenWord();
+            Assert.IsNotNull(_hiddenWord);
+        }
+        [TestMethod]
+        public void HiddenWordSetFromChar()
+        {
+            char[] _word = new char[] { 'H', 'e', 'l', 'l', 'o' };
+            _hiddenWord.Word = _word;
+            Assert.AreEqual(_word, _hiddenWord.Word);
         }
     }
 }

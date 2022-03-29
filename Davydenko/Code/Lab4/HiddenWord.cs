@@ -8,6 +8,7 @@ namespace Lab4
 {
     public class HiddenWord
     {
-
+        private char[] _word;
+        public char[] Word { get => _word; set => _word = value; }
     }
 }
