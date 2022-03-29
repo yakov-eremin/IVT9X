@@ -16,12 +16,17 @@ namespace Lab4
             _word = word.ToCharArray();
         }
 
-        public bool TryGuessLetter(char letter)
+        public bool TryGuessLetter(char letter, ref int index)
         {
-            if(Array.IndexOf(_word, letter)!=-1)
+            if(Array.IndexOf(_word, letter) != -1)
+            {
+                index = Array.IndexOf(_word, letter);
                 return true;
+            }
             else
+            {
                 return false;
+            }                
         }
     }
 }

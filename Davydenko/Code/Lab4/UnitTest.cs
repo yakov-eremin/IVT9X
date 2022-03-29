@@ -103,7 +103,10 @@ namespace TestProject
         public void TryGuessLetterTest()
         {
             char _letter = 'l';
-            bool actual = _hiddenWord.TryGuessLetter(_letter);
+            int _index = -1;
+            bool actual = _hiddenWord.TryGuessLetter(_letter, ref _index);
+            if (actual == true && _index == -1)
+                actual = false;
             Assert.AreEqual(true, actual);
         }
     }
