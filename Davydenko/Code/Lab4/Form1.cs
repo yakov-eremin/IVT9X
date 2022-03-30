@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace Lab4
@@ -71,6 +66,7 @@ namespace Lab4
 
         private void NextTurn()
         {
+            TurnWheel();
             _playerTurn++;
             if (_playerTurn > 3)
                 _playerTurn = 1;
@@ -92,7 +88,7 @@ namespace Lab4
                 button2.Enabled = false;
                 button3.Enabled = true;
             }
-            button_wheel.Enabled = true;
+            button_start.Enabled = true;
         }
 
         private void OpenLetters(List<int> index)
@@ -112,11 +108,16 @@ namespace Lab4
             }
         }
 
-        private void button_wheel_Click(object sender, EventArgs e)
+        private void TurnWheel()
         {
             _currentpoints = _points[random.Next(0, _points.Length)];
             label_points.Text = _currentpoints.ToString();
-            button_wheel.Enabled = false;
+            button_start.Enabled = false;
+        }
+
+        private void button_start_Click(object sender, EventArgs e)
+        {
+            Start();
         }
 
         private void button1_Click(object sender, EventArgs e)

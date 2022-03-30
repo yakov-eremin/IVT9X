@@ -39,7 +39,7 @@
             this.label_points_3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label_points = new System.Windows.Forms.Label();
-            this.button_wheel = new System.Windows.Forms.Button();
+            this.button_start = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox_question = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -142,15 +142,15 @@
             this.label_points.TabIndex = 3;
             this.label_points.Text = "0";
             // 
-            // button_wheel
+            // button_start
             // 
-            this.button_wheel.Location = new System.Drawing.Point(280, 82);
-            this.button_wheel.Name = "button_wheel";
-            this.button_wheel.Size = new System.Drawing.Size(75, 23);
-            this.button_wheel.TabIndex = 2;
-            this.button_wheel.Text = "Крутить";
-            this.button_wheel.UseVisualStyleBackColor = true;
-            this.button_wheel.Click += new System.EventHandler(this.button_wheel_Click);
+            this.button_start.Location = new System.Drawing.Point(279, 105);
+            this.button_start.Name = "button_start";
+            this.button_start.Size = new System.Drawing.Size(75, 23);
+            this.button_start.TabIndex = 2;
+            this.button_start.Text = "Начать";
+            this.button_start.UseVisualStyleBackColor = true;
+            this.button_start.Click += new System.EventHandler(this.button_start_Click);
             // 
             // label4
             // 
@@ -181,7 +181,7 @@
             this.Controls.Add(this.label_points_3);
             this.Controls.Add(this.label_points_2);
             this.Controls.Add(this.label_points_1);
-            this.Controls.Add(this.button_wheel);
+            this.Controls.Add(this.button_start);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -210,7 +210,7 @@
         private System.Windows.Forms.Label label_points_3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_points;
-        private System.Windows.Forms.Button button_wheel;
+        private System.Windows.Forms.Button button_start;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox_question;
     }
