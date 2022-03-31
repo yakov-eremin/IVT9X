@@ -18,26 +18,6 @@ namespace TestProject
         }
 
         [TestMethod]
-        public void ReturnAnswerTest()
-        {
-            List<string> _answer = new List<string> { "Жупа", "Чихание" };
-            for (int i = 0; i < _answer.Count; i++)
-            {
-                Assert.AreEqual(_library.Answer[i], _answer[i]);
-            }
-                         
-        }
-        [TestMethod]
-        public void ReturnQuestionTest()
-        {
-            List<string> _questions = new List<string> { "Как у западных", "Человеческие способности" };
-            for (int i = 0; i < _questions.Count; i++)
-            {
-                Assert.AreEqual(_library.Question[i], _questions[i]);
-            }            
-        }
-
-        [TestMethod]
         public void GetRandomPuzzleTestAccordance()
         {
             string _question;
@@ -56,18 +36,6 @@ namespace TestProject
         {
             _player = new Player();
             Assert.IsNotNull(_player);
-        }
-        [TestMethod]
-        public void PlayerSetNameTest()
-        {
-            _player.Name = "Player1";
-            Assert.AreEqual("Player1", _player.Name);
-        }
-        [TestMethod]
-        public void PlayerSetPointsTest()
-        {
-            _player.Points = 10;
-            Assert.AreEqual(10, _player.Points);
         }
 
         [TestMethod]
