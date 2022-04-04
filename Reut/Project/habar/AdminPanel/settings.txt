@@ -1,1 +1,0 @@
-"{\"settings\":{\"live\":\"123123123123\",\"mail\":\"habar24@mail.ru\",\"deadlist\":[]}}"
