@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="kotApp">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Хабар24 | Панель администратора приложения Хабар 24</title>
+        <!-- Meta tags -->
+        <meta name="description" content="Панель администратора приложения Хабар 24" />
+        <meta name="keywords" content="Хабар 24" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="css/fontawesome.min.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="bg-secondary" ng-controller="MainController">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12">
+
+                        <div class="card bg-light mt-5 mb-3">
+                            <div class="card-body">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col-1">
+                                        <img src="images/logo.png" class="card-img" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <h6 class="ml-3 mb-0">Панель администратора <br /><small class="text-muted">Настройка приложения Хабар24</small></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 online-form">
+                            <div class="card-header">
+                                <h6 class="mb-0">Ссылка на онлайн-трансляцию телеканала:</h6>
+                            </div>
+                            <form class="card-body">
+                                <div class="input-group mb-3">
+                                    <input ng-model="live" type="text" class="form-control" placeholder="Введите ссылку.." />
+                                    <div ng-click="update()"  class="input-group-append">
+                                        <input class="btn btn-outline-primary" type="button" value="Сохранить" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card mb-3 reporter-form">
+                            <div class="card-header">
+                                <h6 class="mb-0">Адрес почты для функции "Народный репортер":</h6>
+                            </div>
+                            <form class="card-body">
+                                <div  class="input-group mb-3">
+                                    <input ng-model="mail" type="email" class="form-control" placeholder="Введите email.." />
+                                    <div ng-click="update()" class="input-group-append">
+                                        <input class="btn btn-outline-primary" type="button" value="Сохранить" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card mb-3 reporter-form">
+                            <div class="card-header">
+                                <h6 class="mb-0">Ссылка на изображение для "Баннера" (Если ссылка пустая баннер не показываеться) :</h6>
+                            </div>
+                            <form class="card-body">
+                                <div  class="input-group mb-3">
+                                    <input ng-model="banner" type="text" class="form-control" placeholder="Введите URL баннера" />
+                                    <div ng-click="update()" class="input-group-append">
+                                        <input class="btn btn-outline-primary" type="button" value="Сохранить" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card mb-3 reporter-form">
+                            <div class="card-header">
+                                <h6 class="mb-0">Срочная новость (только если настроен Push):</h6>
+                            </div>
+                            <form class="card-body">
+                                <div  class="input-group mb-3">
+                                    <input ng-model="msgTitle" type="text" class="form-control" placeholder="Заголовок" />
+                                    <input ng-model="msgText" type="text" class="form-control" placeholder="Текст" />
+                                    <div ng-click="sendPush()" class="input-group-append">
+                                        <input class="btn btn-outline-primary" type="button" value="Сохранить" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card mb-3 heading-form">
+                            <div class="card-header">
+                                <h6 class="mb-0">Редактирование отображаемых рубрик:</h6>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-bordered table-responsive-md">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Статус</th>
+                                            <th colspan="2">Рубрика</th>
+                                            <th colspan="2">Управление</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="item in deadlist">
+                                            <td class="align-middle text-center">
+                                                <p class="mb-0" ng-if="item.disabled == 0"><i class="fas fa-eye text-success"></i></p>
+                                                <p class="mb-0" ng-if="item.disabled == 1"><i class="fas fa-eye-slash text-danger"></i></p>
+                                            </td>
+                                             
+                                            <td class="align-middle">{{item.title}}</td>
+                                            <td class="align-middle text-center">
+                                                <button type="button" class="btn btn-outline-success" ng-click="updateList(item.value, 0)">Показывать</button>
+                                            </td>
+                                            <td class="align-middle text-center">
+                                                <button type="button" class="btn btn-outline-danger" ng-click="updateList(item.value, 1)">Скрывать</button>
+                                            </td>
+                                        </tr>
+
+                                         
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="script/app.js"></script>   
+    </body>
+</html>
