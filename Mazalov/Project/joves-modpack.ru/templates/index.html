@@ -1,0 +1,133 @@
+<div class="row">
+	<div class="col-md-12 col-lg-12 col-sm-12">
+		<div class="body-wrapper">
+			<div class="flex-direction-row">
+				<div class="youtube-video">
+					<img src="assets/modpak.jpg?l34y5634iy" width="646" height="369" style="border-radius: 10px;">
+					<!--iframe class="iframe"
+						src="https://www.youtube.com/embed/TfCqh1gC5ws?showinfo=0;" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe-->
+				</div>
+				<div class="about-modpack">
+					<p class="about-title">
+						Модпак Джова 1.14.0
+					</p>
+					<p class="about-text">
+						Перед вами новый Модпак Джова к патчу 1.14.0
+					</p>
+					<p class="about-text">
+						Мы собрали для вас лучшие моды World of Tanks - от
+						умных прицелов и интерфейсов до шкурок с зонами
+						пробития и программы для поднятия ФПС на слабых ПК.
+					</p>
+					<p class="about-text">
+						Если вам нравится модпак и вы цените нашу работу -
+						пожалуйста, подпишитесь на наш канал. Это поможет нам и дальше продолжать радовать
+						вас!
+					</p>
+					<p class="about-text">
+						Спасибо! ;)
+					</p>
+				</div>
+			</div>
+			<div class="buttons-downoad">
+				<div class="downloads">
+					<div type="button" class="downloads-button"
+						onclick="clickCounter();window.open('{download_url_official}');">
+						<!-- Сюда ссылки на скачивание-->
+						<p class="downloads-button-text">Скачать<br></p>
+					</div>
+					<div class="buttons-links flex-direction-row">
+						<p class="links-text">Скачать с облака:</p>
+						<!-- Сюда ссылки на скачивание сторонние-->
+						{download_mail}
+						{download_yandex}
+						{download_google}
+					</div>
+				</div>
+				<div class="statistic">
+					<div class="stat-wrapper">
+						<div class="col-6">
+							<p class="stat">Всего скачано</p>
+						</div>
+						<div class="col-6">
+							<p class="stat-numbers" id="p">{click_count}<span class="stat-numbers"
+									style="margin-left: 0px;" id="span"> млн раз</span></p>
+						</div>
+					</div>
+					<div class="stat-wrapper">
+						<div class="col-6">
+							<p class="stat">Версия игры</p>
+						</div>
+						<div class="col-6">
+							<p class="stat-numbers" id='game-version'>{game_version}<span id='game-version-span'></span></p>
+						</div>
+					</div>
+					<div class="stat-wrapper">
+						<div class="col-6">
+							<p class="stat">Версия модпака</p>
+						</div>
+						<div class="col-6">
+							<p class="stat-numbers" id='modpack-version'>{modpack_version}<span id='modpack-version-span'></span></p>
+						</div>
+					</div>
+					<div class="stat-wrapper">
+						<div class="col-6">
+							<p class="stat">Последнее обновление</p>
+						</div>
+						<div class="col-6">
+							<p class="stat-numbers" id='last-update'>{last_update}<span id='last-update-span'></span></p>
+						</div>
+					</div>
+					<a href="/changes">История изменений</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 col-lg-12 col-sm-12">
+		<div class="chanes-main-wrapper second-body">
+			<p class="about-title">
+				История изменений
+			</p>
+			<div class="change-block" id="changees">
+				{version_history}
+				<a href="/changes">Полная история изменений</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 col-lg-12 col-sm-12">
+		<div class="body-wrapper second-body">
+			<p class="about-title">
+				Что в Модпаке?
+			</p>
+			<div class="about-cards flex-direction-row">
+				<div class="about-card">
+					<div class="image-card"></div>
+					<p>Точные Прицелы</p>
+				</div>
+				<div class="about-card">
+					<div class="image-card" id="tank"></div>
+					<p>Шкурки Декали</p>
+				</div>
+				<div class="about-card">
+					<div class="image-card" id="up"></div>
+					<p>Удобные Панели</p>
+				</div>
+				<div class="about-card">
+					<div class="image-card" id="voice"></div>
+					<p>Крутые Озвучки</p>
+				</div>
+				<div class="about-card">
+					<div class="image-card" id="angar"></div>
+					<p>Помощь в ангаре</p>
+				</div>
+			</div>
+			<span class="under-text">Полный список модов, а также графические представления содержатся в самом модпаке.</span>
+		</div>
+	</div>
+</div>

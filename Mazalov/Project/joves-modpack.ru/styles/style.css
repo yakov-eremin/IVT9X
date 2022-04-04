@@ -1,0 +1,1185 @@
+/* font-family: "RobotoRegular"; */
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "RobotoBlack"; */
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("../fonts/Roboto-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "Package"; */
+
+@font-face {
+    font-family: "Package";
+    src: url("../fonts/Package.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "RobotoMedium"; */
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "RobotoRegular"; */
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*----------------------*/
+
+/*-----Global style-----*/
+
+/*----------------------*/
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+#overlay{
+    width: 100%;
+    min-height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 11;
+    display: none;
+}
+
+.close{
+    display: none;
+    background-image: url(../assets/close-icon-svg.png);
+    background-size: cover;
+    z-index: 111;
+    position: fixed;
+    height: 64px;
+    cursor:pointer;
+    width: 64px;
+    top: 24px;
+    right: 24px;
+}
+
+b {
+    font-family: "Roboto-Bold";
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+html {
+    font-family: "Roboto-Regular";
+    color: #fff;
+}
+
+body {
+    background-image: url(../assets/bg.jpg);
+    background-size: 5000;
+    background-position: 50% 0%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+    display: flex;
+}
+
+.underline-bold {
+    font-family: "Roboto-Bold";
+    text-decoration: underline;
+    color: #fff!important;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+/*----------------------*/
+
+/*------Main style------*/
+
+/*----------------------*/
+
+.main-wrapper {
+    background-color: #363636;
+}
+
+.link-button {
+    background-color: #9406FF;
+    color: #fff;
+    border-radius: 9px;
+    padding: 5px 11px 5px 11px;
+    font-size: 21px;
+    font-family: "Roboto-Bold";
+    line-height: 28px;
+    border-width: 0px;
+    outline: none;
+    box-shadow: 3px 3px 0px #7200A1;
+}
+
+.link-button:hover {
+    filter: brightness(80%)
+}
+
+.download-button {
+    background-color: #FF5B06;
+    color: #fff;
+    border-radius: 9px;
+    padding: 5px 11px 5px 11px;
+    font-size: 21px;
+    font-family: "Roboto-Bold";
+    line-height: 28px;
+    border-width: 0px;
+    outline: none;
+    box-shadow: 3px 3px 0px #A13700;
+}
+
+.download-button:hover {
+    filter: brightness(80%)
+}
+
+.buy-button {
+    background-color: #FF5B06;
+    color: #fff;
+    position: absolute;
+    top: 125px;
+    margin-left: -290px;
+    border-radius: 9px;
+    padding: 5px 27px 5px 27px;
+    font-size: 18px;
+    font-family: "Roboto-Bold";
+    line-height: 20px;
+    border-width: 0px;
+    outline: none;
+    box-shadow: 3px 3px 0px #A13700;
+}
+
+.buy-button:hover {
+    filter: brightness(80%)
+}
+
+.information-button {
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    top: 125px;
+    margin-left: -150px;
+    border-radius: 9px;
+    padding: 5px 12px 5px 12px;
+    font-size: 18px;
+    font-family: "Roboto-Bold";
+    line-height: 20px;
+    border-width: 0px;
+    outline: none;
+    box-shadow: 3px 3px 0px #bdbdbd;
+}
+
+.information-button:hover {
+    filter: brightness(80%)
+}
+
+#for-free {
+    position: absolute;
+    top: 145px;
+    margin-left: -275px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: "Roboto-Regular";
+    color: #fff;
+}
+
+#first-tank {
+    background-image: url(../assets/first-tank.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 325px;
+    height: 400px;
+    width: 438px;
+    margin-left: -439px;
+}
+#first-tank:hover{
+    background-image: url(../assets/first-tank-hover.png);
+}
+
+#second-tank {
+    background-image: url(../assets/second-tank.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -85px 0px;
+    position: absolute;
+    top: 345px;
+    height: 450px;
+    width: 515px;
+    margin-left: 1111px;
+}
+
+#second-tank:hover{
+    background-image: url(../assets/second-tank-hover.png);
+}
+
+#first-gift {
+    background-image: url(../assets/first-gift.png);
+    background-repeat: no-repeat;
+    background-size: 315px;
+    position: absolute;
+    top: 260px;
+    height: 110px;
+    width: 300px;
+    margin-left: -325px;
+}
+#first-gift:hover{
+    background-image: url(../assets/first-gift-hover.png);
+}
+#second-gift {
+    background-image: url(../assets/second-gift.png);
+    background-repeat: no-repeat;
+    background-size: 315px;
+    position: absolute;
+    top: 115px;
+    height: 100px;
+    width: 300px;
+    margin-left: -330px;
+}
+
+#second-gift:hover{
+    background-image: url(../assets/second-gift-hover.png);
+}
+
+#third-gift {
+    background-image: url(../assets/third-gift.png);
+    background-repeat: no-repeat;
+    background-size: 315px;
+    position: absolute;
+    top: 200px;
+    height: 80px;
+    width: 300px;
+    margin-left: -325px;
+
+}
+#third-gift:hover {
+    background-image: url(../assets/third-gift-hover.png);
+}
+
+#four-gift {
+    background-image: url(../assets/for-gift.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    position: absolute;
+    top: 350px;
+    height: 318px;
+    z-index: -1;
+    width: 280px;
+    margin-left: -370px;
+}
+
+#four-gift:hover {
+    background-image: url(../assets/for-gift-hover.png);
+}
+
+.header-buttons {
+    margin-top: 13px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.header-buttons .link-button {
+    margin-right: 12px;
+}
+
+.header-buttons .download-button {
+    margin-right: 50px;
+}
+
+.ads-name {
+    background-image: url(../assets/infoPanel.png);
+    border-radius: 12px;
+    width: 263px;
+    padding: 4px;
+    position: absolute;
+    font-size: 20px;
+    height: 130px;
+    top: 15px;
+    margin-left: -320px;
+    background-position: 0px 0px;
+    cursor: pointer;
+}
+
+.ads-name:hover{
+    background-image:url(../assets/infoPanel-hover.png);
+}
+
+.package-name {
+    font-size: 28px;
+    line-height: 28px;
+}
+
+#arrow {
+    font-size: 16px;
+}
+
+.ads-name p {
+    color: white;
+    font-family: "Roboto-Black";
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.ads-name p:last-child {
+    font-family: "Package";
+}
+
+.main-title {
+    margin-top: -2px;
+}
+
+.image-part {
+    margin-left: 64px;
+    margin-right: 16px;
+    background-image: url(../assets/part.png);
+    width: 60px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    background-position: 50% 35%;
+}
+
+.title {
+    font-size: 3.25rem;
+    color: #fff;
+    font-family: "Roboto-Bold";
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.white-line {
+    width: 2px;
+    background-color: #fff;
+    margin: 20px 16px 20px 0px;
+}
+
+.line-block {
+    display: flex;
+    margin-left: 10px;
+}
+
+.second-text {
+    font-size: 1rem;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    margin-bottom: 0px;
+    color: #fff;
+    font-style: italic;
+}
+
+.social-wrapper {
+    background-color: #151515;
+    width: 150px;
+    margin: 20px 0px;
+    float: right;
+    border-radius: 10px;
+    margin-right: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icon {
+    width: 34px;
+    height: 34px;
+    background-color: #363636;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background-color: #464646;
+}
+
+.volod9{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    height: 360px;
+    width: 295px;
+    top: 11px;
+    display:none;
+    margin-left: -305px;
+    border-radius: 20px;
+}
+
+#youtube {
+    background-image: url(../assets/youtube.png);
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: center;
+}
+
+#vk {
+    background-image: url(../assets/vk.png);
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: center;
+}
+
+#instagram {
+    background-image: url(../assets/instagram.png);
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: center;
+}
+
+.white-header {
+    background-color: #fff;
+    border-radius: 6px;
+    height: 41px;
+    margin: 0px 30px;
+    margin-top: 27px;
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.25);
+}
+
+.pages {
+    display: flex;
+    width: fit-content;
+}
+
+.brigt {
+    margin-left: 9px;
+    height: 41px;
+    padding: 8px 0px;
+}
+
+.brigt:not(:nth-child(2)):hover {
+    background-color: #DBDBDB;
+}
+
+.brigt span:hover {
+    color: #000;
+}
+
+.pages:first-child {
+    margin-top: 8px;
+    margin-left: 18px;
+}
+
+.page {
+    font-family: "Roboto-Bold";
+    font-size: 17px;
+    line-height: 23px;
+    color: #3F3F3F;
+    padding: 10px 9px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.pages #active {
+    padding: 4px 9px;
+    background-color: #8C2D9E;
+    color: #fff!important;
+}
+
+.pages #active:hover {
+    background-color: #6D237B;
+}
+
+.ads-window{
+position: fixed;
+    background-image: url(../assets/adfl.jpeg);
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    z-index: 111;
+    width: 640px;
+    display: none;
+    height: 480px;
+    transform: translate(-50%, -50%);
+}
+.ads-window:hover{
+    background-position: 0 -480px;
+    background-image:url(../assets/adfl.jpeg);
+}
+
+.body-wrapper {
+    background: linear-gradient(to bottom, #1C1C1C, #2D2D2D);
+    margin: 0px 45px;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 29px;
+    flex-direction: column;
+    box-shadow: 0 9px 20px rgba(0, 0, 0, 0.25);
+}
+
+.about-text {
+    font-family: "Roboto-Regular";
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #fff;
+}
+
+.about-title {
+    font-family: "Roboto-Bold";
+    font-size: 1.75rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.youtube-video {
+    margin-top: 22px;
+    margin-left: 20px;
+    width: 675px;
+    height: 393px;
+    background-color: #464646;
+    border-radius: 14px;
+    padding: 12px;
+    margin-bottom: 22px;
+}
+
+.about-modpack {
+    margin-top: 17px;
+    margin-left: 24px;
+    margin-right: 10px;
+}
+
+.buttons-downoad {
+    display: flex;
+    justify-content: center;
+}
+
+.downloads-button {
+    margin-top: 24px;
+    background-color: #FF5B06;
+    color: #fff;
+    border-radius: 9px;
+    padding: 5px 11px 5px 11px;
+    width: 330px;
+    height: 90px;
+    border-width: 0px;
+    outline: none;
+    box-shadow: 4px 4px 0px #A13700;
+    margin-bottom: 18px;
+}
+
+.downloads-button .downloads-button-text {
+    color: #fff;
+    font-size: 47px;
+    font-family: "Roboto-Bold";
+    line-height: 63px;
+    text-align: center;
+    outline: none;
+}
+
+.downloads-button .downloads-button-text:after {
+    content: "с сайта wgmods.net";
+    color: #fff;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    font-style: italic;
+    line-height: 20px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -75px;
+    text-align: center;
+    outline: none;
+}
+
+.downloads-button:hover {
+    filter: brightness(80%)
+}
+
+.buttons-links {
+    background-color: #464646;
+    border-radius: 9px;
+    justify-content: space-around;
+    padding: 7px 11px;
+    margin: 0px 25px;
+}
+
+.buttons-links p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 0px;
+}
+
+.downloads {
+    flex-direction: column;
+}
+
+#mail {
+    background-image: url(../assets/mail.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+#yandex {
+    background-image: url(../assets/yandex.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+#google {
+    background-image: url(../assets/google.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.statistic {
+    min-width: 430px;
+    background-color: #464646;
+    margin-left: 65px;
+    margin-top: 24px;
+    border-radius: 17px;
+    padding: 5px 6px;
+    padding-bottom: 8px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.stat-wrapper {
+    flex-direction: row;
+    display: flex;
+    margin-top: 4px;
+    text-align: center;
+    justify-content: center;
+}
+
+.iframe {
+    width: 646px;
+    height: 368px;
+    border-radius: 10px;
+}
+
+.stat {
+    font-family: "Roboto-Bold";
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    width: fit-content;
+    margin-bottom: 0px;
+    float: right;
+}
+
+.stat-numbers {
+    font-family: "Roboto-Regular";
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    width: fit-content;
+    margin-bottom: 0px;
+    margin-left: 18px;
+}
+
+.stat-wrapper .col-6 {
+    padding: 0px;
+}
+
+.stat-wrapper .col-6:first-child {
+    justify-self: flex-end;
+}
+
+.statistic a {
+    margin-top: -3px;
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.body-wrapper:first-child {
+    margin-bottom: 25px;
+}
+
+.second-body .about-title {
+    text-align: center;
+}
+
+.about-cards {
+    display: flex;
+    margin: 0px 25px;
+    justify-content: space-between;
+}
+
+.about-card {
+    width: 165px;
+    height: 200px;
+    background-color: #3E3E3E;
+    border-radius: 12.5px;
+}
+
+.about-card p {
+    font-size: 25px;
+    font-family: "Roboto-Bold";
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+}
+
+.image-card {
+    background-image: url(../assets/scope.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 100px;
+    margin-top: 14px;
+}
+
+#tank {
+    background-image: url(../assets/tank.png);
+}
+
+#up {
+    background-image: url(../assets/up.png);
+}
+
+#voice {
+    background-image: url(../assets/voice.png);
+}
+
+#angar {
+    background-image: url(../assets/angar.png);
+}
+
+.second-body .change-block {
+    margin: 35px 40px 45px 40px;
+}
+
+.chanes-main-wrapper {
+    background: linear-gradient(to bottom, #1C1C1C, #2D2D2D);
+    margin: 0px 200px;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 29px;
+    flex-direction: column;
+    box-shadow: 0 9px 20px rgba(0, 0, 0, 0.25);
+}
+
+#changees div:nth-child(n+3):nth-child(-n+8) {
+    display: none;
+}
+
+.change-block a {
+    margin-top: -3px;
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.under-text {
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: #252525;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 21px;
+    line-height: 25px;
+    color: #838383;
+    text-decoration: underline #838383;
+    margin-bottom: 0px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.changes-title {
+    font-size: 35px;
+    line-height: 40px;
+    color: #fff;
+    font-family: "Roboto-Bold";
+    margin-top: 27px;
+    text-align: center;
+}
+
+.version {
+    margin-bottom: 20px;
+}
+
+.change-title {
+    font-size: 22px;
+    font-family: "Roboto-Bold";
+    line-height: 24px;
+    color: #fff;
+}
+
+.change-text {
+    font-size: 17px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.change-block {
+    margin: 45px 78px 194px 78px;
+}
+
+.description-text {
+    margin: 40px 250px 0px 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+}
+
+.program-call {
+    background-color: #242424;
+    margin: 32px 78px 240px 78px;
+    border-radius: 26px;
+    padding: 22.5px 205px;
+    display: flex;
+    flex-direction: column;
+}
+
+.program-call .change-title {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.vk-button {
+    padding: 5px 20px;
+    background-color: #4A76A8;
+    width: fit-content;
+    margin-top: 12px;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px #395D86;
+}
+
+.vk-text {
+    font-size: 29px;
+    font-family: "Roboto-Bold";
+    color: #fff;
+    margin-bottom: 0px;
+    margin-left: 14px;
+}
+
+.warn-text {
+    margin-top: 22px;
+    font-size: 14px;
+    color: #FF3E3E;
+    text-align: center;
+    font-family: "Roboto-Bold";
+}
+
+.icon-but {
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: cover!important;
+}
+
+.faq {
+    margin-top: 20px;
+    margin-left: 78px;
+    margin-right: 78px;
+}
+
+.faq-with-margin {
+    margin-top: 42px;
+    margin-left: 78px;
+    margin-right: 78px;
+}
+
+.faq-title {
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.faq-text {
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.vk-button:hover {
+    filter: brightness(80%)
+}
+
+.warn-wrapper {
+    width: auto;
+    background: linear-gradient(to bottom, #C47373, #F3CBCB);
+    margin: 12px 45px 0px 45px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warn-wrapper p {
+    font-size: 23px;
+    line-height: 29px;
+    font-family: "Roboto-Bold";
+    text-align: center;
+    margin: 12px 0px;
+    color: #580000;
+}
+
+/* Admin Panel */
+
+.login {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 279px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.login input[type=login] {
+    width: 260px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+}
+
+.login input[type=password] {
+    width: 260px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+.login input[type=submit] {
+    width: 260px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #a18d6c;
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.login input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.login input[type=submit]:active {
+    opacity: 0.6;
+}
+
+.login input[type=login]:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.login input[type=password]:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.login input[type=submit]:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+::-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+@media (max-width:659px) {
+    .mobile-adab{
+        display:none;
+    }
+}
+@media (max-width:1910px) {
+    .container {
+        max-width: 840px;
+    }
+    .ads-name {
+        margin-left: -272px;
+    }
+    .information-button {
+        margin-left: -132px;
+    }
+    .buy-button {
+        margin-left: -271px;
+    }
+    #for-free {
+        margin-left: -260px;
+    }
+    #second-gift {
+        margin-left: -270px;
+    }
+    #first-gift {
+        margin-left: -280px;
+    }
+    #third-gift {
+        margin-left: -280px;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 0px;
+        align-self: center;
+    }
+    .image-part {
+        margin-left: 40px;
+        margin-right: 16px;
+        background-image: url(../assets/part.png);
+        background-position: 50% 50%;
+        width: 45px;
+    }
+    .second-text {
+        font-size: 13px;
+    }
+    .social-wrapper {
+        margin-right: 44px;
+    }
+    .icon {
+        margin: 8px 0px;
+    }
+    .iframe {
+        width: 460px;
+        height: 260px;
+    }
+    .youtube-video {
+        height: 285px;
+    }
+    .about-title {
+        font-size: 21px;
+        line-height: 2rem;
+    }
+    .about-text {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 8px;
+    }
+    #second-tank {
+        background-image: url(../assets/second-tank.png);
+        background-repeat: no-repeat;
+        background-size: 417px;
+        position: absolute;
+        top: 532px;
+        height: 431px;
+        width: 349px;
+        margin-left: 709px;
+        z-index: -1;
+    }
+    .chanes-main-wrapper {
+        margin: 0px 135px;
+    }
+    .downloads-button {
+        width: 265px;
+    }
+    .statistic {
+        min-width: 340px;
+        background-color: #464646;
+        margin-left: 42px;
+    }
+    .stat {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .stat-numbers {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .about-card {
+        width: 115px;
+        height: 135px;
+    }
+    .image-card{
+        height: 60px;
+        width: 60px;
+    }
+    .about-card p{
+        font-size: 17px;
+        font-family: "Roboto-Bold";
+        text-align: center;
+        color: #fff;
+        line-height: 20px;    
+    }
+    .faq-with-margin{
+        margin-top: 26px;
+    }
+    .faq-title{
+        font-size: 14px;
+        line-height: 16px;    
+    }
+    .faq-text{
+        font-size: 14px;
+        line-height: 16px;    
+    }
+    .program-call{
+        padding: 22.5px 55px;
+    }
+    .description-text{
+        margin: 40px 100px 0px 100px;
+    }
+}

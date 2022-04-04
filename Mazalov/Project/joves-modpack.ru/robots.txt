@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: *
+
+Disallow: templates/404.html
+
+Host: https://joves-modpack.ru/
