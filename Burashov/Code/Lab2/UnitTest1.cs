@@ -144,10 +144,10 @@ namespace UnitTestProject1
             string[] array = new string[] { "abcdefg", "abc", "cde", "kkkkkk", "abcd" };
 
             // Act
-            string actual = StringLibrary.GetMinLengthString(array);
+            string result = StringLibrary.GetMinLengthString(array);
 
             // Assert
-            Assert.AreEqual("abc", actual);
+            Assert.AreEqual("abc", result);
         }
 
         [TestMethod]
