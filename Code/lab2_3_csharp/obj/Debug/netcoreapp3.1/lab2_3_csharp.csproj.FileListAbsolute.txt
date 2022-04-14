@@ -1,0 +1,14 @@
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\obj\Debug\netcoreapp3.1\lab2_3_csharp.AssemblyInfoInputs.cache
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\obj\Debug\netcoreapp3.1\lab2_3_csharp.AssemblyInfo.cs
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\obj\Debug\netcoreapp3.1\lab2_3_csharp.csproj.CoreCompileInputs.cache
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\bin\Debug\netcoreapp3.1\lab2_3_csharp.exe
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\bin\Debug\netcoreapp3.1\lab2_3_csharp.deps.json
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\bin\Debug\netcoreapp3.1\lab2_3_csharp.runtimeconfig.json
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\bin\Debug\netcoreapp3.1\lab2_3_csharp.runtimeconfig.dev.json
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\bin\Debug\netcoreapp3.1\lab2_3_csharp.dll
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\bin\Debug\netcoreapp3.1\lab2_3_csharp.pdb
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\obj\Debug\netcoreapp3.1\lab2_3_csharp.dll
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\obj\Debug\netcoreapp3.1\lab2_3_csharp.pdb
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\obj\Debug\netcoreapp3.1\lab2_3_csharp.genruntimeconfig.cache
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\obj\Debug\netcoreapp3.1\lab2_3_csharp.csproj.AssemblyReference.cache
+D:\Отчёты\Лабы Тушев\СТП\lab2_3_csharp\lab2_3_csharp\obj\Debug\netcoreapp3.1\lab2_3_csharp.GeneratedMSBuildEditorConfig.editorconfig
