@@ -1,0 +1,205 @@
+\hypertarget{class_spectacl}{}\doxysection{Spectacl Class Reference}
+\label{class_spectacl}\index{Spectacl@{Spectacl}}
+
+
+Вспомогательный класс  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_performance}{Performance}} \mbox{\hyperlink{class_spectacl_a946cab4b552cda089370c4a66b0c804f}{minprofit}} ()
+\begin{DoxyCompactList}\small\item\em Период дня с минимальной суммой заработанных денег \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spectacl_ae8ece05b26e78973aa7e8a7fa5563f04}{proc}} ()
+\begin{DoxyCompactList}\small\item\em Эта функция выводит в консоль проценты заполнения партера за каждую часть дня (утро, день, вечер) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_spectacl_acfc0897ae525fc8235a8a1731fd933ed}{realprofit}} ()
+\item 
+void \mbox{\hyperlink{class_spectacl_a347a8ada3628334c3560248a398623e9}{init}} (double c1, int k1, double c2, int k2, double c3, int k3, double z1, double z2, double z3)
+\begin{DoxyCompactList}\small\item\em Эта функция инициализирует входящие данные \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_spectacl_a8ddfd3420c672ec1949b7661dbf69778}{getname}} ()
+\item 
+void \mbox{\hyperlink{class_spectacl_ae48241455839f472c39b1c27870da9c6}{putname}} (char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Эта функция получает название спектакля и копирует в новую переменную \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_spectacl_ac0567abff49a0f9925a259500cc6d21d}{average}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Вспомогательный класс 
+
+Имеет объекты основного класса для определения суммы денег за конкретный период времени. Имеет методы, определяющие минимальную сумму денег, общую сумму денег за сутки и проценты заполнения мест. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_spectacl_ac0567abff49a0f9925a259500cc6d21d}\label{class_spectacl_ac0567abff49a0f9925a259500cc6d21d}} 
+\index{Spectacl@{Spectacl}!average@{average}}
+\index{average@{average}!Spectacl@{Spectacl}}
+\doxysubsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily double Spectacl\+::average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+среднюю сумму денег за сутки
+\end{DoxyReturn}
+\[ Средняя.сумма = \frac{Сумма.утром + Сумма.днем + Сумма.вечером}{3} \] Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_spectacl_ac0567abff49a0f9925a259500cc6d21d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_spectacl_a8ddfd3420c672ec1949b7661dbf69778}\label{class_spectacl_a8ddfd3420c672ec1949b7661dbf69778}} 
+\index{Spectacl@{Spectacl}!getname@{getname}}
+\index{getname@{getname}!Spectacl@{Spectacl}}
+\doxysubsubsection{\texorpdfstring{getname()}{getname()}}
+{\footnotesize\ttfamily char $\ast$ Spectacl\+::getname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+название спектакля n 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_spectacl_a8ddfd3420c672ec1949b7661dbf69778_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_spectacl_a347a8ada3628334c3560248a398623e9}\label{class_spectacl_a347a8ada3628334c3560248a398623e9}} 
+\index{Spectacl@{Spectacl}!init@{init}}
+\index{init@{init}!Spectacl@{Spectacl}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Spectacl\+::init (\begin{DoxyParamCaption}\item[{double}]{c1,  }\item[{int}]{k1,  }\item[{double}]{c2,  }\item[{int}]{k2,  }\item[{double}]{c3,  }\item[{int}]{k3,  }\item[{double}]{z1,  }\item[{double}]{z2,  }\item[{double}]{z3 }\end{DoxyParamCaption})}
+
+
+
+Эта функция инициализирует входящие данные 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c1} & цена утреннего билета \\
+\hline
+\mbox{\texttt{ in}}  & {\em k1} & количество утренних билетов \\
+\hline
+\mbox{\texttt{ in}}  & {\em c2} & цена дневного билета \\
+\hline
+\mbox{\texttt{ in}}  & {\em k2} & количество дневных билетов \\
+\hline
+\mbox{\texttt{ in}}  & {\em c3} & цена вечернего билета \\
+\hline
+\mbox{\texttt{ in}}  & {\em k3} & количество вечерних билетов \\
+\hline
+\mbox{\texttt{ in}}  & {\em z1} & процент заполнения зала утром \\
+\hline
+\mbox{\texttt{ in}}  & {\em z2} & процент заполнения зала днем \\
+\hline
+\mbox{\texttt{ in}}  & {\em z3} & процент заполнения зала вечером \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{class_spectacl_a347a8ada3628334c3560248a398623e9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_spectacl_a347a8ada3628334c3560248a398623e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_spectacl_a946cab4b552cda089370c4a66b0c804f}\label{class_spectacl_a946cab4b552cda089370c4a66b0c804f}} 
+\index{Spectacl@{Spectacl}!minprofit@{minprofit}}
+\index{minprofit@{minprofit}!Spectacl@{Spectacl}}
+\doxysubsubsection{\texorpdfstring{minprofit()}{minprofit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_performance}{Performance}} Spectacl\+::minprofit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Период дня с минимальной суммой заработанных денег 
+
+
+
+Метод сравнивает суммы денег за каждый из 3-\/х периодов суток (утро, день, вечер) \begin{DoxyReturn}{Returns}
+объект с минимальной суммой 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_spectacl_a946cab4b552cda089370c4a66b0c804f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_spectacl_a946cab4b552cda089370c4a66b0c804f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_spectacl_ae8ece05b26e78973aa7e8a7fa5563f04}\label{class_spectacl_ae8ece05b26e78973aa7e8a7fa5563f04}} 
+\index{Spectacl@{Spectacl}!proc@{proc}}
+\index{proc@{proc}!Spectacl@{Spectacl}}
+\doxysubsubsection{\texorpdfstring{proc()}{proc()}}
+{\footnotesize\ttfamily void Spectacl\+::proc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Эта функция выводит в консоль проценты заполнения партера за каждую часть дня (утро, день, вечер) 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_spectacl_ae8ece05b26e78973aa7e8a7fa5563f04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_spectacl_ae48241455839f472c39b1c27870da9c6}\label{class_spectacl_ae48241455839f472c39b1c27870da9c6}} 
+\index{Spectacl@{Spectacl}!putname@{putname}}
+\index{putname@{putname}!Spectacl@{Spectacl}}
+\doxysubsubsection{\texorpdfstring{putname()}{putname()}}
+{\footnotesize\ttfamily void Spectacl\+::putname (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Эта функция получает название спектакля и копирует в новую переменную 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & название спектакля \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_spectacl_ae48241455839f472c39b1c27870da9c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_spectacl_acfc0897ae525fc8235a8a1731fd933ed}\label{class_spectacl_acfc0897ae525fc8235a8a1731fd933ed}} 
+\index{Spectacl@{Spectacl}!realprofit@{realprofit}}
+\index{realprofit@{realprofit}!Spectacl@{Spectacl}}
+\doxysubsubsection{\texorpdfstring{realprofit()}{realprofit()}}
+{\footnotesize\ttfamily double Spectacl\+::realprofit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+общую сумму денег за весь день (утро, день, вечер) 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_spectacl_acfc0897ae525fc8235a8a1731fd933ed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_spectacl_acfc0897ae525fc8235a8a1731fd933ed_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lab3_8cpp}{lab3.\+cpp}}\end{DoxyCompactItemize}

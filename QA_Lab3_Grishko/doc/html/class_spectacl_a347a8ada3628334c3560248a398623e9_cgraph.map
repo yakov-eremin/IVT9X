@@ -1,0 +1,4 @@
+<map id="Spectacl::init" name="Spectacl::init">
+<area shape="rect" id="node1" title="Эта функция инициализирует входящие данные" alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node2" href="$class_performance.html#ae963c80df47f23ccb2e311400aeb014e" title="Эта функция присваивает начальное значение для цены билета и количества билетов" alt="" coords="152,5,272,32"/>
+</map>
