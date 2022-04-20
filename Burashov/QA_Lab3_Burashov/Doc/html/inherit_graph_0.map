@@ -1,0 +1,9 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$interface_console_app5_1_1interfaces_1_1_i_figure_properties.html" title="Интерфейс для вычисления параметров фигур" alt="" coords="5,49,208,90"/>
+<area shape="rect" id="node2" href="$class_console_app5_1_1figures_1_1_figure.html" title="Геометрическая фигура" alt="" coords="256,56,437,83"/>
+<area shape="rect" id="node3" href="$class_console_app5_1_1figures_1_1_circle.html" title="Окружность" alt="" coords="491,5,670,32"/>
+<area shape="rect" id="node5" href="$class_console_app5_1_1figures_1_1_square.html" title="Квадрат" alt="" coords="487,56,674,83"/>
+<area shape="rect" id="node7" href="$class_console_app5_1_1figures_1_1_triangle.html" title="Равнобедренный треугольник" alt="" coords="485,107,676,133"/>
+<area shape="rect" id="node4" href="$class_console_app5_1_1figures_1_1_ellipse.html" title="Эллипс" alt="" coords="733,5,917,32"/>
+<area shape="rect" id="node6" href="$class_console_app5_1_1figures_1_1_rectangle.html" title="Прямоугольник" alt="" coords="724,56,927,83"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ConsoleApp5.figures.Rectangle" name="ConsoleApp5.figures.Rectangle">
+<area shape="rect" id="node1" title="Прямоугольник" alt="" coords="5,229,208,256"/>
+<area shape="rect" id="node2" href="$class_console_app5_1_1figures_1_1_square.html" title="Квадрат" alt="" coords="75,155,138,181"/>
+<area shape="rect" id="node3" href="$class_console_app5_1_1figures_1_1_figure.html" title="Геометрическая фигура" alt="" coords="77,80,136,107"/>
+<area shape="rect" id="node4" href="$interface_console_app5_1_1interfaces_1_1_i_figure_properties.html" title="Интерфейс для вычисления параметров фигур" alt="" coords="47,5,167,32"/>
+</map>

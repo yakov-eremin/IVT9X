@@ -1,0 +1,9 @@
+<map id="ConsoleApp5.interfaces.IFigureProperties" name="ConsoleApp5.interfaces.IFigureProperties">
+<area shape="rect" id="node1" title="Интерфейс для вычисления параметров фигур" alt="" coords="211,5,413,47"/>
+<area shape="rect" id="node2" href="$class_console_app5_1_1figures_1_1_figure.html" title="Геометрическая фигура" alt="" coords="221,95,403,121"/>
+<area shape="rect" id="node3" href="$class_console_app5_1_1figures_1_1_circle.html" title="Окружность" alt="" coords="13,169,192,196"/>
+<area shape="rect" id="node5" href="$class_console_app5_1_1figures_1_1_square.html" title="Квадрат" alt="" coords="219,169,405,196"/>
+<area shape="rect" id="node7" href="$class_console_app5_1_1figures_1_1_triangle.html" title="Равнобедренный треугольник" alt="" coords="430,169,621,196"/>
+<area shape="rect" id="node4" href="$class_console_app5_1_1figures_1_1_ellipse.html" title="Эллипс" alt="" coords="5,244,189,271"/>
+<area shape="rect" id="node6" href="$class_console_app5_1_1figures_1_1_rectangle.html" title="Прямоугольник" alt="" coords="213,244,416,271"/>
+</map>

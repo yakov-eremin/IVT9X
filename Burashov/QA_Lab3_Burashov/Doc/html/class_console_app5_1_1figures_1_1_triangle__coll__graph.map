@@ -1,0 +1,5 @@
+<map id="ConsoleApp5.figures.Triangle" name="ConsoleApp5.figures.Triangle">
+<area shape="rect" id="node1" title="Равнобедренный треугольник" alt="" coords="5,155,196,181"/>
+<area shape="rect" id="node2" href="$class_console_app5_1_1figures_1_1_figure.html" title="Геометрическая фигура" alt="" coords="71,80,130,107"/>
+<area shape="rect" id="node3" href="$interface_console_app5_1_1interfaces_1_1_i_figure_properties.html" title="Интерфейс для вычисления параметров фигур" alt="" coords="41,5,161,32"/>
+</map>
