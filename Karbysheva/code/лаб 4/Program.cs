@@ -8,12 +8,12 @@ namespace ConsoleApp8
 {
     public class Cities
     {
-        private string _allCities;
+        private string[] _allCities;
 
-        public string AllCities { get => _allCities; }
+        public string[] AllCities { get => _allCities; }
         public void setCity()
         {
-            _allCities = "Астрахань";
+            _allCities = new string[] { "Астрахань", "Новгород", "Барнаул" } ;
         }
 
     }

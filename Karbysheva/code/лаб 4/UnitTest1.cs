@@ -16,13 +16,16 @@ namespace UnitTestProject2
         }
 
         [TestMethod]
-        public void setCityTest()
+        public void setCitiesTest()
         {
 
-            string _expected = "Астрахань";
+            string[] _expected = new string[] {"Астрахань", "Новгород", "Барнаул"};
             _cities.setCity();
-            string _actual = _cities.AllCities;
-            Assert.AreEqual(_expected, _actual);
+            string[] _actual = _cities.AllCities;
+            for (int i = 0; i < _expected.Length; i++)
+            {
+                Assert.AreEqual(_expected[i], _actual[i]);
+            }
         }
     }
 
