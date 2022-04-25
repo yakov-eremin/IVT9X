@@ -27,7 +27,7 @@ namespace lab4Tests
         {
             Requests requests = new Requests();
             string x = "";
-            Assert.NotNull(requests.Insert(x));
+            Assert.AreEqual(10, requests.Insert(x));
         }
         [Test]
         public void lab4Test4()
