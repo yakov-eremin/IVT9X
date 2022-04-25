@@ -1,0 +1,80 @@
+\hypertarget{class_permit}{}\doxysection{Класс Permit}
+\label{class_permit}\index{Permit@{Permit}}
+
+
+Дочерний класс от \mbox{\hyperlink{class_tour}{Tour}}.  
+
+
+Граф наследования\+:Permit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_permit}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_permit_a36260287576a1dac4ca1533ae6e77a4f}{Init}} (double price, int sale, int hot\+Per)
+\begin{DoxyCompactList}\small\item\em Метод инициализации переменных \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_permit_a5c64305d0a592d34bfd41da0884948a0}\label{class_permit_a5c64305d0a592d34bfd41da0884948a0}} 
+void {\bfseries Display} ()
+\begin{DoxyCompactList}\small\item\em Метод, который выводит в консоль данных из класса \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_permit_ae69410777f8c0c0ad0a90793171c2fbf}\label{class_permit_ae69410777f8c0c0ad0a90793171c2fbf}} 
+int {\bfseries Get\+\_\+hot\+\_\+per} ()
+\begin{DoxyCompactList}\small\item\em Метод, возвращающий 1 или 0, что говорит горящая ли путевка \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_permit_a16be54b49c295ccf94c0c954950c542e}{Exp\+\_\+amount}} ()
+\begin{DoxyCompactList}\small\item\em Метод вычисление ожидаеммой суммы от продаж билетов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Дополнительные унаследованные члены}
+
+
+\doxysubsection{Подробное описание}
+Дочерний класс от \mbox{\hyperlink{class_tour}{Tour}}. 
+
+Содержит дополнительное поле, обозначающие с \char`\"{}горящей\char`\"{} ли путевкой тур
+
+ 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_permit_a16be54b49c295ccf94c0c954950c542e}\label{class_permit_a16be54b49c295ccf94c0c954950c542e}} 
+\index{Permit@{Permit}!Exp\_amount@{Exp\_amount}}
+\index{Exp\_amount@{Exp\_amount}!Permit@{Permit}}
+\doxysubsubsection{\texorpdfstring{Exp\_amount()}{Exp\_amount()}}
+{\footnotesize\ttfamily double Permit\+::\+Exp\+\_\+amount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод вычисление ожидаеммой суммы от продаж билетов 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ out}}  & {\em summ} & Ожидаеммая сумма от продаж билетов\\
+\hline
+\end{DoxyParams}
+Если тур горячий, то будет скидка 30\% и вычисляется по след. формуле
+
+$Summ = (Price - Price * 0.3) * PlanSale$
+
+т.\+е. мы стоимость уменьшили на 30 \% \mbox{\Hypertarget{class_permit_a36260287576a1dac4ca1533ae6e77a4f}\label{class_permit_a36260287576a1dac4ca1533ae6e77a4f}} 
+\index{Permit@{Permit}!Init@{Init}}
+\index{Init@{Init}!Permit@{Permit}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Permit\+::\+Init (\begin{DoxyParamCaption}\item[{double}]{price,  }\item[{int}]{sale,  }\item[{int}]{hot\+Per }\end{DoxyParamCaption})}
+
+
+
+Метод инициализации переменных 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em pr} & Цена тура \\
+\hline
+\mbox{\texttt{ in}}  & {\em sale} & Планируемое кол-\/во билетов \\
+\hline
+\mbox{\texttt{ in}}  & {\em hotper} & С \char`\"{}горящей\char`\"{} ли путевуой тур 1 или 0 \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Test/\+QA\+\_\+\+Lab3\+\_\+\+Kovtun\+\_\+1/\+Task\+\_\+2/Task\+\_\+2.\+cpp\end{DoxyCompactItemize}
