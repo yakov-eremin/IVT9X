@@ -11,16 +11,18 @@ namespace lab4
 {
     public class Requests
     {
-        private static string connectionString = ConfigurationManager.ConnectionStrings["FriendsDB"].ConnectionString;
+        public static string connectionString = ConfigurationManager.ConnectionStrings["lab4DB"].ConnectionString;
 
         private static SqlConnection sqlConnection = null;
         public int Select()
         {
             string select = "select * from [Friends]";
+            sqlConnection = new SqlConnection(connectionString);
+            sqlConnection.Open();
             SqlCommand sqlCommand = new SqlCommand(select, sqlConnection);
             SqlDataReader sqlDataReader = null;
             sqlDataReader = sqlCommand.ExecuteReader();
-            string today = "2003-12-11";
+            string today = "11.04.2008";
             while (sqlDataReader.Read())
             {
                 Console.WriteLine(new string('-', 50));

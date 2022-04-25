@@ -36,3 +36,5 @@ D:\test_po\IVT9X\lab4\lab4Tests\obj\Debug\net472\lab4Tests.csproj.CoreCompileInp
 D:\test_po\IVT9X\lab4\lab4Tests\obj\Debug\net472\lab4Tests.csproj.CopyComplete
 D:\test_po\IVT9X\lab4\lab4Tests\obj\Debug\net472\lab4Tests.dll
 D:\test_po\IVT9X\lab4\lab4Tests\obj\Debug\net472\lab4Tests.pdb
+D:\test_po\IVT9X\lab4\lab4Tests\bin\Debug\net472\lab4DB.mdf
+D:\test_po\IVT9X\lab4\lab4Tests\bin\Debug\net472\lab4DB_log.ldf
