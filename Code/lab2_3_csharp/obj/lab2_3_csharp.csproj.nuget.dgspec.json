@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\lab2_3_csharp\\lab2_3_csharp.csproj": {}
+    "D:\\test_po\\IVT9X\\Code\\lab2_3_csharp\\lab2_3_csharp.csproj": {}
   },
   "projects": {
-    "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\lab2_3_csharp\\lab2_3_csharp.csproj": {
+    "D:\\test_po\\IVT9X\\Code\\lab2_3_csharp\\lab2_3_csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\lab2_3_csharp\\lab2_3_csharp.csproj",
+        "projectUniqueName": "D:\\test_po\\IVT9X\\Code\\lab2_3_csharp\\lab2_3_csharp.csproj",
         "projectName": "lab2_3_csharp",
-        "projectPath": "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\lab2_3_csharp\\lab2_3_csharp.csproj",
+        "projectPath": "D:\\test_po\\IVT9X\\Code\\lab2_3_csharp\\lab2_3_csharp.csproj",
         "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
-        "outputPath": "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\lab2_3_csharp\\obj\\",
+        "outputPath": "D:\\test_po\\IVT9X\\Code\\lab2_3_csharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

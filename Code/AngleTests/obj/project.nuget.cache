@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DlWThTv5EqphFp5Y7HmYxqTx0HPiI67HrxAJ5QFKYSbbkN1xcmrcbl2lej9DfMPJQux26YrrEkzjDLPW54bNZg==",
+  "dgSpecHash": "GtfopxxyNoWKyNjd9e/ewe8IdNPAyIddu6Pzzqy4/ImN6BYdhHCnTs0d6zBA68iDIlU/AfQamiYGyFQvX5SOtw==",
   "success": true,
-  "projectFilePath": "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\AngleTests\\AngleTests.csproj",
+  "projectFilePath": "D:\\test_po\\IVT9X\\Code\\AngleTests\\AngleTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mihai\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\mihai\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

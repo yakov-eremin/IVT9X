@@ -4975,11 +4975,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\AngleTests\\AngleTests.csproj",
+      "projectUniqueName": "D:\\test_po\\IVT9X\\Code\\AngleTests\\AngleTests.csproj",
       "projectName": "AngleTests",
-      "projectPath": "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\AngleTests\\AngleTests.csproj",
+      "projectPath": "D:\\test_po\\IVT9X\\Code\\AngleTests\\AngleTests.csproj",
       "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
-      "outputPath": "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\AngleTests\\obj\\",
+      "outputPath": "D:\\test_po\\IVT9X\\Code\\AngleTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5000,8 +5000,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\lab2_3_csharp\\lab2_3_csharp.csproj": {
-              "projectPath": "D:\\Отчёты\\Лабы Тушев\\СТП\\lab2_3_csharp\\lab2_3_csharp\\lab2_3_csharp.csproj"
+            "D:\\test_po\\IVT9X\\Code\\lab2_3_csharp\\lab2_3_csharp.csproj": {
+              "projectPath": "D:\\test_po\\IVT9X\\Code\\lab2_3_csharp\\lab2_3_csharp.csproj"
             }
           }
         }
