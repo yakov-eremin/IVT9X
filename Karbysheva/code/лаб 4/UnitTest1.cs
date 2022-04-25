@@ -7,11 +7,23 @@ namespace UnitTestProject2
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
+        Cities _cities;
+        [TestInitialize]
         public void CitiesCreateTest()
         {
-            Cities _cities = new Cities();
+            _cities = new Cities();
             Assert.IsNotNull(_cities);
         }
+
+        [TestMethod]
+        public void setCityTest()
+        {
+
+            string _expected = "Астрахань";
+            _cities.setCity();
+            string _actual = _cities.AllCities;
+            Assert.AreEqual(_expected, _actual);
+        }
     }
+
 }
