@@ -16,29 +16,31 @@ namespace lab4Tests
             Requests requests = new Requests();
             Assert.NotNull(requests);
         }
-
+        [Test]
         public void lab4Test2()
         {
             Requests requests = new Requests();
-            Assert.NotNull(requests);
+            Assert.NotNull(requests.Select());
         }
-
+        [Test]
         public void lab4Test3()
         {
             Requests requests = new Requests();
-            Assert.NotNull(requests);
+            string x = "";
+            Assert.NotNull(requests.Insert(x));
         }
-
+        [Test]
         public void lab4Test4()
         {
             Requests requests = new Requests();
-            Assert.NotNull(requests);
+            string x = "";
+            Assert.NotNull(requests.Delete(x));
         }
 
         public void lab4Test5()
         {
             Requests requests = new Requests();
-            Assert.NotNull(requests);
+            Assert.NotNull(requests.Exit());
         }
     }
 }
