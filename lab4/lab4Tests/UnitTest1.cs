@@ -13,7 +13,32 @@ namespace lab4Tests
         [Test]
         public void lab4Test1()
         {
-            
+            Requests requests = new Requests();
+            Assert.NotNull(requests);
+        }
+
+        public void lab4Test2()
+        {
+            Requests requests = new Requests();
+            Assert.NotNull(requests);
+        }
+
+        public void lab4Test3()
+        {
+            Requests requests = new Requests();
+            Assert.NotNull(requests);
+        }
+
+        public void lab4Test4()
+        {
+            Requests requests = new Requests();
+            Assert.NotNull(requests);
+        }
+
+        public void lab4Test5()
+        {
+            Requests requests = new Requests();
+            Assert.NotNull(requests);
         }
     }
 }
