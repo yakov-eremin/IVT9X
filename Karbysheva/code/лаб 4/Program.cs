@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp8
 {
+    public class Cities
+        {
+
+        }
     internal class Program
     {
+        
         static void Main(string[] args)
         {
         }
