@@ -11,7 +11,7 @@ namespace lab4
 
         public int Insert(string x)
         {
-            return 0;
+            return 10;
         }
 
         public int Delete(string x)
