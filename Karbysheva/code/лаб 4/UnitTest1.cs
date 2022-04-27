@@ -16,11 +16,11 @@ namespace UnitTestProject2
         }
 
         [TestMethod]
-        public void setCitiesTest()
+        public void readCitiesTest()
         {
 
             string[] _expected = new string[] {"Астрахань", "Новгород", "Барнаул"};
-            _cities.setCity();
+            _cities.readCitiesfromfile("C:\\Users\\Katya\\Desktop\\Cities.txt");
             string[] _actual = _cities.AllCities;
             for (int i = 0; i < _expected.Length; i++)
             {
