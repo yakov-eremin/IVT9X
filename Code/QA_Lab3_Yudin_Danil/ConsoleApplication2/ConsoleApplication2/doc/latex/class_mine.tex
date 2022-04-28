@@ -1,0 +1,164 @@
+\hypertarget{class_mine}{}\doxysection{Класс Mine}
+\label{class_mine}\index{Mine@{Mine}}
+
+
+Основной класс, рудник  
+
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mineralz__resource}{Mineralz\+\_\+resource}} \mbox{\hyperlink{class_mine_a4c79e1cefe3994f343b214221851e3b0}{Best}} ()
+\item 
+void \mbox{\hyperlink{class_mine_add34e7bcc6207089149a3e9acb65d591}{Init}} (const char $\ast$title, double weight\+\_\+1, double price\+\_\+1, double weight\+\_\+2, double price\+\_\+2, double weight\+\_\+3, double price\+\_\+3, double total\+\_\+cost)
+\item 
+void \mbox{\hyperlink{class_mine_ae275e1b3b549f88835b30f95013c6c7d}{Read}} ()
+\item 
+void \mbox{\hyperlink{class_mine_aad53256cdb33c324eb5a043dc7629a85}{Display}} ()
+\item 
+double \mbox{\hyperlink{class_mine_af86e2420731e44763f15326bc5634b83}{Mine\+\_\+profitability}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Основной класс, рудник 
+
+Данный класс имеет три полезный ископаемых 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_mine_a4c79e1cefe3994f343b214221851e3b0}\label{class_mine_a4c79e1cefe3994f343b214221851e3b0}} 
+\index{Mine@{Mine}!Best@{Best}}
+\index{Best@{Best}!Mine@{Mine}}
+\doxysubsubsection{\texorpdfstring{Best()}{Best()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mineralz__resource}{Mineralz\+\_\+resource}} Mine\+::\+Best (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Находит самое ценное полезное ископае из трех 
+\begin{DoxyParams}{Аргументы}
+{\em a,b} & Складываемые числа \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Объект самого ценного ископаемого 
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_mine_a4c79e1cefe3994f343b214221851e3b0_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_mine_a4c79e1cefe3994f343b214221851e3b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_mine_aad53256cdb33c324eb5a043dc7629a85}\label{class_mine_aad53256cdb33c324eb5a043dc7629a85}} 
+\index{Mine@{Mine}!Display@{Display}}
+\index{Display@{Display}!Mine@{Mine}}
+\doxysubsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void Mine\+::\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Вывод на экран всех полей Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mine_aad53256cdb33c324eb5a043dc7629a85_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_mine_aad53256cdb33c324eb5a043dc7629a85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_mine_add34e7bcc6207089149a3e9acb65d591}\label{class_mine_add34e7bcc6207089149a3e9acb65d591}} 
+\index{Mine@{Mine}!Init@{Init}}
+\index{Init@{Init}!Mine@{Mine}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Mine\+::\+Init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{title,  }\item[{double}]{weight\+\_\+1,  }\item[{double}]{price\+\_\+1,  }\item[{double}]{weight\+\_\+2,  }\item[{double}]{price\+\_\+2,  }\item[{double}]{weight\+\_\+3,  }\item[{double}]{price\+\_\+3,  }\item[{double}]{total\+\_\+cost }\end{DoxyParamCaption})}
+
+Инициализация, из трёх полезных ископаемых состоит рудник, добавлено нащвание и затраты 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em title,Название} & рудника \\
+\hline
+\mbox{\texttt{ in}}  & {\em weight\+\_\+1,price\+\_\+1,Вес} & и цена первого полезного ископаемого \\
+\hline
+\mbox{\texttt{ in}}  & {\em weight\+\_\+2,price\+\_\+2,Вес} & и цена второго полезного ископаемого \\
+\hline
+\mbox{\texttt{ in}}  & {\em weight\+\_\+3,price\+\_\+3,Вес} & и цена третьего полезного ископаемого \\
+\hline
+\mbox{\texttt{ in}}  & {\em Total\+\_\+cost,затраты} & \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_mine_add34e7bcc6207089149a3e9acb65d591_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_mine_add34e7bcc6207089149a3e9acb65d591_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_mine_af86e2420731e44763f15326bc5634b83}\label{class_mine_af86e2420731e44763f15326bc5634b83}} 
+\index{Mine@{Mine}!Mine\_profitability@{Mine\_profitability}}
+\index{Mine\_profitability@{Mine\_profitability}!Mine@{Mine}}
+\doxysubsubsection{\texorpdfstring{Mine\_profitability()}{Mine\_profitability()}}
+{\footnotesize\ttfamily double Mine\+::\+Mine\+\_\+profitability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Находит доходность 
+\begin{DoxyParams}{Аргументы}
+{\em ris1,ris2,ris3} & Складываемые числа \\
+\hline
+{\em Total\+\_\+cost} & вычитаемое \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Доходность  
+\end{DoxyReturn}
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_mine_af86e2420731e44763f15326bc5634b83_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_mine_af86e2420731e44763f15326bc5634b83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_mine_ae275e1b3b549f88835b30f95013c6c7d}\label{class_mine_ae275e1b3b549f88835b30f95013c6c7d}} 
+\index{Mine@{Mine}!Read@{Read}}
+\index{Read@{Read}!Mine@{Mine}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily void Mine\+::\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ввод с клавиатуры всех Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_mine_ae275e1b3b549f88835b30f95013c6c7d_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_mine_ae275e1b3b549f88835b30f95013c6c7d_icgraph}
+\end{center}
+\end{figure}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_console_application2_8cpp}{Console\+Application2.\+cpp}}\end{DoxyCompactItemize}
