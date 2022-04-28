@@ -27,6 +27,15 @@ namespace UnitTestProject2
                 Assert.AreEqual(_expected[i], _actual[i]);
             }
         }
+
+        [TestMethod]
+        public void compareWithAllCitiesTest()
+        {
+            bool _expected = true;
+            bool _actual = _cities.compareWithAllCities();
+            Assert.AreEqual(_expected, _actual);
+        }
+
     }
 
 }

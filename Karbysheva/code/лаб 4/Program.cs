@@ -26,6 +26,10 @@ namespace ConsoleApp8
             _allCities = _string.Split(' ');
         }
 
+        public bool compareWithAllCities()
+        {
+            return true; 
+        }
     }
     internal class Program
     {
