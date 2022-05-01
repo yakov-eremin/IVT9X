@@ -33,17 +33,26 @@ namespace Lab_4
 
                         if (sity2 != "")
                         {
-                            if (game.Rules(sity2, sity1))
-                            {
-                                Console.WriteLine("Игроку 2 нужно назвать город на букву: " + game.GetLast(sity1));
+                            bool check1 = true;
 
-                                sity2 = Console.ReadLine();
-                            }
-                            else
+                            while(check1)
                             {
-                                Console.WriteLine("Вы не соблюдаете правило, введенный город не начинается на " + game.GetLast(sity1) + "\nВведите город заново:");
-                                sity2 = Console.ReadLine();
+                                if (game.Rules(sity2, sity1))
+                                {
+                                    Console.WriteLine("Игроку 2 нужно назвать город на букву: " + game.GetLast(sity1));
+
+                                    sity2 = Console.ReadLine();
+
+                                    check1 = false;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Вы не соблюдаете правило, введенный город не начинается на " + game.GetLast(sity1) + "\nВведите город заново:");
+                                    sity1 = Console.ReadLine();
+                                }
                             }
+
+                           
                         } else
                         {
                             Console.WriteLine("Игроку 2 нужно назвать город на букву: " + game.GetLast(sity1));
@@ -59,16 +68,23 @@ namespace Lab_4
                             {
                                 checkWord2 = false;
 
-                                if (game.Rules(sity1, sity2))
+                                bool check2 = true;
+
+                                while (check2)
                                 {
-                                    Console.WriteLine("Следующий раунд.\nИгроку 1 нужно назвать город на букву " + game.GetLast(sity2));
-                                    sity1 = Console.ReadLine();
+                                    if (game.Rules(sity1, sity2))
+                                    {
+                                        check2 = false;
+                                        Console.WriteLine("Следующий раунд.\nИгроку 1 нужно назвать город на букву " + game.GetLast(sity2));
+                                        sity1 = Console.ReadLine();
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Вы не соблюдаете правило, введенный город не начинается на " + game.GetLast(sity1) + "\nВведите город заново:");
+                                        sity2 = Console.ReadLine();
+                                    }
                                 }
-                                else
-                                {
-                                    Console.WriteLine("Вы не соблюдаете правило, введенный город не начинается на " + game.GetLast(sity1) +"\nВведите город заново:");
-                                    sity1 = Console.ReadLine();
-                                }
+
                             } else
                             {
                                 if (sity2 == "0")
