@@ -65,5 +65,23 @@ namespace Lab_4
         {
             return v[v.Length - 1].ToString();
         }
+
+        private string[] sityes;
+
+        public string[] Sityes { get { return sityes; } }
+
+        public void ReadInMas()
+        {
+            string path = "goroda.txt";
+
+            string Text;
+
+            using (StreamReader reader = new StreamReader(path))
+            {
+                Text = reader.ReadToEnd();
+            }
+
+            sityes = Text.Split('\n');
+        }
     }
 }

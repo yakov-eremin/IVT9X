@@ -46,7 +46,7 @@ namespace TestLab4
 
             sg.ReadInMas();
 
-            Assert.AreEqual(1117, sityes.Lenght);
+            Assert.AreEqual(1117, sg.Sityes.Length);
         }
     }
 }
