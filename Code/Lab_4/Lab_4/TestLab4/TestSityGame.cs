@@ -30,7 +30,7 @@ namespace TestLab4
         {
             SityGame sg = new SityGame();
 
-            Assert.IsTrue(sg.Rules("Борисов", "Волгоград"));
+            Assert.IsTrue(sg.Rules("Пермь", "Москва"));
         }
 
         [TestMethod]
@@ -38,7 +38,7 @@ namespace TestLab4
         {
             SityGame sg = new SityGame();
 
-            Assert.AreEqual("в", sg.GetLast("Киров"));
+            Assert.AreEqual("м", sg.GetLast("Пермь"));
         }
 
         [TestMethod]
