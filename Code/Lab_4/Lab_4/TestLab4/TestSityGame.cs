@@ -13,5 +13,14 @@ namespace TestLab4
 
             Assert.IsNotNull(sg);
         }
+
+        [TestMethod]
+        public void CheckSityTest()
+        {
+            SityGame sity = new SityGame();
+
+            Assert.IsTrue(sity.isSity("Волгоград"));
+
+        }
     }
 }
