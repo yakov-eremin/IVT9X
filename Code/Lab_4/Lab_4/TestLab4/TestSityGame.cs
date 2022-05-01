@@ -17,10 +17,18 @@ namespace TestLab4
         [TestMethod]
         public void CheckSityTest()
         {
-            SityGame sity = new SityGame();
+            SityGame sg = new SityGame();
 
-            Assert.IsTrue(sity.isSity("Волгоград"));
+            Assert.IsTrue(sg.isSity("Волгоград"));
 
+        }
+
+        [TestMethod]
+        public void CheckRightGameRuleTest()
+        {
+            SityGame sg = new SityGame();
+
+            Assert.IsTrue(sg.Rules("Борисов", "Волгоград"));
         }
     }
 }
