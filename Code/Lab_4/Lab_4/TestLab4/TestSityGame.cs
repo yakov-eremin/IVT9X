@@ -38,7 +38,7 @@ namespace TestLab4
         {
             SityGame sg = new SityGame();
 
-            Assert.AreEqual("м", sg.GetLast("ѕермь"));
+            Assert.AreEqual("р", sg.GetLast("јнадырь"));
         }
 
         [TestMethod]
