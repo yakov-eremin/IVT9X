@@ -8,5 +8,10 @@ namespace Lab_4
 {
     public class SityGame
     {
+        public bool isSity(string v)
+        {
+            //todo Позже доделать весь функционал 
+            return true;
+        }
     }
 }
