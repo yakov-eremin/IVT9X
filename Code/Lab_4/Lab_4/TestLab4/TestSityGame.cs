@@ -38,5 +38,15 @@ namespace TestLab4
 
             Assert.AreEqual("в", sg.GetLast(" иров"));
         }
+
+        [TestMethod]
+        public void ReadInMasTest()
+        {
+            SityGame sg = new SityGame();
+
+            sg.ReadInMas();
+
+            Assert.AreEqual(1117, sityes.Lenght);
+        }
     }
 }
