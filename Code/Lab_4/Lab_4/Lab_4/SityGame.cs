@@ -21,6 +21,11 @@ namespace Lab_4
 
         */
 
+        public SityGame()
+        {
+            ReadInMas();
+        }
+
         public bool isSity(string v)
         {
             for (int i = 0; i < sityes.Length; i++)
