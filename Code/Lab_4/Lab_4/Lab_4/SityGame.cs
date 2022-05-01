@@ -8,6 +8,9 @@ namespace Lab_4
 {
     public class SityGame
     {
+
+        private string[] sityes;
+
         /*!
          
             /brief Метод проверяет есть ли город в списке городов
@@ -20,8 +23,11 @@ namespace Lab_4
 
         public bool isSity(string v)
         {
-            //todo Позже доделать весь функционал 
-            return true;
+            for (int i = 0; i < sityes.Length; i++)
+                if (sityes[i] == v)
+                    return true;
+
+            return false;
         }
 
         /*!
@@ -65,8 +71,6 @@ namespace Lab_4
         {
             return v[v.Length - 1].ToString();
         }
-
-        private string[] sityes;
 
         public string[] Sityes { get { return sityes; } }
 
