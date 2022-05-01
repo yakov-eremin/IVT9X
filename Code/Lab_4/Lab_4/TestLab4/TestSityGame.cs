@@ -30,5 +30,13 @@ namespace TestLab4
 
             Assert.IsTrue(sg.Rules("Борисов", "Волгоград"));
         }
+
+        [TestMethod]
+        public void LastBykvTest()
+        {
+            SityGame sg = new SityGame();
+
+            Assert.AreEqual("в", sg.GetLast("Киров"));
+        }
     }
 }
