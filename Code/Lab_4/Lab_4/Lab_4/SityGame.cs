@@ -23,6 +23,20 @@ namespace Lab_4
             return true;
         }
 
+        public bool Rules(string v1, string v2)
+        {
+            //todo Необоходимо добавить функционал, для городов
+            //     которые кончаются на ь
 
+
+            v2 = v2.ToLower();
+
+            if (v1[v1.Length - 1].Equals(v2[0]))
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
 }
