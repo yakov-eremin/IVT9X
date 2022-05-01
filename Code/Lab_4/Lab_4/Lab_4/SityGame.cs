@@ -15,6 +15,7 @@ namespace Lab_4
             \param [in] v Название города
         
             \param [out] bool Есть или Нет
+
         */
 
         public bool isSity(string v)
@@ -22,6 +23,17 @@ namespace Lab_4
             //todo Позже доделать весь функционал 
             return true;
         }
+
+        /*!
+
+            /brief Метод, проверяет соблюдены ли правила игры
+
+            \param [in] v1 Название города 1
+            \param [in] v2 Название города 2
+
+            \param [out] bool Соблюдены или нет
+
+        */
 
         public bool Rules(string v1, string v2)
         {
