@@ -75,7 +75,10 @@ namespace Lab_4
 
         public string GetLast(string v)
         {
-            return v[v.Length - 1].ToString();
+            if (v[v.Length - 1].Equals('ь'))
+                return v[v.Length - 2].ToString();
+            else
+                return v[v.Length - 1].ToString();   
         }
 
         public string[] Sityes { get { return sityes; } }
