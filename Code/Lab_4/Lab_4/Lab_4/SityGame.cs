@@ -50,5 +50,10 @@ namespace Lab_4
 
             return false;
         }
+
+        public string GetLast(string v)
+        {
+            return v[v.Length - 1].ToString();
+        }
     }
 }
