@@ -19,6 +19,8 @@ namespace TestLab4
         {
             SityGame sg = new SityGame();
 
+            sg.ReadInMas();
+
             Assert.IsTrue(sg.isSity("Волгоград"));
 
         }
