@@ -70,6 +70,12 @@ namespace Lab_4
 
         public string[] Sityes { get { return sityes; } }
 
+        /*!
+
+            /brief Метод считывает из файла название город в массив
+
+        */
+
         public void ReadInMas()
         {
             string path = "goroda.txt";
