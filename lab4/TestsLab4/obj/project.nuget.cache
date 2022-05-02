@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "u2k0UUTjbBoGj/0UDDLyx2ThS6K/KVeIXPnRGDjkwIR8AC4TjeOuf07uLKgthluc6wMgBccISuqj0qa8JAIkDw==",
+  "success": true,
+  "projectFilePath": "D:\\test_po\\IVT9X\\lab4\\TestsLab4\\TestsLab4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mihai\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
+    "C:\\Users\\mihai\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
+    "C:\\Users\\mihai\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\mihai\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}

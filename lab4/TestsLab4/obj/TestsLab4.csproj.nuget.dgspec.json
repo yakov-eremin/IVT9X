@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\test_po\\IVT9X\\lab4\\TestsLab4\\TestsLab4.csproj": {}
+  },
+  "projects": {
+    "D:\\test_po\\IVT9X\\lab4\\lab4.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\test_po\\IVT9X\\lab4\\lab4.csproj",
+        "projectName": "lab4",
+        "projectPath": "D:\\test_po\\IVT9X\\lab4\\lab4.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\test_po\\IVT9X\\lab4\\TestsLab4\\TestsLab4.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\test_po\\IVT9X\\lab4\\TestsLab4\\TestsLab4.csproj",
+        "projectName": "TestsLab4",
+        "projectPath": "D:\\test_po\\IVT9X\\lab4\\TestsLab4\\TestsLab4.csproj",
+        "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
+        "outputPath": "D:\\test_po\\IVT9X\\lab4\\TestsLab4\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "D:\\test_po\\IVT9X\\lab4\\lab4.csproj": {
+                "projectPath": "D:\\test_po\\IVT9X\\lab4\\lab4.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
