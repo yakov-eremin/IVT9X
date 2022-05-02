@@ -30,7 +30,13 @@ namespace lab4
 
         public double SortingMax(double[] arr, int m)
         {
-            return 1;
+            double max = 0;
+            for (int i = 0; i < m; i++)
+            {
+                if (arr[i] > max)
+                    max = arr[i];
+            }
+            return max;
         }
 
         public double SortingMin(double v1, double v2)

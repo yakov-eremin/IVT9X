@@ -44,9 +44,9 @@ namespace TestsLab4
         public void TestMethodSortingMax()
         {
             Calculate calc = new Calculate();
-            double[] arr = new double[2];
+            double[] arr = new double[3];
             arr[0] = 3; arr[1] = 15; arr[2] = 10;
-            double summ = calc.SortingMax(arr, 2);
+            double summ = calc.SortingMax(arr, 3);
             Assert.AreEqual(15, summ);
         }
         [Test]
