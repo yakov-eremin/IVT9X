@@ -53,13 +53,19 @@ namespace TestsLab4
         public void TestMethodSortingMin()
         {
             Calculate calc = new Calculate();
-            Assert.AreEqual(1, calc.SortingMin(1.2, 1.2));
+            double[] arr = new double[4];
+            arr[0] = 5; arr[1] = 3; arr[2] = 7; arr[3] = 13;
+            double summ = calc.SortingMin(arr, 4);
+            Assert.AreEqual(3, summ);
         }
         [Test]
         public void TestMethodSortingSumm()
         {
             Calculate calc = new Calculate();
-            Assert.AreEqual(1, calc.SortingSumm(1.2, 1.2));
+            double[] arr = new double[4];
+            arr[0] = 10; arr[1] = 5; arr[2] = 3; arr[3] = 11;
+            double summ = calc.SortingSumm(arr, 4);
+            Assert.AreEqual(29, summ);
         }
 
     }
