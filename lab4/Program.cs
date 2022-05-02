@@ -28,7 +28,7 @@ namespace lab4
             return 1;
         }
 
-        public double SortingMax(double v1, double v2)
+        public double SortingMax(double[] arr, int m)
         {
             return 1;
         }
