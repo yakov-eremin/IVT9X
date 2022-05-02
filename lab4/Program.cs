@@ -8,7 +8,40 @@ namespace lab4
 {
     public class Calculate
     {
+        public double Summ(double v1, double v2)
+        {
+            return 7.8;
+        }
 
+        public double Subtraction(double v1, double v2)
+        {
+            return 1.2;
+        }
+
+        public double Multiplication(double v1, double v2)
+        {
+            return 1.44;
+        }
+
+        public double Division(double v1, double v2)
+        {
+            return 1;
+        }
+
+        public double SortingMax(double v1, double v2)
+        {
+            return 1;
+        }
+
+        public double SortingMin(double v1, double v2)
+        {
+            return 1;
+        }
+
+        public double SortingSumm(double v1, double v2)
+        {
+            return 1;
+        }
     }
     class Program
     {
