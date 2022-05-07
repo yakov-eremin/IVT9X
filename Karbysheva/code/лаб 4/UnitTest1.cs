@@ -34,6 +34,15 @@ namespace UnitTestProject2
             bool _actual = _cities.IsUsed(_city);
             Assert.AreEqual(_expected, _actual);
         }
+
+        [TestMethod]
+        public void compareFirstLetterAndLastTest()
+        {
+            bool _expected = true;
+            bool _actual = _cities.compareFirstLetterAndLast();
+            Assert.AreEqual(_expected, _actual);
+        }
+
     }
 
 }

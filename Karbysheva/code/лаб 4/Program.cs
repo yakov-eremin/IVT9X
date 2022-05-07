@@ -11,7 +11,6 @@ namespace ConsoleApp8
     {
         private string[] _allCities;
         private List<string> _usedCities = new List<string>();
-        public string[] AllCities { get => _allCities; }
         public void readCitiesfromfile(string path)
         {
             string _string = "";
@@ -45,6 +44,11 @@ namespace ConsoleApp8
                     return true;
             }
             return false;
+        }
+
+        public bool compareFirstLetterAndLast()
+        {
+            return true;
         }
     }
     internal class Program
