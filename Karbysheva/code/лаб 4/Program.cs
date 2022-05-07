@@ -53,7 +53,7 @@ namespace ConsoleApp8
             {
                 string _lastCity = _usedCities[_usedCities.Count - 1];
                 char _lastLetter;
-                if (_lastCity[_lastCity.Length - 1].Equals('ь') || _lastCity[_lastCity.Length - 1].Equals("ъ") || _lastCity[_lastCity.Length - 1].Equals("ы"))
+                if (_lastCity[_lastCity.Length - 1].Equals('ь') || _lastCity[_lastCity.Length - 1].Equals('ъ') || _lastCity[_lastCity.Length - 1].Equals('ы'))
                     _lastLetter = _lastCity[_lastCity.Length - 2];
                 else
                     _lastLetter = _lastCity[_lastCity.Length - 1];
@@ -69,8 +69,30 @@ namespace ConsoleApp8
         
         static void Main(string[] args)
         {
-            string _city = Console.ReadLine();
-            
+            Cities _cities = new Cities();
+            _cities.readCitiesfromfile("C:\\Users\\Katya\\Desktop\\Cities.txt");
+            while (true)
+            {
+                Console.WriteLine("Введите город:");
+                string _city = Console.ReadLine().ToLower();
+                if (!_cities.compareWithAllCities(_city))
+                {
+                    Console.WriteLine("Такого города не существует.");
+                    break;
+                }    
+                if(_cities.IsUsed(_city))
+                {
+                    Console.WriteLine("Город уже использован.");
+                    break;
+                }
+                if(!_cities.compareFirstLetterAndLast(_city))
+                {
+                    Console.WriteLine("Город не подходит.");
+                    break;
+                }
+            }
+            Console.WriteLine("Игра окончена");
+            Console.ReadKey();
         }
     }
 }
