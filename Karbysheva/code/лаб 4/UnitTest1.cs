@@ -28,9 +28,10 @@ namespace UnitTestProject2
 
         [TestMethod]
         public void IsUsedTest()
-        { 
+        {
+            string _city = "Астрахань".ToLower();
             bool _expected = false;
-            bool _actual = _cities.IsUsed();
+            bool _actual = _cities.IsUsed(_city);
             Assert.AreEqual(_expected, _actual);
         }
     }

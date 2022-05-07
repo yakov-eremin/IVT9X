@@ -10,6 +10,7 @@ namespace ConsoleApp8
     public class Cities
     {
         private string[] _allCities;
+        private List<string> _usedCities = new List<string>();
         public string[] AllCities { get => _allCities; }
         public void readCitiesfromfile(string path)
         {
@@ -36,8 +37,13 @@ namespace ConsoleApp8
             return false;
         }
 
-        public bool IsUsed()
+        public bool IsUsed(string city)
         {
+            for (int i = 0; i < _usedCities.Count; i++)
+            {
+                if (city == _usedCities[i])
+                    return true;
+            }
             return false;
         }
     }
