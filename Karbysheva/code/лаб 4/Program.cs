@@ -52,7 +52,12 @@ namespace ConsoleApp8
             if (_usedCities.Count != 0)
             {
                 string _lastCity = _usedCities[_usedCities.Count - 1];
-                if (city[0] != _lastCity[_lastCity.Length - 1])
+                char _lastLetter;
+                if (_lastCity[_lastCity.Length - 1].Equals('ь') || _lastCity[_lastCity.Length - 1].Equals("ъ") || _lastCity[_lastCity.Length - 1].Equals("ы"))
+                    _lastLetter = _lastCity[_lastCity.Length - 2];
+                else
+                    _lastLetter = _lastCity[_lastCity.Length - 1];
+                if (city[0] != _lastLetter)
                     return false;
             }
             _usedCities.Add(city);
