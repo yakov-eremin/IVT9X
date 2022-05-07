@@ -54,6 +54,15 @@ namespace UnitTestProject2
             bool _actual = _cities.UsedCities.Contains(_city);
             Assert.AreEqual(_expected, _actual);
         }
+        [TestMethod]
+        public void compareFirstLetterAndLastAddFirstTest()
+        {
+            string _city = "Добрый".ToLower();
+            bool _expected = true;
+            _cities.compareFirstLetterAndLast(_city);
+            bool _actual = _cities.UsedCities.Contains(_city);
+            Assert.AreEqual(_expected, _actual);
+        }
     }
 
 }

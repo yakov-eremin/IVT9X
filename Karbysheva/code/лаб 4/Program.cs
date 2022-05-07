@@ -49,9 +49,12 @@ namespace ConsoleApp8
 
         public bool compareFirstLetterAndLast(string city)
         {
-            string _lastCity = _usedCities[_usedCities.Count - 1];
-            if (city[0] != _lastCity[_lastCity.Length-1])
-                return false;
+            if (_usedCities.Count != 0)
+            {
+                string _lastCity = _usedCities[_usedCities.Count - 1];
+                if (city[0] != _lastCity[_lastCity.Length - 1])
+                    return false;
+            }
             _usedCities.Add(city);
             return true;
         }
