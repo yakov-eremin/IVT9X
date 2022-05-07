@@ -20,12 +20,19 @@ namespace UnitTestProject2
         [TestMethod]
         public void compareWithAllCitiesTest()
         {
-            string _city = "Астрахань";
+            string _city = "Астрахань".ToLower();
             bool _expected = true;
             bool _actual = _cities.compareWithAllCities(_city);
             Assert.AreEqual(_expected, _actual);
         }
 
+        [TestMethod]
+        public void IsUsedTest()
+        { 
+            bool _expected = false;
+            bool _actual = _cities.IsUsed();
+            Assert.AreEqual(_expected, _actual);
+        }
     }
 
 }

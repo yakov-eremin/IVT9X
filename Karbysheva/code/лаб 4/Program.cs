@@ -35,6 +35,11 @@ namespace ConsoleApp8
             }
             return false;
         }
+
+        public bool IsUsed()
+        {
+            return false;
+        }
     }
     internal class Program
     {
