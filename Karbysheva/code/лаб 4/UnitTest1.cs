@@ -38,7 +38,8 @@ namespace UnitTestProject2
         [TestMethod]
         public void compareFirstLetterAndLastTest()
         {
-            string _city = "Астрахань".ToLower();
+            _cities.UsedCities.Add("Новгород");
+            string _city = "добрый".ToLower();
             bool _expected = true;
             bool _actual = _cities.compareFirstLetterAndLast(_city);
             Assert.AreEqual(_expected, _actual);
@@ -46,7 +47,8 @@ namespace UnitTestProject2
         [TestMethod]
         public void compareFirstLetterAndLastAddTest()
         {
-            string _city = "Астрахань".ToLower();
+            _cities.UsedCities.Add("Новгород");
+            string _city = "Добрый".ToLower();
             bool _expected = true;
             _cities.compareFirstLetterAndLast(_city);
             bool _actual = _cities.UsedCities.Contains(_city);
