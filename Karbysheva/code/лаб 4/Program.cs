@@ -11,6 +11,7 @@ namespace ConsoleApp8
     {
         private string[] _allCities;
         private List<string> _usedCities = new List<string>();
+        public List<string> UsedCities { get { return _usedCities; } }
         public void readCitiesfromfile(string path)
         {
             string _string = "";
@@ -46,8 +47,9 @@ namespace ConsoleApp8
             return false;
         }
 
-        public bool compareFirstLetterAndLast()
+        public bool compareFirstLetterAndLast(string city)
         {
+            _usedCities.Add(city);
             return true;
         }
     }

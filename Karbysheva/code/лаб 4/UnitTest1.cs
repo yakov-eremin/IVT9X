@@ -38,11 +38,20 @@ namespace UnitTestProject2
         [TestMethod]
         public void compareFirstLetterAndLastTest()
         {
+            string _city = "Астрахань".ToLower();
             bool _expected = true;
-            bool _actual = _cities.compareFirstLetterAndLast();
+            bool _actual = _cities.compareFirstLetterAndLast(_city);
             Assert.AreEqual(_expected, _actual);
         }
-
+        [TestMethod]
+        public void compareFirstLetterAndLastAddTest()
+        {
+            string _city = "Астрахань".ToLower();
+            bool _expected = true;
+            _cities.compareFirstLetterAndLast(_city);
+            bool _actual = _cities.UsedCities.Contains(_city);
+            Assert.AreEqual(_expected, _actual);
+        }
     }
 
 }
