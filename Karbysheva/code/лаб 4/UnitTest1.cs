@@ -8,31 +8,21 @@ namespace UnitTestProject2
     public class UnitTest1
     {
         Cities _cities;
-        [TestInitialize]
-        public void CitiesCreateTest()
-        {
-            _cities = new Cities();
-            Assert.IsNotNull(_cities);
-        }
 
-        [TestMethod]
+        [TestInitialize]
         public void readCitiesTest()
         {
-
-            string[] _expected = new string[] {"Астрахань", "Новгород", "Барнаул"};
+            _cities = new Cities();
             _cities.readCitiesfromfile("C:\\Users\\Katya\\Desktop\\Cities.txt");
-            string[] _actual = _cities.AllCities;
-            for (int i = 0; i < _expected.Length; i++)
-            {
-                Assert.AreEqual(_expected[i], _actual[i]);
-            }
+            Assert.IsNotNull(_cities);
         }
 
         [TestMethod]
         public void compareWithAllCitiesTest()
         {
+            string _city = "Астрахань";
             bool _expected = true;
-            bool _actual = _cities.compareWithAllCities();
+            bool _actual = _cities.compareWithAllCities(_city);
             Assert.AreEqual(_expected, _actual);
         }
 

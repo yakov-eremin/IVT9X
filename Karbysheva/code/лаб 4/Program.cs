@@ -26,9 +26,14 @@ namespace ConsoleApp8
             _allCities = _string.Split(' ');
         }
 
-        public bool compareWithAllCities()
+        public bool compareWithAllCities(string city)
         {
-            return true; 
+            for (int i = 0; i < _allCities.Length; i++)
+            {
+                if (city == _allCities[i])
+                    return true;
+            }
+            return false;
         }
     }
     internal class Program
@@ -36,6 +41,8 @@ namespace ConsoleApp8
         
         static void Main(string[] args)
         {
+            string _city = Console.ReadLine();
+            
         }
     }
 }
