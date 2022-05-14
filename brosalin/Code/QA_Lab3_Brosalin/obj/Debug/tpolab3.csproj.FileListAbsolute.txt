@@ -1,0 +1,7 @@
+C:\Users\nikit\source\repos\tpolab3\bin\Debug\tpolab3.exe.config
+C:\Users\nikit\source\repos\tpolab3\bin\Debug\tpolab3.exe
+C:\Users\nikit\source\repos\tpolab3\bin\Debug\tpolab3.pdb
+C:\Users\nikit\source\repos\tpolab3\obj\Debug\tpolab3.csprojAssemblyReference.cache
+C:\Users\nikit\source\repos\tpolab3\obj\Debug\tpolab3.csproj.CoreCompileInputs.cache
+C:\Users\nikit\source\repos\tpolab3\obj\Debug\tpolab3.exe
+C:\Users\nikit\source\repos\tpolab3\obj\Debug\tpolab3.pdb

@@ -1,0 +1,113 @@
+\hypertarget{classtpolab3_1_1_spectacle__per__day}{}\doxysection{tpolab3.\+Spectacle\+\_\+per\+\_\+day Class Reference}
+\label{classtpolab3_1_1_spectacle__per__day}\index{tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}}
+
+
+Основной класс\+: Спектакль за день  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classtpolab3_1_1_spectacle__per__day_a39968bcf4244e00bbd632a9b7484b1e7}{getname}} ()
+\item 
+void \mbox{\hyperlink{classtpolab3_1_1_spectacle__per__day_ae37835ff5025784cd459dbd5af4bc9e8}{putname}} (string s)
+\item 
+void \mbox{\hyperlink{classtpolab3_1_1_spectacle__per__day_a66a8880fcb52ffd716a356b6c77c5fef}{init}} (String v, float p1, int c1, int pzu, float p2, int c2, int pzd, float p3, int c3, int pzv)
+\item 
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_ac7d9e75b12d9b21a8038684d171ffeaf}\label{classtpolab3_1_1_spectacle__per__day_ac7d9e75b12d9b21a8038684d171ffeaf}} 
+void {\bfseries display} ()
+\begin{DoxyCompactList}\small\item\em Вывод на экран информации о спектаклях за день \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_aeb558bf6aeb1886a37c81c6c9edaa67e}\label{classtpolab3_1_1_spectacle__per__day_aeb558bf6aeb1886a37c81c6c9edaa67e}} 
+void {\bfseries read} ()
+\begin{DoxyCompactList}\small\item\em Метод предназначен для взаимодействия с пользователем, позволяет ввести информацию о спектаклях \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classtpolab3_1_1_spectacle__per__day_a0dd3475ddea9bc7a5f1155b18b8eb533}{daysale}} ()
+\item 
+\mbox{\hyperlink{classtpolab3_1_1_spectacle}{Spectacle}} \mbox{\hyperlink{classtpolab3_1_1_spectacle__per__day_acd756998d6fb04027aee45c8c6d7afb9}{minsale}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Основной класс\+: Спектакль за день 
+
+Этот класс имеет поля\+: название спектакля, три объекта вспомогательного класса spectacle (утро, день и вечер), процент заполнения в разное время суток (утро, день и вечер) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_a0dd3475ddea9bc7a5f1155b18b8eb533}\label{classtpolab3_1_1_spectacle__per__day_a0dd3475ddea9bc7a5f1155b18b8eb533}} 
+\index{tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}!daysale@{daysale}}
+\index{daysale@{daysale}!tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}}
+\doxysubsubsection{\texorpdfstring{daysale()}{daysale()}}
+{\footnotesize\ttfamily float tpolab3.\+Spectacle\+\_\+per\+\_\+day.\+daysale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция для подсчёта дохода 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em u,d,v} & Складываемые числа \\
+\hline
+\mbox{\texttt{ out}}  & {\em s} & Сумма за утро, день и вечер \begin{DoxyReturn}{Returns}
+Сумма денег от продажи билетов за весь день
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_a39968bcf4244e00bbd632a9b7484b1e7}\label{classtpolab3_1_1_spectacle__per__day_a39968bcf4244e00bbd632a9b7484b1e7}} 
+\index{tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}!getname@{getname}}
+\index{getname@{getname}!tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}}
+\doxysubsubsection{\texorpdfstring{getname()}{getname()}}
+{\footnotesize\ttfamily string tpolab3.\+Spectacle\+\_\+per\+\_\+day.\+getname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод позволяет получить название спектакля \begin{DoxyReturn}{Returns}
+Название спектакля
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_a66a8880fcb52ffd716a356b6c77c5fef}\label{classtpolab3_1_1_spectacle__per__day_a66a8880fcb52ffd716a356b6c77c5fef}} 
+\index{tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}!init@{init}}
+\index{init@{init}!tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void tpolab3.\+Spectacle\+\_\+per\+\_\+day.\+init (\begin{DoxyParamCaption}\item[{String}]{v,  }\item[{float}]{p1,  }\item[{int}]{c1,  }\item[{int}]{pzu,  }\item[{float}]{p2,  }\item[{int}]{c2,  }\item[{int}]{pzd,  }\item[{float}]{p3,  }\item[{int}]{c3,  }\item[{int}]{pzv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод для инициализации спектакля за день 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em v} & Название спектакля \\
+\hline
+\mbox{\texttt{ in}}  & {\em p1} & Цена билета на утреннюю постановку \\
+\hline
+\mbox{\texttt{ in}}  & {\em c1} & Количество проданных билетов на утро \\
+\hline
+\mbox{\texttt{ in}}  & {\em pzu} & Процент заполнения зала утром \\
+\hline
+\mbox{\texttt{ in}}  & {\em p2} & Цена билета на дневную постановку \\
+\hline
+\mbox{\texttt{ in}}  & {\em c2} & Количество проданных билетов на день \\
+\hline
+\mbox{\texttt{ in}}  & {\em pzd} & Процент заполнения зала днём \\
+\hline
+\mbox{\texttt{ in}}  & {\em p3} & Цена билета на вечернюю постановку \\
+\hline
+\mbox{\texttt{ in}}  & {\em c3} & Количество проданных билетов на вечер \\
+\hline
+\mbox{\texttt{ in}}  & {\em pzv} & Процент заполнения зала вечером \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_acd756998d6fb04027aee45c8c6d7afb9}\label{classtpolab3_1_1_spectacle__per__day_acd756998d6fb04027aee45c8c6d7afb9}} 
+\index{tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}!minsale@{minsale}}
+\index{minsale@{minsale}!tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}}
+\doxysubsubsection{\texorpdfstring{minsale()}{minsale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtpolab3_1_1_spectacle}{Spectacle}} tpolab3.\+Spectacle\+\_\+per\+\_\+day.\+minsale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция находит спектакль, который принёс наименьший доход \begin{DoxyReturn}{Returns}
+Спектакль с наименьшим доходом
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_ae37835ff5025784cd459dbd5af4bc9e8}\label{classtpolab3_1_1_spectacle__per__day_ae37835ff5025784cd459dbd5af4bc9e8}} 
+\index{tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}!putname@{putname}}
+\index{putname@{putname}!tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}}
+\doxysubsubsection{\texorpdfstring{putname()}{putname()}}
+{\footnotesize\ttfamily void tpolab3.\+Spectacle\+\_\+per\+\_\+day.\+putname (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод для изменения название спектакля 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & Новое название \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Program.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,88 @@
+\hypertarget{classtpolab3_1_1_spectacle}{}\doxysection{tpolab3.\+Spectacle Class Reference}
+\label{classtpolab3_1_1_spectacle}\index{tpolab3.Spectacle@{tpolab3.Spectacle}}
+
+
+Вспомогательный класс Спектакль  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtpolab3_1_1_spectacle_a281580136b0108b606860b1a3d73e639}{init}} (int c, float p, string tm)
+\item 
+string \mbox{\hyperlink{classtpolab3_1_1_spectacle_a95501b618587bd6a1569e948a4b7ff73}{gettime}} ()
+\item 
+void \mbox{\hyperlink{classtpolab3_1_1_spectacle_a95647f399e703325c115bf1cb4fa7584}{settime}} (string tm)
+\item 
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle_ae6cb1a964a098a2570cfbbd0b98092df}\label{classtpolab3_1_1_spectacle_ae6cb1a964a098a2570cfbbd0b98092df}} 
+void {\bfseries read} ()
+\begin{DoxyCompactList}\small\item\em Метод предназначен для взаимодействия с пользователем, позволяет ввести цену билета и количество проданных билетов \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle_a534614caf622760f3b492652dff58dca}\label{classtpolab3_1_1_spectacle_a534614caf622760f3b492652dff58dca}} 
+void {\bfseries display} ()
+\begin{DoxyCompactList}\small\item\em Вывод на экран информации о спектакле \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classtpolab3_1_1_spectacle_aff6447d52783957858a2dd9ce55e22c9}{sum}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Вспомогательный класс Спектакль 
+
+Класс имеет поля\+: количество, цена и время. В классе описаны методы инициализации, извлечения времени, установки времени, ввода данных, вывод данных, а также подсчёт общей суммы от продажи билетов 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle_a95501b618587bd6a1569e948a4b7ff73}\label{classtpolab3_1_1_spectacle_a95501b618587bd6a1569e948a4b7ff73}} 
+\index{tpolab3.Spectacle@{tpolab3.Spectacle}!gettime@{gettime}}
+\index{gettime@{gettime}!tpolab3.Spectacle@{tpolab3.Spectacle}}
+\doxysubsubsection{\texorpdfstring{gettime()}{gettime()}}
+{\footnotesize\ttfamily string tpolab3.\+Spectacle.\+gettime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод для получения времени спектакля \begin{DoxyReturn}{Returns}
+Время спектакля
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle_a281580136b0108b606860b1a3d73e639}\label{classtpolab3_1_1_spectacle_a281580136b0108b606860b1a3d73e639}} 
+\index{tpolab3.Spectacle@{tpolab3.Spectacle}!init@{init}}
+\index{init@{init}!tpolab3.Spectacle@{tpolab3.Spectacle}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void tpolab3.\+Spectacle.\+init (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{float}]{p,  }\item[{string}]{tm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод для инициализации полей класса 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & Количество проданных билетов \\
+\hline
+\mbox{\texttt{ in}}  & {\em p} & Цена одного билета \\
+\hline
+\mbox{\texttt{ in}}  & {\em tm} & Время проведения спектакля \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle_a95647f399e703325c115bf1cb4fa7584}\label{classtpolab3_1_1_spectacle_a95647f399e703325c115bf1cb4fa7584}} 
+\index{tpolab3.Spectacle@{tpolab3.Spectacle}!settime@{settime}}
+\index{settime@{settime}!tpolab3.Spectacle@{tpolab3.Spectacle}}
+\doxysubsubsection{\texorpdfstring{settime()}{settime()}}
+{\footnotesize\ttfamily void tpolab3.\+Spectacle.\+settime (\begin{DoxyParamCaption}\item[{string}]{tm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Метод для задания времени спектакля 
+\begin{DoxyParams}{Parameters}
+{\em tm} & Время спектакля \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classtpolab3_1_1_spectacle_aff6447d52783957858a2dd9ce55e22c9}\label{classtpolab3_1_1_spectacle_aff6447d52783957858a2dd9ce55e22c9}} 
+\index{tpolab3.Spectacle@{tpolab3.Spectacle}!sum@{sum}}
+\index{sum@{sum}!tpolab3.Spectacle@{tpolab3.Spectacle}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily float tpolab3.\+Spectacle.\+sum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Функция, предназначенная для подсчёта цены всех проданных билетов $ {price*count}$ 
+\begin{DoxyParams}{Parameters}
+{\em price} & Цена одного билета \\
+\hline
+{\em count} & Количество проданных билетов \begin{DoxyReturn}{Returns}
+Сумма цен всех проданных билетов 
+\end{DoxyReturn}
+\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Program.\+cs\end{DoxyCompactItemize}
