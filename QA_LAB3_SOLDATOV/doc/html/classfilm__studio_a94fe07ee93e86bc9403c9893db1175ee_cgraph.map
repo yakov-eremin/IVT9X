@@ -1,0 +1,4 @@
+<map id="film_studio::Read" name="film_studio::Read">
+<area shape="rect" id="node1" title="функция считывает данные о киностудии и фильмах этой киностудии" alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node2" href="$classfilm.html#a15d8bf7135a319f582ff5a73618d7023" title="Период дня с минимальной суммой заработанных денег" alt="" coords="176,5,256,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="film_studio::Display" name="film_studio::Display">
+<area shape="rect" id="node1" title="функция выводит в консоль данные о киностудии и их фильмах" alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node2" href="$classfilm.html#a89203420dfa36ae21019ca8455151a1d" title="Эта функция выводит в консоль затраты на фильм и прибль за фильм" alt="" coords="188,5,281,32"/>
+</map>

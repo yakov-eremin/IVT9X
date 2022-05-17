@@ -1,0 +1,124 @@
+\hypertarget{classfilm}{}\doxysection{film Class Reference}
+\label{classfilm}\index{film@{film}}
+
+
+Основной класс  
+
+
+Inheritance diagram for film\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classfilm}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classfilm_afc5ccfbec9161ebc81830f66ae8a5475}{Init}} (int cost1, int gain1)
+\begin{DoxyCompactList}\small\item\em Метод инициализации значений для стоимости и зарат \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfilm_a89203420dfa36ae21019ca8455151a1d}\label{classfilm_a89203420dfa36ae21019ca8455151a1d}} 
+void {\bfseries Display} ()
+\begin{DoxyCompactList}\small\item\em Эта функция выводит в консоль затраты на фильм и прибль за фильм \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classfilm_a15d8bf7135a319f582ff5a73618d7023}\label{classfilm_a15d8bf7135a319f582ff5a73618d7023}} 
+void {\bfseries Read} ()
+\begin{DoxyCompactList}\small\item\em Эта функция считывает из консоли затраты на фильм и прибль \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classfilm_a26b0d092d72ec5932eb92a2f8eaa2088}{okup\+\_\+f}} ()
+\begin{DoxyCompactList}\small\item\em Метод расчета окупаемости \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classfilm_aae489caee0a4de4cdf101026de41e5a0}{Get\+Gain}} ()
+\item 
+double \mbox{\hyperlink{classfilm_aadc41b5e82974222a8179153149dfa94}{Get\+Cost}} ()
+\item 
+int \mbox{\hyperlink{classfilm_afa954940432dea614e6898d3d2fe1d45}{summ}} (\mbox{\hyperlink{classfilm}{film}} X)
+\begin{DoxyCompactList}\small\item\em Сумма прибыли за флильм \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfilm_a433e481ca25c609ffbc9b3586b011327}\label{classfilm_a433e481ca25c609ffbc9b3586b011327}} 
+int {\bfseries cost}
+\item 
+\mbox{\Hypertarget{classfilm_a3a480feb6c02f40fb571acb808a57687}\label{classfilm_a3a480feb6c02f40fb571acb808a57687}} 
+int {\bfseries gain}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Основной класс 
+
+В нем находится метод, который вычисляет окупаемость фльма 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfilm_aadc41b5e82974222a8179153149dfa94}\label{classfilm_aadc41b5e82974222a8179153149dfa94}} 
+\index{film@{film}!GetCost@{GetCost}}
+\index{GetCost@{GetCost}!film@{film}}
+\doxysubsubsection{\texorpdfstring{GetCost()}{GetCost()}}
+{\footnotesize\ttfamily double film\+::\+Get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+затраты cost 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfilm_aae489caee0a4de4cdf101026de41e5a0}\label{classfilm_aae489caee0a4de4cdf101026de41e5a0}} 
+\index{film@{film}!GetGain@{GetGain}}
+\index{GetGain@{GetGain}!film@{film}}
+\doxysubsubsection{\texorpdfstring{GetGain()}{GetGain()}}
+{\footnotesize\ttfamily double film\+::\+Get\+Gain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+прибль gain 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfilm_afc5ccfbec9161ebc81830f66ae8a5475}\label{classfilm_afc5ccfbec9161ebc81830f66ae8a5475}} 
+\index{film@{film}!Init@{Init}}
+\index{Init@{Init}!film@{film}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void film\+::\+Init (\begin{DoxyParamCaption}\item[{int}]{cost1,  }\item[{int}]{gain1 }\end{DoxyParamCaption})}
+
+
+
+Метод инициализации значений для стоимости и зарат 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cost1} & входящий параметр затраты \\
+\hline
+\mbox{\texttt{ in}}  & {\em gain1} & входящий параметр прибль \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfilm_a26b0d092d72ec5932eb92a2f8eaa2088}\label{classfilm_a26b0d092d72ec5932eb92a2f8eaa2088}} 
+\index{film@{film}!okup\_f@{okup\_f}}
+\index{okup\_f@{okup\_f}!film@{film}}
+\doxysubsubsection{\texorpdfstring{okup\_f()}{okup\_f()}}
+{\footnotesize\ttfamily float film\+::okup\+\_\+f (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод расчета окупаемости 
+
+\[
+    окупаемость = \frac{Расходы }{Доходы }\times {100}
+\]
+
+\begin{DoxyReturn}{Returns}
+Окупаемость к 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfilm_afa954940432dea614e6898d3d2fe1d45}\label{classfilm_afa954940432dea614e6898d3d2fe1d45}} 
+\index{film@{film}!summ@{summ}}
+\index{summ@{summ}!film@{film}}
+\doxysubsubsection{\texorpdfstring{summ()}{summ()}}
+{\footnotesize\ttfamily int film\+::summ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classfilm}{film}}}]{X }\end{DoxyParamCaption})}
+
+
+
+Сумма прибыли за флильм 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em х} & входящий параметр объект класса (фильм)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+сумма к 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/123/\+Desktop/1.\+10.\+22/1.\+10.\+22/1.\+10.\+22.\+cpp\end{DoxyCompactItemize}
