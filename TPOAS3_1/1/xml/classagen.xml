@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classagen" kind="class" language="C++" prot="public">
+    <compoundname>agen</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classagen_1a18434e2d5dee93d7ba3cbe50b7a9df26" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char agen::n[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>n</name>
+        <qualifiedname>agen::n</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="71" column="6" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagen_1ada402528d3484f93af15fe2aa4eb3db7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double agen::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>agen::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="72" column="8" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagen_1a8b0a9e7e0623c4d8cab91839e298163a" prot="private" static="no" mutable="no">
+        <type><ref refid="classpom" kindref="compound">pom</ref></type>
+        <definition>pom agen::p1</definition>
+        <argsstring></argsstring>
+        <name>p1</name>
+        <qualifiedname>agen::p1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="73" column="5" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagen_1a9336d2612738694a1546941ef280c114" prot="private" static="no" mutable="no">
+        <type><ref refid="classpom" kindref="compound">pom</ref></type>
+        <definition>pom agen::p2</definition>
+        <argsstring></argsstring>
+        <name>p2</name>
+        <qualifiedname>agen::p2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="74" column="5" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classagen_1ac5caea08e02ac73359106295dea4085c" prot="private" static="no" mutable="no">
+        <type><ref refid="classpom" kindref="compound">pom</ref></type>
+        <definition>pom agen::p3</definition>
+        <argsstring></argsstring>
+        <name>p3</name>
+        <qualifiedname>agen::p3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="75" column="5" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classagen_1a318bed8f0919349b28a9c3e7d608f3ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classpom" kindref="compound">pom</ref></type>
+        <definition>pom agen::dorpom</definition>
+        <argsstring>()</argsstring>
+        <name>dorpom</name>
+        <qualifiedname>agen::dorpom</qualifiedname>
+        <briefdescription>
+<para>Стоимость самой дорогой комнаты </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>  ! КАРТИНКА !
+</verbatim> /details метод сравнивает стоимость каждой из 3-х комнат /return объект с максимальной стоимостью </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="65" column="5" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="106" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classagen_1a36559664045dc1d651725fd30da510b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double agen::totcost</definition>
+        <argsstring>()</argsstring>
+        <name>totcost</name>
+        <qualifiedname>agen::totcost</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="66" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classagen_1a2be30fd101eedbe5349de152dc6f94e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * agen::getname</definition>
+        <argsstring>()</argsstring>
+        <name>getname</name>
+        <qualifiedname>agen::getname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>/return название агенства (n) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="67" column="6" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classagen_1a99086155357bc1b2d859d841c09d2278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agen::putname</definition>
+        <argsstring>(char *s)</argsstring>
+        <name>putname</name>
+        <qualifiedname>agen::putname</qualifiedname>
+        <param>
+          <type>char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>функция получает название агенства и копирует в новую переменную </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>название агенства </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="68" column="6" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classagen_1a250579573f2c9f5297bef41ec1615ffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void agen::init</definition>
+        <argsstring>(double a1, int b1, double a2, int b2, double a3, int b3, double z1)</argsstring>
+        <name>init</name>
+        <qualifiedname>agen::init</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b1</declname>
+          <defname>c1</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b2</declname>
+          <defname>c2</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a3</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b3</declname>
+          <defname>c3</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z1</declname>
+        </param>
+        <briefdescription>
+<para>Данная функция инициализирует входящие данные </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">a1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>площадь первой комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>стоимость квадратного метра первой комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">a2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>площадь второй комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>стоимость квадратонго метра второй комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">a3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>площадь третьей комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">c3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>стоимость квадратного метра третьей комнаты </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">z1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>расходы </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="69" column="6" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="89" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Вспомогательный класс </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Имеет объекты основного класса для определения конкретной стоимости комнаты. Имеет методы, определяющие стоимость самой дорогой комнаты, общую стоимость агенства и название агенства. </para>
+    </detaileddescription>
+    <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="62" column="1" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="63" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classagen_1a318bed8f0919349b28a9c3e7d608f3ee" prot="public" virt="non-virtual"><scope>agen</scope><name>dorpom</name></member>
+      <member refid="classagen_1a2be30fd101eedbe5349de152dc6f94e8" prot="public" virt="non-virtual"><scope>agen</scope><name>getname</name></member>
+      <member refid="classagen_1a250579573f2c9f5297bef41ec1615ffe" prot="public" virt="non-virtual"><scope>agen</scope><name>init</name></member>
+      <member refid="classagen_1a18434e2d5dee93d7ba3cbe50b7a9df26" prot="private" virt="non-virtual"><scope>agen</scope><name>n</name></member>
+      <member refid="classagen_1a8b0a9e7e0623c4d8cab91839e298163a" prot="private" virt="non-virtual"><scope>agen</scope><name>p1</name></member>
+      <member refid="classagen_1a9336d2612738694a1546941ef280c114" prot="private" virt="non-virtual"><scope>agen</scope><name>p2</name></member>
+      <member refid="classagen_1ac5caea08e02ac73359106295dea4085c" prot="private" virt="non-virtual"><scope>agen</scope><name>p3</name></member>
+      <member refid="classagen_1a99086155357bc1b2d859d841c09d2278" prot="public" virt="non-virtual"><scope>agen</scope><name>putname</name></member>
+      <member refid="classagen_1a36559664045dc1d651725fd30da510b6" prot="public" virt="non-virtual"><scope>agen</scope><name>totcost</name></member>
+      <member refid="classagen_1ada402528d3484f93af15fe2aa4eb3db7" prot="private" virt="non-virtual"><scope>agen</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

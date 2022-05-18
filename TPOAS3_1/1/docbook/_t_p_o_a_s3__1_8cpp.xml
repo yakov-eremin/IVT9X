@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__t_p_o_a_s3__1_8cpp" xml:lang="ru">
+<title>Файл C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp</title>
+<indexterm><primary>C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;iostream&gt;
+</programlisting>Граф включаемых заголовочных файлов для TPOAS3_1.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_t_p_o_a_s3__1_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Структуры данных    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classpom">pom</link></para>
+
+<para>Основной класс </para>
+</listitem>
+            <listitem><para>class <link linkend="_classagen">agen</link></para>
+
+<para>Вспомогательный класс </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

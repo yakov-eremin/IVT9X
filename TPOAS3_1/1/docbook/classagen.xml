@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classagen" xml:lang="en-US">
+<title>agen Class Reference</title>
+<indexterm><primary>agen</primary></indexterm>
+<para>
+
+<para>Вспомогательный класс </para>
+ 
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classpom">pom</link> <link linkend="_classagen_1a318bed8f0919349b28a9c3e7d608f3ee">dorpom</link> ()</para>
+
+<para>Стоимость самой дорогой комнаты </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classagen_1a36559664045dc1d651725fd30da510b6"/>double <emphasis role="strong">totcost</emphasis> ()</para>
+</listitem>
+            <listitem><para>char * <link linkend="_classagen_1a2be30fd101eedbe5349de152dc6f94e8">getname</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classagen_1a99086155357bc1b2d859d841c09d2278">putname</link> (char *s)</para>
+
+<para>функция получает название агенства и копирует в новую переменную </para>
+</listitem>
+            <listitem><para>void <link linkend="_classagen_1a250579573f2c9f5297bef41ec1615ffe">init</link> (double a1, int b1, double a2, int b2, double a3, int b3, double z1)</para>
+
+<para>Данная функция инициализирует входящие данные </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Вспомогательный класс </para>
+
+
+
+<para>Имеет объекты основного класса для определения конкретной стоимости комнаты. Имеет методы, определяющие стоимость самой дорогой комнаты, общую стоимость агенства и название агенства. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classagen_1a318bed8f0919349b28a9c3e7d608f3ee"/><section>
+    <title>dorpom()</title>
+<indexterm><primary>dorpom</primary><secondary>agen</secondary></indexterm>
+<indexterm><primary>agen</primary><secondary>dorpom</secondary></indexterm>
+<para><computeroutput><link linkend="_classpom">pom</link> agen::dorpom ( )</computeroutput></para><para>
+
+<para>Стоимость самой дорогой комнаты </para>
+</para>
+
+<para><literallayout><computeroutput>  ! КАРТИНКА !
+</computeroutput></literallayout> /details метод сравнивает стоимость каждой из 3-х комнат /return объект с максимальной стоимостью </para>
+</section>
+<anchor xml:id="_classagen_1a2be30fd101eedbe5349de152dc6f94e8"/><section>
+    <title>getname()</title>
+<indexterm><primary>getname</primary><secondary>agen</secondary></indexterm>
+<indexterm><primary>agen</primary><secondary>getname</secondary></indexterm>
+<para><computeroutput>char * agen::getname ( )</computeroutput></para>
+<para>/return название агенства (n) </para>
+</section>
+<anchor xml:id="_classagen_1a250579573f2c9f5297bef41ec1615ffe"/><section>
+    <title>init()</title>
+<indexterm><primary>init</primary><secondary>agen</secondary></indexterm>
+<indexterm><primary>agen</primary><secondary>init</secondary></indexterm>
+<para><computeroutput>void agen::init (double a1, int c1, double a2, int c2, double a3, int c3, double z1)</computeroutput></para><para>
+
+<para>Данная функция инициализирует входящие данные </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>a1</entry><entry>
+<para>площадь первой комнаты </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>c1</entry><entry>
+<para>стоимость квадратного метра первой комнаты </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>a2</entry><entry>
+<para>площадь второй комнаты </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>c2</entry><entry>
+<para>стоимость квадратонго метра второй комнаты </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>a3</entry><entry>
+<para>площадь третьей комнаты </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>c3</entry><entry>
+<para>стоимость квадратного метра третьей комнаты </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>z1</entry><entry>
+<para>расходы </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classagen_1a99086155357bc1b2d859d841c09d2278"/><section>
+    <title>putname()</title>
+<indexterm><primary>putname</primary><secondary>agen</secondary></indexterm>
+<indexterm><primary>agen</primary><secondary>putname</secondary></indexterm>
+<para><computeroutput>void agen::putname (char * s)</computeroutput></para><para>
+
+<para>функция получает название агенства и копирует в новую переменную </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>s</entry><entry>
+<para>название агенства </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp</section>
+</section>

@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__t_p_o_a_s3__1_8cpp_source" xml:lang="ru">
+<title>TPOAS3_1.cpp</title>
+<indexterm><primary>C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&lt;iostream&gt;</emphasis>
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00002"/>00002 <emphasis role="keyword">using&#32;namespace&#32;</emphasis>std;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00003"/>00003 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00011"/><link linkend="_classpom">00011</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classpom">pom</link>
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00012"/>00012 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00013"/>00013 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;c;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;a;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00016"/>00016 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00017"/>00017 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classpom_1af59b8d41d5addc524ccb44d4bd30e8ab">display</link>();
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classpom_1ad04d177124b8d8ee65c425f4cdc11674">init</link>(<emphasis role="keywordtype">double</emphasis>&#32;c1,&#32;<emphasis role="keywordtype">int</emphasis>&#32;a1);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00019"/>00019 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>();
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00020"/>00020 };
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00021"/>00021 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00028"/><link linkend="_classpom_1ad04d177124b8d8ee65c425f4cdc11674">00028</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classpom_1ad04d177124b8d8ee65c425f4cdc11674">pom::init</link>(<emphasis role="keywordtype">double</emphasis>&#32;с1,&#32;<emphasis role="keywordtype">int</emphasis>&#32;a1)
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00029"/>00029 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;c&#32;=&#32;с1;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00031"/>00031 &#32;&#32;&#32;&#32;a&#32;=&#32;a1;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00032"/>00032 }
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00033"/>00033 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00034"/>00034 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00036"/>00036 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00037"/>00037 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00038"/><link linkend="_classpom_1af59b8d41d5addc524ccb44d4bd30e8ab">00038</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classpom_1af59b8d41d5addc524ccb44d4bd30e8ab">pom::display</link>()
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00039"/>00039 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Стоимость&#32;квадратного&#32;метра:\t\t&quot;</emphasis>&#32;&lt;&lt;&#32;c&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00041"/>00041 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Площадь&#32;помещения:\t\t&quot;</emphasis>&#32;&lt;&lt;&#32;a&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00042"/>00042 }
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00043"/>00043 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00050"/><link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">00050</link> <emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">pom::p</link>()
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00051"/>00051 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;c&#32;*&#32;a;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00053"/>00053 }
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00054"/>00054 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00062"/><link linkend="_classagen">00062</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classagen">agen</link>
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00063"/>00063 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00064"/>00064 <emphasis role="keyword">public</emphasis>:
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;<link linkend="_classpom">pom</link>&#32;<link linkend="_classagen_1a318bed8f0919349b28a9c3e7d608f3ee">dorpom</link>();
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00066"/><link linkend="_classagen_1a36559664045dc1d651725fd30da510b6">00066</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_classagen_1a36559664045dc1d651725fd30da510b6">totcost</link>();
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00067"/>00067 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_classagen_1a2be30fd101eedbe5349de152dc6f94e8">getname</link>();
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00068"/>00068 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classagen_1a99086155357bc1b2d859d841c09d2278">putname</link>(<emphasis role="keywordtype">char</emphasis>*&#32;s);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00069"/>00069 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classagen_1a250579573f2c9f5297bef41ec1615ffe">init</link>(<emphasis role="keywordtype">double</emphasis>&#32;a1,&#32;<emphasis role="keywordtype">int</emphasis>&#32;b1,&#32;<emphasis role="keywordtype">double</emphasis>&#32;a2,&#32;<emphasis role="keywordtype">int</emphasis>&#32;b2,&#32;<emphasis role="keywordtype">double</emphasis>&#32;a3,&#32;<emphasis role="keywordtype">int</emphasis>&#32;b3,&#32;<emphasis role="keywordtype">double</emphasis>&#32;z1);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00070"/>00070 <emphasis role="keyword">private</emphasis>:
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;n[50];
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00072"/>00072 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;z;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00073"/>00073 &#32;&#32;&#32;&#32;<link linkend="_classpom">pom</link>&#32;p1;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00074"/>00074 &#32;&#32;&#32;&#32;<link linkend="_classpom">pom</link>&#32;p2;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;<link linkend="_classpom">pom</link>&#32;p3;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00076"/>00076 };
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00077"/>00077 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00089"/><link linkend="_classagen_1a250579573f2c9f5297bef41ec1615ffe">00089</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classagen_1a250579573f2c9f5297bef41ec1615ffe">agen::init</link>(<emphasis role="keywordtype">double</emphasis>&#32;a1,&#32;<emphasis role="keywordtype">int</emphasis>&#32;c1,&#32;<emphasis role="keywordtype">double</emphasis>&#32;a2,&#32;<emphasis role="keywordtype">int</emphasis>&#32;c2,&#32;<emphasis role="keywordtype">double</emphasis>&#32;a3,&#32;<emphasis role="keywordtype">int</emphasis>&#32;c3,&#32;<emphasis role="keywordtype">double</emphasis>&#32;z1)
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00090"/>00090 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;p1.<link linkend="_classpom_1ad04d177124b8d8ee65c425f4cdc11674">init</link>(a1,&#32;c1);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00092"/>00092 &#32;&#32;&#32;&#32;p2.<link linkend="_classpom_1ad04d177124b8d8ee65c425f4cdc11674">init</link>(a2,&#32;c2);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00093"/>00093 &#32;&#32;&#32;&#32;p3.<link linkend="_classpom_1ad04d177124b8d8ee65c425f4cdc11674">init</link>(a3,&#32;c3);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00094"/>00094 &#32;&#32;&#32;&#32;z&#32;=&#32;z1;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00095"/>00095 }
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00096"/>00096 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00106"/><link linkend="_classagen_1a318bed8f0919349b28a9c3e7d608f3ee">00106</link> <link linkend="_classpom">pom</link>&#32;<link linkend="_classagen_1a318bed8f0919349b28a9c3e7d608f3ee">agen::dorpom</link>()
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00107"/>00107 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00108"/>00108 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(p1.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;&gt;&#32;p2.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;&amp;&amp;&#32;p1.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;&gt;&#32;p3.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>())
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00109"/>00109 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00110"/>00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;p1;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00111"/>00111 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00112"/>00112 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00113"/>00113 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(p2.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;&gt;&#32;p3.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;&amp;&amp;&#32;p2.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;&gt;&#32;p1.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>())
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;p2;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00117"/>00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">return</emphasis>&#32;p3;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00119"/>00119 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00120"/>00120 }
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00121"/>00121 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00126"/><link linkend="_classagen_1a2be30fd101eedbe5349de152dc6f94e8">00126</link> <emphasis role="keywordtype">char</emphasis>*&#32;<link linkend="_classagen_1a2be30fd101eedbe5349de152dc6f94e8">agen::getname</link>()
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00127"/>00127 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00128"/>00128 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;n;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00129"/>00129 }
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00130"/>00130 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00137"/><link linkend="_classagen_1a99086155357bc1b2d859d841c09d2278">00137</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classagen_1a99086155357bc1b2d859d841c09d2278">agen::putname</link>(<emphasis role="keywordtype">char</emphasis>*&#32;s)
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00138"/>00138 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00139"/>00139 &#32;&#32;&#32;&#32;strcpy_s(n,&#32;s);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00140"/>00140 }
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00141"/>00141 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00150"/>00150 <emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_classagen_1a36559664045dc1d651725fd30da510b6">agen::totcost</link>()
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00151"/>00151 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00152"/>00152 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;p1.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;+&#32;p2.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;+&#32;p3.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;-&#32;z;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00153"/>00153 }
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00154"/>00154 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00156"/>00156 
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00157"/>00157 <emphasis role="keywordtype">int</emphasis>&#32;main()
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00158"/>00158 {
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00159"/>00159 &#32;&#32;&#32;&#32;setlocale(LC_ALL,&#32;<emphasis role="stringliteral">&quot;rus&quot;</emphasis>);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00160"/>00160 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;c1,&#32;c2,&#32;c3,&#32;z;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00161"/>00161 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;a1,&#32;a2,&#32;a3;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00162"/>00162 &#32;&#32;&#32;&#32;<link linkend="_classpom">pom</link>&#32;p1,&#32;p2,&#32;p3,&#32;dorpom;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00163"/>00163 &#32;&#32;&#32;&#32;<link linkend="_classagen">agen</link>&#32;ag;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00164"/>00164 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;n[50];
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00165"/>00165 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Первая&#32;комната\nВведите&#32;стоимость&#32;квадратного&#32;метра:\t&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00166"/>00166 &#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;c1;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00167"/>00167 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Введите&#32;площадь&#32;помещения:\t\t&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00168"/>00168 &#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;a1;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00169"/>00169 &#32;&#32;&#32;&#32;p1.<link linkend="_classpom_1ad04d177124b8d8ee65c425f4cdc11674">init</link>(c1,&#32;a1);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00170"/>00170 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;\nВторая&#32;комната\nВведите&#32;стоимость&#32;квадратного&#32;метра:\t&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00171"/>00171 &#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;c2;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00172"/>00172 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Введите&#32;площадь&#32;помещения:\t\t&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00173"/>00173 &#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;a2;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00174"/>00174 &#32;&#32;&#32;&#32;p2.<link linkend="_classpom_1ad04d177124b8d8ee65c425f4cdc11674">init</link>(c2,&#32;a2);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00175"/>00175 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;\nТретья&#32;комната\nВведите&#32;стоимость&#32;квадратного&#32;метра:\t&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00176"/>00176 &#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;c3;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00177"/>00177 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Введите&#32;площадь&#32;помещения:\t\t&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00178"/>00178 &#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;a3;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00179"/>00179 &#32;&#32;&#32;&#32;p3.<link linkend="_classpom_1ad04d177124b8d8ee65c425f4cdc11674">init</link>(c3,&#32;a3);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00180"/>00180 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;\nКомната&#32;1\n&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00181"/>00181 &#32;&#32;&#32;&#32;p1.<link linkend="_classpom_1af59b8d41d5addc524ccb44d4bd30e8ab">display</link>();
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00182"/>00182 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;\nКомната&#32;2\n&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00183"/>00183 &#32;&#32;&#32;&#32;p2.<link linkend="_classpom_1af59b8d41d5addc524ccb44d4bd30e8ab">display</link>();
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00184"/>00184 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;\nКомната&#32;3\n&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00185"/>00185 &#32;&#32;&#32;&#32;p3.<link linkend="_classpom_1af59b8d41d5addc524ccb44d4bd30e8ab">display</link>();
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00186"/>00186 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;\nВведите&#32;расходы:\t\t&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00187"/>00187 &#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;z;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00188"/>00188 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Введите&#32;название&#32;агенства:&#32;&quot;</emphasis>;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00189"/>00189 &#32;&#32;&#32;&#32;cin&#32;&gt;&gt;&#32;n;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00190"/>00190 &#32;&#32;&#32;&#32;ag.<link linkend="_classagen_1a99086155357bc1b2d859d841c09d2278">putname</link>(n);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00191"/>00191 &#32;&#32;&#32;&#32;ag.<link linkend="_classagen_1a250579573f2c9f5297bef41ec1615ffe">init</link>(c1,&#32;a1,&#32;c2,&#32;a2,&#32;c3,&#32;a3,&#32;z);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00192"/>00192 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;\nАгенство&#32;-&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;ag.<link linkend="_classagen_1a2be30fd101eedbe5349de152dc6f94e8">getname</link>()&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;\nОбщая&#32;стоимость&#32;агенства:\t\t&quot;</emphasis>&#32;&lt;&lt;&#32;ag.<link linkend="_classagen_1a36559664045dc1d651725fd30da510b6">totcost</link>()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00193"/>00193 &#32;&#32;&#32;&#32;dorpom&#32;=&#32;ag.<link linkend="_classagen_1a318bed8f0919349b28a9c3e7d608f3ee">dorpom</link>();
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00194"/>00194 &#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;Самая&#32;дорогая&#32;комната:\t&quot;</emphasis>&#32;&lt;&lt;&#32;dorpom.<link linkend="_classpom_1af2d6e6645281f1eb7441a80296fadb68">p</link>()&#32;&lt;&lt;&#32;endl;
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00195"/>00195 &#32;&#32;&#32;&#32;system(<emphasis role="stringliteral">&quot;pause&gt;&gt;void&quot;</emphasis>);
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00196"/>00196 }
+<anchor xml:id="__t_p_o_a_s3__1_8cpp_source_1l00197"/>00197 
+</programlisting></section>

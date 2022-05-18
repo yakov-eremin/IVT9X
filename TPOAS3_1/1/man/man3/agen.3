@@ -1,0 +1,89 @@
+.TH "agen" 3 "Tue May 17 2022" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+agen \- Вспомогательный класс  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpom\fP \fBdorpom\fP ()"
+.br
+.RI "Стоимость самой дорогой комнаты "
+.ti -1c
+.RI "double \fBtotcost\fP ()"
+.br
+.ti -1c
+.RI "char * \fBgetname\fP ()"
+.br
+.ti -1c
+.RI "void \fBputname\fP (char *s)"
+.br
+.RI "функция получает название агенства и копирует в новую переменную "
+.ti -1c
+.RI "void \fBinit\fP (double a1, int b1, double a2, int b2, double a3, int b3, double z1)"
+.br
+.RI "Данная функция инициализирует входящие данные "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Вспомогательный класс 
+
+Имеет объекты основного класса для определения конкретной стоимости комнаты\&. Имеет методы, определяющие стоимость самой дорогой комнаты, общую стоимость агенства и название агенства\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBpom\fP agen::dorpom ()"
+
+.PP
+Стоимость самой дорогой комнаты 
+.PP
+.nf
+  ! КАРТИНКА !
+
+.fi
+.PP
+ /details метод сравнивает стоимость каждой из 3-х комнат /return объект с максимальной стоимостью 
+.SS "char * agen::getname ()"
+/return название агенства (n) 
+.SS "void agen::init (double a1, int c1, double a2, int c2, double a3, int c3, double z1)"
+
+.PP
+Данная функция инициализирует входящие данные 
+.PP
+\fBParameters\fP
+.RS 4
+\fIa1\fP площадь первой комнаты 
+.br
+\fIc1\fP стоимость квадратного метра первой комнаты 
+.br
+\fIa2\fP площадь второй комнаты 
+.br
+\fIc2\fP стоимость квадратонго метра второй комнаты 
+.br
+\fIa3\fP площадь третьей комнаты 
+.br
+\fIc3\fP стоимость квадратного метра третьей комнаты 
+.br
+\fIz1\fP расходы 
+.RE
+.PP
+
+.SS "void agen::putname (char * s)"
+
+.PP
+функция получает название агенства и копирует в новую переменную 
+.PP
+\fBParameters\fP
+.RS 4
+\fIs\fP название агенства 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classpom" kind="class" language="C++" prot="public">
+    <compoundname>pom</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpom_1a7e7b4b6373e7fd9d7080b27c7b7cfd5f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double pom::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <qualifiedname>pom::c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="14" column="8" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpom_1a02f5bd75779904b56145da1b946d082d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pom::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>pom::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="15" column="5" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpom_1af59b8d41d5addc524ccb44d4bd30e8ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pom::display</definition>
+        <argsstring>()</argsstring>
+        <name>display</name>
+        <qualifiedname>pom::display</qualifiedname>
+        <briefdescription>
+<para>Функция выводит в консоль стоимость квадратного метра и площадь помещения </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="17" column="6" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classpom_1ad04d177124b8d8ee65c425f4cdc11674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pom::init</definition>
+        <argsstring>(double c1, int a1)</argsstring>
+        <name>init</name>
+        <qualifiedname>pom::init</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>c1</declname>
+          <defname>с1</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a1</declname>
+        </param>
+        <briefdescription>
+<para>Эта функция присваивает начальное значение для стоимости квадратного метра помещения и его площади </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>входящий параметр стоимости квадратного метра </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">k1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>входящий параметр площади помещения </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="18" column="6" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classpom_1af2d6e6645281f1eb7441a80296fadb68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double pom::p</definition>
+        <argsstring>()</argsstring>
+        <name>p</name>
+        <qualifiedname>pom::p</qualifiedname>
+        <briefdescription>
+<para>Стоимость помещения </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Функция возвражает произведение стоимости квадратного метра и площади помещения </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="19" column="8" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="50" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Основной класс </para>
+    </briefdescription>
+    <detaileddescription>
+<para>В нём находится метод, вычисляющий стоимость помещения </para>
+    </detaileddescription>
+    <location file="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" line="11" column="1" bodyfile="C:/Users/pagan/source/repos/TPOAS3_1/TPOAS3_1/TPOAS3_1.cpp" bodystart="12" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classpom_1a02f5bd75779904b56145da1b946d082d" prot="private" virt="non-virtual"><scope>pom</scope><name>a</name></member>
+      <member refid="classpom_1a7e7b4b6373e7fd9d7080b27c7b7cfd5f" prot="private" virt="non-virtual"><scope>pom</scope><name>c</name></member>
+      <member refid="classpom_1af59b8d41d5addc524ccb44d4bd30e8ab" prot="public" virt="non-virtual"><scope>pom</scope><name>display</name></member>
+      <member refid="classpom_1ad04d177124b8d8ee65c425f4cdc11674" prot="public" virt="non-virtual"><scope>pom</scope><name>init</name></member>
+      <member refid="classpom_1af2d6e6645281f1eb7441a80296fadb68" prot="public" virt="non-virtual"><scope>pom</scope><name>p</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,11 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,56,209"/>
+<area shape="rect" id="node2" href="$classpom.html#af59b8d41d5addc524ccb44d4bd30e8ab" title="Функция выводит в консоль стоимость квадратного метра и площадь помещения" alt="" coords="110,5,206,32"/>
+<area shape="rect" id="node3" href="$classagen.html#a318bed8f0919349b28a9c3e7d608f3ee" title="Стоимость самой дорогой комнаты" alt="" coords="107,208,209,235"/>
+<area shape="rect" id="node4" href="$classpom.html#af2d6e6645281f1eb7441a80296fadb68" title="Стоимость помещения" alt="" coords="265,107,327,133"/>
+<area shape="rect" id="node5" href="$classagen.html#a2be30fd101eedbe5349de152dc6f94e8" title=" " alt="" coords="104,157,212,184"/>
+<area shape="rect" id="node6" href="$classagen.html#a250579573f2c9f5297bef41ec1615ffe" title="Данная функция инициализирует входящие данные" alt="" coords="121,360,195,387"/>
+<area shape="rect" id="node7" href="$classpom.html#ad04d177124b8d8ee65c425f4cdc11674" title="Эта функция присваивает начальное значение для стоимости квадратного метра помещения и его площади" alt="" coords="260,309,332,336"/>
+<area shape="rect" id="node8" href="$classagen.html#a99086155357bc1b2d859d841c09d2278" title="функция получает название агенства и копирует в новую переменную" alt="" coords="104,309,212,336"/>
+<area shape="rect" id="node9" href="$classagen.html#a36559664045dc1d651725fd30da510b6" title=" " alt="" coords="109,107,207,133"/>
+</map>

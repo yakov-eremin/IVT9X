@@ -1,0 +1,4 @@
+<map id="agen::init" name="agen::init">
+<area shape="rect" id="node1" title="Данная функция инициализирует входящие данные" alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node2" href="$classpom.html#ad04d177124b8d8ee65c425f4cdc11674" title="Эта функция присваивает начальное значение для стоимости квадратного метра помещения и его площади" alt="" coords="128,5,200,32"/>
+</map>

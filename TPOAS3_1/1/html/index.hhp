@@ -1,0 +1,55 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x419 Russian
+Title=My Project
+
+[WINDOWS]
+main="My Project","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+_t_p_o_a_s3__1_8cpp.html
+_t_p_o_a_s3__1_8cpp_source.html
+annotated.html
+classagen.html
+classes.html
+classpom.html
+dir_df534bc5e227cdcb548d1cc325b38f42.html
+files.html
+functions.html
+functions_func.html
+graph_legend.html
+index.html
+_t_p_o_a_s3__1_8cpp__incl.pdf
+_t_p_o_a_s3__1_8cpp__incl.png
+bc_s.png
+bdwn.png
+classagen_a250579573f2c9f5297bef41ec1615ffe_cgraph.png
+classagen_a318bed8f0919349b28a9c3e7d608f3ee_cgraph.png
+classpom_ad04d177124b8d8ee65c425f4cdc11674_icgraph.png
+classpom_af2d6e6645281f1eb7441a80296fadb68_icgraph.png
+closed.png
+doc.png
+doxygen.svg
+folderclosed.png
+folderopen.png
+graph_legend.png
+nav_f.png
+nav_g.png
+nav_h.png
+open.png
+splitbar.png
+sync_off.png
+sync_on.png
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+doxygen.css
+dynsections.js
+jquery.js
+tabs.css

@@ -1,0 +1,192 @@
+\hypertarget{classagen}{}\doxysection{Класс agen}
+\label{classagen}\index{agen@{agen}}
+
+
+Вспомогательный класс  
+
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpom}{pom}} \mbox{\hyperlink{classagen_a318bed8f0919349b28a9c3e7d608f3ee}{dorpom}} ()
+\begin{DoxyCompactList}\small\item\em Стоимость самой дорогой комнаты \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classagen_a36559664045dc1d651725fd30da510b6}{totcost}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{classagen_a2be30fd101eedbe5349de152dc6f94e8}{getname}} ()
+\item 
+void \mbox{\hyperlink{classagen_a99086155357bc1b2d859d841c09d2278}{putname}} (char $\ast$s)
+\begin{DoxyCompactList}\small\item\em функция получает название агенства и копирует в новую переменную \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classagen_a250579573f2c9f5297bef41ec1615ffe}{init}} (double a1, int b1, double a2, int b2, double a3, int b3, double z1)
+\begin{DoxyCompactList}\small\item\em Данная функция инициализирует входящие данные \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Вспомогательный класс 
+
+Имеет объекты основного класса для определения конкретной стоимости комнаты. Имеет методы, определяющие стоимость самой дорогой комнаты, общую стоимость агенства и название агенства. 
+
+См. определение в файле \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source}{TPOAS3\+\_\+1.\+cpp}} строка \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source_l00062}{62}}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classagen_a318bed8f0919349b28a9c3e7d608f3ee}\label{classagen_a318bed8f0919349b28a9c3e7d608f3ee}} 
+\index{agen@{agen}!dorpom@{dorpom}}
+\index{dorpom@{dorpom}!agen@{agen}}
+\doxysubsubsection{\texorpdfstring{dorpom()}{dorpom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classpom}{pom}} agen\+::dorpom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Стоимость самой дорогой комнаты 
+
+
+
+метод сравнивает стоимость каждой из 3-\/х комнат \begin{DoxyReturn}{Возвращает}
+объект с максимальной стоимостью 
+\end{DoxyReturn}
+
+
+См. определение в файле \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source}{TPOAS3\+\_\+1.\+cpp}} строка \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source_l00105}{105}}
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classagen_a318bed8f0919349b28a9c3e7d608f3ee_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classagen_a318bed8f0919349b28a9c3e7d608f3ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classagen_a2be30fd101eedbe5349de152dc6f94e8}\label{classagen_a2be30fd101eedbe5349de152dc6f94e8}} 
+\index{agen@{agen}!getname@{getname}}
+\index{getname@{getname}!agen@{agen}}
+\doxysubsubsection{\texorpdfstring{getname()}{getname()}}
+{\footnotesize\ttfamily char $\ast$ agen\+::getname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+/return название агенства (n) 
+
+См. определение в файле \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source}{TPOAS3\+\_\+1.\+cpp}} строка \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source_l00125}{125}}
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classagen_a2be30fd101eedbe5349de152dc6f94e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classagen_a250579573f2c9f5297bef41ec1615ffe}\label{classagen_a250579573f2c9f5297bef41ec1615ffe}} 
+\index{agen@{agen}!init@{init}}
+\index{init@{init}!agen@{agen}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void agen\+::init (\begin{DoxyParamCaption}\item[{double}]{a1,  }\item[{int}]{c1,  }\item[{double}]{a2,  }\item[{int}]{c2,  }\item[{double}]{a3,  }\item[{int}]{c3,  }\item[{double}]{z1 }\end{DoxyParamCaption})}
+
+
+
+Данная функция инициализирует входящие данные 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em a1} & площадь первой комнаты \\
+\hline
+\mbox{\texttt{ in}}  & {\em c1} & стоимость квадратного метра первой комнаты \\
+\hline
+\mbox{\texttt{ in}}  & {\em a2} & площадь второй комнаты \\
+\hline
+\mbox{\texttt{ in}}  & {\em c2} & стоимость квадратонго метра второй комнаты \\
+\hline
+\mbox{\texttt{ in}}  & {\em a3} & площадь третьей комнаты \\
+\hline
+\mbox{\texttt{ in}}  & {\em c3} & стоимость квадратного метра третьей комнаты \\
+\hline
+\mbox{\texttt{ in}}  & {\em z1} & расходы \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source}{TPOAS3\+\_\+1.\+cpp}} строка \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source_l00089}{89}}
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classagen_a250579573f2c9f5297bef41ec1615ffe_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classagen_a250579573f2c9f5297bef41ec1615ffe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classagen_a99086155357bc1b2d859d841c09d2278}\label{classagen_a99086155357bc1b2d859d841c09d2278}} 
+\index{agen@{agen}!putname@{putname}}
+\index{putname@{putname}!agen@{agen}}
+\doxysubsubsection{\texorpdfstring{putname()}{putname()}}
+{\footnotesize\ttfamily void agen\+::putname (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+функция получает название агенства и копирует в новую переменную 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & название агенства \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source}{TPOAS3\+\_\+1.\+cpp}} строка \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source_l00136}{136}}
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classagen_a99086155357bc1b2d859d841c09d2278_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classagen_a36559664045dc1d651725fd30da510b6}\label{classagen_a36559664045dc1d651725fd30da510b6}} 
+\index{agen@{agen}!totcost@{totcost}}
+\index{totcost@{totcost}!agen@{agen}}
+\doxysubsubsection{\texorpdfstring{totcost()}{totcost()}}
+{\footnotesize\ttfamily double agen\+::totcost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Возвращает}
+общую стоимость агенства с учётом расходов
+\end{DoxyReturn}
+\[
+    Стоимость = Комната1 + Комната2 + Комната3 - Расходы
+\]\mbox{]} 
+
+См. определение в файле \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source}{TPOAS3\+\_\+1.\+cpp}} строка \mbox{\hyperlink{_t_p_o_a_s3__1_8cpp_source_l00151}{151}}
+
+Граф вызовов\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classagen_a36559664045dc1d651725fd30da510b6_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classagen_a36559664045dc1d651725fd30da510b6_icgraph}
+\end{center}
+\end{figure}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/pagan/source/repos/\+TPOAS3\+\_\+1/\+TPOAS3\+\_\+1/\mbox{\hyperlink{_t_p_o_a_s3__1_8cpp}{TPOAS3\+\_\+1.\+cpp}}\end{DoxyCompactItemize}
