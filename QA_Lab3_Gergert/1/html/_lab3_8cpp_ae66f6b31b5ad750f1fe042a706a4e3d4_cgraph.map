@@ -1,0 +1,12 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,56,184"/>
+<area shape="rect" id="node2" href="$classbludo.html#abf0e8cab740e70b6c54505a6b78f7b28" title="Эта функция выводит в консоль информацию о добавках которые содержаться в блюде, о самом блюде и саму..." alt="" coords="104,56,207,83"/>
+<area shape="rect" id="node7" href="$classspec.html#a6e6d305fd5d138c1fcdd7b5d19984dc4" title="Эта функция присваивает начальное значение для цены специи за грамм и вес специи в граммах." alt="" coords="118,107,193,133"/>
+<area shape="rect" id="node8" href="$classbludo.html#adaed8b49f7edc9e1fffebdffb50ffad9" title="Эта функция инициализирует входящие данные" alt="" coords="116,157,195,184"/>
+<area shape="rect" id="node9" href="$classspec.html#a1b961df80dd648682ce1ff1500bdd6eb" title="Эта фйнкция вводит цену одного грамма специи и вес специи." alt="" coords="277,233,359,260"/>
+<area shape="rect" id="node10" href="$classbludo.html#a24de658b342678394c17ceeba5e4047a" title="Эта функция записывает информацию о блюде" alt="" coords="112,259,199,285"/>
+<area shape="rect" id="node3" href="$classbludo.html#a62784710fa8d4f1aad357d63a6853c0a" title="Самая дешевая добавка" alt="" coords="263,5,373,32"/>
+<area shape="rect" id="node5" href="$classspec.html#a2d904e2bb6cc5322fbaa7b1801ff40a0" title="Эта функция выводит в консоль стоимость 1 грамма и количество грамм специи." alt="" coords="255,56,381,83"/>
+<area shape="rect" id="node6" href="$classbludo.html#a5d29247c0bc14083e94baba8dd506af6" title=" " alt="" coords="263,107,373,133"/>
+<area shape="rect" id="node4" href="$classspec.html#ae3d973312d4edf95105810e88796982c" title="Общая сумма денег за специи." alt="" coords="429,56,524,83"/>
+</map>

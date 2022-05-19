@@ -1,0 +1,7 @@
+<map id="bludo::display" name="bludo::display">
+<area shape="rect" id="node1" title="Эта функция выводит в консоль информацию о добавках которые содержаться в блюде, о самом блюде и саму..." alt="" coords="5,56,108,83"/>
+<area shape="rect" id="node2" href="$classbludo.html#a62784710fa8d4f1aad357d63a6853c0a" title="Самая дешевая добавка" alt="" coords="164,5,275,32"/>
+<area shape="rect" id="node4" href="$classspec.html#a2d904e2bb6cc5322fbaa7b1801ff40a0" title="Эта функция выводит в консоль стоимость 1 грамма и количество грамм специи." alt="" coords="156,56,283,83"/>
+<area shape="rect" id="node5" href="$classbludo.html#a5d29247c0bc14083e94baba8dd506af6" title=" " alt="" coords="164,107,275,133"/>
+<area shape="rect" id="node3" href="$classspec.html#ae3d973312d4edf95105810e88796982c" title="Общая сумма денег за специи." alt="" coords="331,56,425,83"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="bludo::read" name="bludo::read">
+<area shape="rect" id="node1" title="Эта функция записывает информацию о блюде" alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node2" href="$classspec.html#a1b961df80dd648682ce1ff1500bdd6eb" title="Эта фйнкция вводит цену одного грамма специи и вес специи." alt="" coords="140,5,223,32"/>
+</map>

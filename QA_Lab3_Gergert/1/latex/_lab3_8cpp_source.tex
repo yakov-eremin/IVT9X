@@ -1,0 +1,159 @@
+\hypertarget{_lab3_8cpp_source}{}\doxysection{Lab3.\+cpp}
+\label{_lab3_8cpp_source}\index{C:/Users/gerge/Desktop/IVT9X/QA\_Lab3\_Gergert/Lab3/Lab3.cpp@{C:/Users/gerge/Desktop/IVT9X/QA\_Lab3\_Gergert/Lab3/Lab3.cpp}}
+\mbox{\hyperlink{_lab3_8cpp}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00003}00003 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00009}\mbox{\hyperlink{classspec}{00009}} \textcolor{keyword}{class }\mbox{\hyperlink{classspec}{spec}}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00010}00010 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00011}00011 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00012}00012     \textcolor{keywordtype}{double} ves, stoimed;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00013}00013 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00014}00014     \textcolor{keywordtype}{void} \mbox{\hyperlink{classspec_a2d904e2bb6cc5322fbaa7b1801ff40a0}{displayspec}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00015}00015     \textcolor{keywordtype}{void} \mbox{\hyperlink{classspec_a6e6d305fd5d138c1fcdd7b5d19984dc4}{init}}(\textcolor{keywordtype}{double} c1, \textcolor{keywordtype}{double} k1);}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00016}00016     \textcolor{keywordtype}{void} \mbox{\hyperlink{classspec_a1b961df80dd648682ce1ff1500bdd6eb}{read}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00017}00017     \textcolor{keywordtype}{double} \mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00018}00018 \};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00028}\mbox{\hyperlink{classspec_a6e6d305fd5d138c1fcdd7b5d19984dc4}{00028}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classspec_a6e6d305fd5d138c1fcdd7b5d19984dc4}{spec::init}}(\textcolor{keywordtype}{double} c1, \textcolor{keywordtype}{double} k1)}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00029}00029 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00030}00030     stoimed = c1;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00031}00031     ves = k1;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00032}00032 \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00041}\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{00041}} \textcolor{keywordtype}{double} \mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{spec::summ}}()}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00042}00042 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00043}00043     \textcolor{keywordflow}{return} stoimed * ves;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00044}00044 \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00048}\mbox{\hyperlink{classspec_a2d904e2bb6cc5322fbaa7b1801ff40a0}{00048}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classspec_a2d904e2bb6cc5322fbaa7b1801ff40a0}{spec::displayspec}}()}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00049}00049 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00050}00050     cout << \textcolor{stringliteral}{"{}Стоимость 1 грамма: \(\backslash\)n"{}} << stoimed << endl;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00051}00051     cout << \textcolor{stringliteral}{"{}Количество грамм: \(\backslash\)n"{}} << ves << endl;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00052}00052 \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00056}\mbox{\hyperlink{classspec_a1b961df80dd648682ce1ff1500bdd6eb}{00056}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classspec_a1b961df80dd648682ce1ff1500bdd6eb}{spec::read}}()}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00057}00057 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00058}00058     cout << \textcolor{stringliteral}{"{}Введите цену одного грамма специи: "{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00059}00059     cin >> stoimed;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00060}00060     cout << \textcolor{stringliteral}{"{}Введите вес специи: "{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00061}00061     cin >> ves;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00062}00062 \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00070}\mbox{\hyperlink{classbludo}{00070}} \textcolor{keyword}{class }\mbox{\hyperlink{classbludo}{bludo}}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00071}00071 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00072}00072 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00073}00073     \textcolor{keywordtype}{char} name[50];}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00074}00074     \mbox{\hyperlink{classspec}{spec}} dob1, dob2, dob3;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00075}00075     \textcolor{keywordtype}{double} stoimvsex;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00076}00076     \textcolor{keywordtype}{int} vess;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00077}00077 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00078}00078     \mbox{\hyperlink{classspec}{spec}} \mbox{\hyperlink{classbludo_a62784710fa8d4f1aad357d63a6853c0a}{deshdob}}(); \textcolor{comment}{//самая дешевая добавка}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00079}00079     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbludo_abf0e8cab740e70b6c54505a6b78f7b28}{display}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00080}00080     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbludo_a24de658b342678394c17ceeba5e4047a}{read}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00081}00081     \textcolor{keywordtype}{double} \mbox{\hyperlink{classbludo_a5d29247c0bc14083e94baba8dd506af6}{realprofit}}(); \textcolor{comment}{//общая стоимость блюда}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00082}00082     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbludo_adaed8b49f7edc9e1fffebdffb50ffad9}{init}}(\mbox{\hyperlink{classspec}{spec}} dobb1, \mbox{\hyperlink{classspec}{spec}} dobb2, \mbox{\hyperlink{classspec}{spec}} dobb3, \textcolor{keywordtype}{double} stoimvsexx, \textcolor{keywordtype}{int} vessd, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* nn);}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00083}\mbox{\hyperlink{classbludo_a8b97346f9607871d32fa908b881a9dfe}{00083}}     \textcolor{keywordtype}{char}* \mbox{\hyperlink{classbludo_a8b97346f9607871d32fa908b881a9dfe}{getname}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00084}\mbox{\hyperlink{classbludo_a4b4e0474f4e0462bf9a146cc5296e0d7}{00084}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbludo_a4b4e0474f4e0462bf9a146cc5296e0d7}{putname}}(\textcolor{keywordtype}{char}* s);}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00085}00085 \};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00097}\mbox{\hyperlink{classbludo_a62784710fa8d4f1aad357d63a6853c0a}{00097}} \mbox{\hyperlink{classspec}{spec}} \mbox{\hyperlink{classbludo_a62784710fa8d4f1aad357d63a6853c0a}{bludo::deshdob}}()}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00098}00098 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00099}00099     \textcolor{keywordflow}{if} (dob1.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}() < dob2.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}())}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00100}00100     \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00101}00101         \textcolor{keywordflow}{if} (dob1.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}() < dob3.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}())}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00102}00102         \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00103}00103             \textcolor{keywordflow}{return} dob1;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00104}00104         \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00105}00105         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (dob3.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}() < dob2.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}())}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00106}00106         \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00107}00107             \textcolor{keywordflow}{return} dob3;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00108}00108         \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00109}00109     \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00110}00110     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (dob2.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}() < dob3.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}())}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00111}00111     \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00112}00112         \textcolor{keywordflow}{return} dob2;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00113}00113     \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00115}00115     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00116}00116     \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00117}00117         \textcolor{keywordflow}{return} dob3;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00118}00118     \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00119}00119 \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00123}\mbox{\hyperlink{classbludo_a24de658b342678394c17ceeba5e4047a}{00123}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classbludo_a24de658b342678394c17ceeba5e4047a}{bludo::read}}()}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00124}00124 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00125}00125     cout << \textcolor{stringliteral}{"{}Введите название блюда:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00126}00126     cin >> name;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00127}00127     cout << \textcolor{stringliteral}{"{}Специя 1:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00128}00128     dob1.\mbox{\hyperlink{classspec_a1b961df80dd648682ce1ff1500bdd6eb}{read}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00129}00129     cout << \textcolor{stringliteral}{"{}Специя 2:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00130}00130     dob2.\mbox{\hyperlink{classspec_a1b961df80dd648682ce1ff1500bdd6eb}{read}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00131}00131     cout << \textcolor{stringliteral}{"{}Специя 3:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00132}00132     dob3.\mbox{\hyperlink{classspec_a1b961df80dd648682ce1ff1500bdd6eb}{read}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00133}00133     cout << \textcolor{stringliteral}{"{}Введите вес блюда\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00134}00134     cin >> vess;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00135}00135     cout << \textcolor{stringliteral}{"{}Введите стоимость единицы основных компонент блюда\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00136}00136     cin >> stoimvsex;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00137}00137 \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00138}00138 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00149}\mbox{\hyperlink{classbludo_adaed8b49f7edc9e1fffebdffb50ffad9}{00149}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classbludo_adaed8b49f7edc9e1fffebdffb50ffad9}{bludo::init}}(\mbox{\hyperlink{classspec}{spec}} dobb1, \mbox{\hyperlink{classspec}{spec}} dobb2, \mbox{\hyperlink{classspec}{spec}} dobb3, \textcolor{keywordtype}{double} stoimvsexx, \textcolor{keywordtype}{int} vessd, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* nn)}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00150}00150 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00151}00151     dob1 = dobb1;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00153}00153     dob2 = dobb2;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00154}00154 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00155}00155     dob3 = dobb3;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00156}00156     stoimvsex = stoimvsexx;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00157}00157     vess = vessd;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00158}00158     strcpy\_s(name, nn);}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00159}00159 \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00169}\mbox{\hyperlink{classbludo_a5d29247c0bc14083e94baba8dd506af6}{00169}} \textcolor{keywordtype}{double} \mbox{\hyperlink{classbludo_a5d29247c0bc14083e94baba8dd506af6}{bludo::realprofit}}()}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00170}00170 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00171}00171     \textcolor{keywordflow}{return} dob1.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}() + dob2.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}() + dob3.\mbox{\hyperlink{classspec_ae3d973312d4edf95105810e88796982c}{summ}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00172}00172 \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00173}00173 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00175}00175 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00176}\mbox{\hyperlink{classbludo_abf0e8cab740e70b6c54505a6b78f7b28}{00176}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classbludo_abf0e8cab740e70b6c54505a6b78f7b28}{bludo::display}}()}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00177}00177 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00178}00178     cout << \textcolor{stringliteral}{"{}Первая специя:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00179}00179     dob1.\mbox{\hyperlink{classspec_a2d904e2bb6cc5322fbaa7b1801ff40a0}{displayspec}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00180}00180     cout << \textcolor{stringliteral}{"{}Вторая специя:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00181}00181     dob2.\mbox{\hyperlink{classspec_a2d904e2bb6cc5322fbaa7b1801ff40a0}{displayspec}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00182}00182     cout << \textcolor{stringliteral}{"{}Третья специя:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00183}00183     dob3.\mbox{\hyperlink{classspec_a2d904e2bb6cc5322fbaa7b1801ff40a0}{displayspec}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00184}00184     cout << \textcolor{stringliteral}{"{}Название блюда: "{}} << name << endl;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00185}00185     cout << \textcolor{stringliteral}{"{}Общая стоимость блюда: "{}} << \mbox{\hyperlink{classbludo_a5d29247c0bc14083e94baba8dd506af6}{realprofit}}() << endl;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00186}00186     cout << \textcolor{stringliteral}{"{}Самая дешевая добавка\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00187}00187     \mbox{\hyperlink{classbludo_a62784710fa8d4f1aad357d63a6853c0a}{deshdob}}().\mbox{\hyperlink{classspec_a2d904e2bb6cc5322fbaa7b1801ff40a0}{displayspec}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00188}00188 \}}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00190}00190 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00192}\mbox{\hyperlink{_lab3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00192}} \textcolor{keywordtype}{int} \mbox{\hyperlink{_lab3_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00193}00193 \{}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00194}00194     system(\textcolor{stringliteral}{"{}chcp 1251>>void"{}});}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00195}00195     setlocale(LC\_ALL, \textcolor{stringliteral}{"{}rus"{}});}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00196}00196     \mbox{\hyperlink{classspec}{spec}} dob1, dob2, dob3;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00197}00197     \mbox{\hyperlink{classbludo}{bludo}} bluddo;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00198}00198     \mbox{\hyperlink{classspec}{spec}} specc;}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00199}00199     \textcolor{keywordtype}{char} name[50];}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00200}00200 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00201}00201 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00202}00202     dob1.\mbox{\hyperlink{classspec_a6e6d305fd5d138c1fcdd7b5d19984dc4}{init}}(5, 300);}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00203}00203     dob2.\mbox{\hyperlink{classspec_a1b961df80dd648682ce1ff1500bdd6eb}{read}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00204}00204     dob3.\mbox{\hyperlink{classspec_a1b961df80dd648682ce1ff1500bdd6eb}{read}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00205}00205 }
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00206}00206     bluddo.\mbox{\hyperlink{classbludo_adaed8b49f7edc9e1fffebdffb50ffad9}{init}}(dob1, dob2, dob3, 20, 900, \textcolor{stringliteral}{"{}борщь"{}});}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00207}00207     bluddo.\mbox{\hyperlink{classbludo_abf0e8cab740e70b6c54505a6b78f7b28}{display}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00208}00208     bluddo.\mbox{\hyperlink{classbludo_a24de658b342678394c17ceeba5e4047a}{read}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00209}00209     bluddo.\mbox{\hyperlink{classbludo_abf0e8cab740e70b6c54505a6b78f7b28}{display}}();}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00210}00210     system(\textcolor{stringliteral}{"{}pause>>void"{}});}
+\DoxyCodeLine{\Hypertarget{_lab3_8cpp_source_l00211}00211 \}}
+
+\end{DoxyCode}

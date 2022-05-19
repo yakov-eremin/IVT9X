@@ -1,7 +1,11 @@
 ﻿#include <iostream>
 #include <math.h>
 using namespace std;
+/*!
+	\brief Основной класс.
 
+	В нем находится метод, который вычисляет цену всех специй.
+*/
 class spec
 {
 private:
@@ -13,22 +17,41 @@ public:
 	double summ();
 };
 
+/*!
+	\brief Эта функция присваивает начальное значение для цены специи за грамм и вес специи в граммах.
+
+	\param [in] c1 входящий параметр цена специи.
+	\param [in] k1 входящий параметр вес специи.
+*/
+
+
 void spec::init(double c1, double k1)
 {
 	stoimed = c1;
 	ves = k1;
 }
 
+/*!
+	\brief Общая сумма денег за специи.
+
+	Эта функция возвращает произведение цены специи на количество граммов специи.
+*/
+
+
 double spec::summ()
 {
 	return stoimed * ves;
 }
+
+///Эта функция выводит в консоль стоимость 1 грамма и количество грамм специи.
 
 void spec::displayspec()
 {
 	cout << "Стоимость 1 грамма: \n" << stoimed << endl;
 	cout << "Количество грамм: \n" << ves << endl;
 }
+
+///Эта фйнкция вводит цену одного грамма специи и вес специи.
 
 void spec::read()
 {
@@ -37,6 +60,12 @@ void spec::read()
 	cout << "Введите вес специи: ";
 	cin >> ves;
 }
+
+/*!
+	\brief Вспомогательный класс.
+
+	Имеет объекты основного класса для определения суммы денег за конкретное блюдо. Имеет методы, определяющие самую дешевую специю и стоимость блюда.
+*/
 
 class bludo
 {
@@ -54,6 +83,16 @@ public:
 	char* getname();
 	void putname(char* s);
 };
+
+/*!
+
+	\brief Самая дешевая добавка
+
+	@image{inline} html image.png "Вот как это работает"
+	\details Метод сравнивает стоимость добавок и возвращает добавку с минимальной стоимостью
+	\return объект с минимальной стоимостью
+*/
+
 
 spec bludo::deshdob()
 {
@@ -79,6 +118,8 @@ spec bludo::deshdob()
 	}
 }
 
+///Эта функция записывает информацию о блюде
+
 void bludo::read()
 {
 	cout << "Введите название блюда:\n";
@@ -95,6 +136,16 @@ void bludo::read()
 	cin >> stoimvsex;
 }
 
+/*!
+	\brief Эта функция инициализирует входящие данные
+	\param [in] dobb1 первая добавка
+	\param [in] dobb2 вторая добавка
+	\param [in] dobb2 третья добавка
+	\param [in] stoimvsex общая стоимость добавок
+	\param [in] vess вес блюда
+*/
+
+
 void bludo::init(spec dobb1, spec dobb2, spec dobb3, double stoimvsexx, int vessd, const char* nn)
 {
 	dob1 = dobb1;
@@ -106,10 +157,22 @@ void bludo::init(spec dobb1, spec dobb2, spec dobb3, double stoimvsexx, int vess
 	vess = vessd;
 	strcpy_s(name, nn);
 }
+
+/*!
+	\return общую стоимость добавок
+
+	\f[
+			Стоимость = Добавка1 + Добавка2 + Добавка3.
+	\f]]
+*/
+
 double bludo::realprofit()
 {
 	return dob1.summ() + dob2.summ() + dob3.summ();
 }
+
+/// Эта функция выводит в консоль информацию о добавках которые содержаться в блюде, о самом блюде и самую дешевую добавку.
+
 void bludo::display()
 {
 	cout << "Первая специя:\n";
@@ -124,15 +187,7 @@ void bludo::display()
 	deshdob().displayspec();
 }
 
-//char* bludo::getname()
-//{
-//	return n;
-//}
 
-//void bludo::putname(char* s)
-//{
-//	strcpy_s(n, s);
-//}
 
 int main()
 {
@@ -152,14 +207,5 @@ int main()
 	bluddo.display();
 	bluddo.read();
 	bluddo.display();
-	//cout << endl;
-	//cout << "Общая стоимость блюда: " << sp.realprofit() << endl;
-	//cout << endl;
-	//cout << "Самая дешевая добавка: " << endl;
-	//deshdob = sp.deshdob();
-	//deshdob.displayspec();
-	//cout << endl;
-	//sp.init(dob1, dob2, dob3, stoimvsex, vess, n);
-	//sp.display();
 	system("pause>>void");
 }
