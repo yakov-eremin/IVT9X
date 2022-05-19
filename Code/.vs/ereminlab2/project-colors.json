@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b06b84b9-bd7b-4609-96dc-23200dae90a9": {
+      "ProjectGuid": "b06b84b9-bd7b-4609-96dc-23200dae90a9",
+      "DisplayName": "TestProject1",
+      "ColorIndex": 0
+    },
+    "01430e30-eda6-4d65-86d6-210da4265f7b": {
+      "ProjectGuid": "01430e30-eda6-4d65-86d6-210da4265f7b",
+      "DisplayName": "ereminlab2",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
