@@ -1,0 +1,30 @@
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\bin\Debug\net6.0\ereminlab2.exe
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\bin\Debug\net6.0\ereminlab2.deps.json
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\bin\Debug\net6.0\ereminlab2.runtimeconfig.json
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\bin\Debug\net6.0\ereminlab2.dll
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\bin\Debug\net6.0\ereminlab2.pdb
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\ereminlab2.csproj.AssemblyReference.cache
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\ereminlab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\ereminlab2.AssemblyInfoInputs.cache
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\ereminlab2.AssemblyInfo.cs
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\ereminlab2.csproj.CoreCompileInputs.cache
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\ereminlab2.dll
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\refint\ereminlab2.dll
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\ereminlab2.pdb
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\ereminlab2.genruntimeconfig.cache
+C:\Users\gerge\Desktop\лабы 3 курс\Еремин\labs\ereminlab2\ereminlab2\obj\Debug\net6.0\ref\ereminlab2.dll
+E:\Eremin\Code\ereminlab2\bin\Debug\net6.0\ereminlab2.exe
+E:\Eremin\Code\ereminlab2\bin\Debug\net6.0\ereminlab2.deps.json
+E:\Eremin\Code\ereminlab2\bin\Debug\net6.0\ereminlab2.runtimeconfig.json
+E:\Eremin\Code\ereminlab2\bin\Debug\net6.0\ereminlab2.dll
+E:\Eremin\Code\ereminlab2\bin\Debug\net6.0\ref\ereminlab2.dll
+E:\Eremin\Code\ereminlab2\bin\Debug\net6.0\ereminlab2.pdb
+E:\Eremin\Code\ereminlab2\obj\Debug\net6.0\ereminlab2.csproj.AssemblyReference.cache
+E:\Eremin\Code\ereminlab2\obj\Debug\net6.0\ereminlab2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Eremin\Code\ereminlab2\obj\Debug\net6.0\ereminlab2.AssemblyInfoInputs.cache
+E:\Eremin\Code\ereminlab2\obj\Debug\net6.0\ereminlab2.AssemblyInfo.cs
+E:\Eremin\Code\ereminlab2\obj\Debug\net6.0\ereminlab2.csproj.CoreCompileInputs.cache
+E:\Eremin\Code\ereminlab2\obj\Debug\net6.0\ereminlab2.dll
+E:\Eremin\Code\ereminlab2\obj\Debug\net6.0\ref\ereminlab2.dll
+E:\Eremin\Code\ereminlab2\obj\Debug\net6.0\ereminlab2.pdb
+E:\Eremin\Code\ereminlab2\obj\Debug\net6.0\ereminlab2.genruntimeconfig.cache
