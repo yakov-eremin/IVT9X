@@ -48,6 +48,8 @@ float \mbox{\hyperlink{classtpolab3_1_1_spectacle__per__day_a0dd3475ddea9bc7a5f1
 \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 0
 \mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_a39968bcf4244e00bbd632a9b7484b1e7}\label{classtpolab3_1_1_spectacle__per__day_a39968bcf4244e00bbd632a9b7484b1e7}} 
 \index{tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}!getname@{getname}}
 \index{getname@{getname}!tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}}
@@ -88,6 +90,8 @@ float \mbox{\hyperlink{classtpolab3_1_1_spectacle__per__day_a0dd3475ddea9bc7a5f1
 \mbox{\texttt{ in}}  & {\em pzv} & Процент заполнения зала вечером \\
 \hline
 \end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 1
 \mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_acd756998d6fb04027aee45c8c6d7afb9}\label{classtpolab3_1_1_spectacle__per__day_acd756998d6fb04027aee45c8c6d7afb9}} 
 \index{tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}!minsale@{minsale}}
 \index{minsale@{minsale}!tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}}
@@ -97,6 +101,8 @@ float \mbox{\hyperlink{classtpolab3_1_1_spectacle__per__day_a0dd3475ddea9bc7a5f1
 Функция находит спектакль, который принёс наименьший доход \begin{DoxyReturn}{Returns}
 Спектакль с наименьшим доходом
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
 \mbox{\Hypertarget{classtpolab3_1_1_spectacle__per__day_ae37835ff5025784cd459dbd5af4bc9e8}\label{classtpolab3_1_1_spectacle__per__day_ae37835ff5025784cd459dbd5af4bc9e8}} 
 \index{tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}!putname@{putname}}
 \index{putname@{putname}!tpolab3.Spectacle\_per\_day@{tpolab3.Spectacle\_per\_day}}
