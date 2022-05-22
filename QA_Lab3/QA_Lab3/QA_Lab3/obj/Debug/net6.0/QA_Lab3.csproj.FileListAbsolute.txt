@@ -1,0 +1,15 @@
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\bin\Debug\net6.0\QA_Lab3.exe
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\bin\Debug\net6.0\QA_Lab3.deps.json
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\bin\Debug\net6.0\QA_Lab3.runtimeconfig.json
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\bin\Debug\net6.0\QA_Lab3.dll
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\bin\Debug\net6.0\ref\QA_Lab3.dll
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\bin\Debug\net6.0\QA_Lab3.pdb
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\obj\Debug\net6.0\QA_Lab3.csproj.AssemblyReference.cache
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\obj\Debug\net6.0\QA_Lab3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\obj\Debug\net6.0\QA_Lab3.AssemblyInfoInputs.cache
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\obj\Debug\net6.0\QA_Lab3.AssemblyInfo.cs
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\obj\Debug\net6.0\QA_Lab3.csproj.CoreCompileInputs.cache
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\obj\Debug\net6.0\QA_Lab3.dll
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\obj\Debug\net6.0\ref\QA_Lab3.dll
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\obj\Debug\net6.0\QA_Lab3.pdb
+D:\Desktop\QA_Lab3_Gertel\QA_Lab3\QA_Lab3\obj\Debug\net6.0\QA_Lab3.genruntimeconfig.cache
