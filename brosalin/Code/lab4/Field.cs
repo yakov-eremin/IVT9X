@@ -10,6 +10,7 @@ namespace lab4
     public class MyField
     {
         private char[,] mas = new char[10, 10];
+        private char[,] fire = new char[10, 10];
 
         public void init() //инициализация поля
         {
@@ -17,12 +18,18 @@ namespace lab4
                 for (int j = 0; j < 10; j++)
                 {
                     mas[i, j] = 'o';
+                    fire[i, j] = 'o';
                 }
         }
 
         public char get(int y, int x)
         {
             return mas[y, x];
+        }
+
+        public void set(int x, int y)
+        {
+            mas[y, x] = 'X';
         }
 
         public void Display() //вывод поля
@@ -746,6 +753,39 @@ namespace lab4
             }
             return true;
 
+        }
+
+        public bool Attack(MyField field, Warships wr, int x1, int y1)
+        {
+            char A;
+            x1 = x1 - 1;
+            y1 = y1 - 1;
+            A = field.get(y1, x1);
+            if (A == 'X')
+            {
+                Console.WriteLine("Вы уже атаковали данную точку");
+                Attack(field, wr, x1, y1);
+            }
+
+            if (A == '#')
+            {
+                Console.WriteLine("Вы уже атаковали данную точку");
+                Attack(field, wr, x1, y1);
+            }
+            if (A == '*')
+            {
+                fire[y1, x1] = 'X';
+                field.set(x1, y1);
+                Console.WriteLine("Попал");
+                return true;
+            }
+
+            else
+            {
+                Console.WriteLine("Промах");
+                fire[y1, x1] = '#';
+                return false;
+            }
         }
     }
     public class Warships

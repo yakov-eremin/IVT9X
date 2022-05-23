@@ -72,6 +72,19 @@ namespace Field.Tests
             actual = field1.Location_One(2, 2);
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Attack_Test()
+        {
+            MyField field1 = new MyField();
+            MyField field2 = new MyField();
+            Warships wr2 = new Warships();
+            field2.init();
+            field2.Install_One(wr2, 1, 1);
+            bool expected = true;
+            bool actual = field1.Attack(field2, wr2, 1, 1);
+            Assert.AreEqual(expected, actual);
+        }
     }
     [TestClass]
     public class WarshipsTests
