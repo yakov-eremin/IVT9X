@@ -11,6 +11,7 @@ namespace lab4
     {
         private char[,] mas = new char[10, 10];
         private char[,] fire = new char[10, 10];
+        public int fin = 0;
 
         public void init() //инициализация поля
         {
@@ -774,23 +775,65 @@ namespace lab4
 
         }
 
-        public bool Attack(MyField field, Warships wr, int x1, int y1)
+        public bool Attack(MyField field, Warships wr)
         {
             bool f;
+            int x1 = 0, y1 = 0;
+            String s;
             char A;
+            Console.WriteLine("Выберите позицию для Атаки");
+            Console.WriteLine("Введите цифру по горизонтали (сверху)");
+            while (x1 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out x1))
+                {
+                    if (x1 < 1 || x1 > 10)
+                    {
+                        x1 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            Console.WriteLine("Введите цифру по вертикали(слева)");
+            while (y1 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out y1))
+                {
+                    if (y1 < 1 || y1 > 10)
+                    {
+                        y1 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
             x1 = x1 - 1;
             y1 = y1 - 1;
             A = field.get(y1, x1);
             if (A == 'X')
             {
                 Console.WriteLine("Вы уже атаковали данную точку");
-                Attack(field, wr, x1, y1);
+                Attack(field, wr);
             }
 
             if (A == '#')
             {
                 Console.WriteLine("Вы уже атаковали данную точку");
-                Attack(field, wr, x1, y1);
+                Attack(field, wr);
             }
             if (A == '*')
             {
@@ -800,6 +843,7 @@ namespace lab4
                 if (f == true)
                 {
                     Console.WriteLine("Корабль уничтожен!");
+                    fin++;
                 }
                 else
                     Console.WriteLine("Попал!");
@@ -812,6 +856,16 @@ namespace lab4
                 fire[y1, x1] = '#';
                 return false;
             }
+        }
+
+        public int win(int a)
+        {
+            if (fin == 10)
+            {
+                a = 1;
+            }
+
+            return a;
         }
     }
     public class Warships

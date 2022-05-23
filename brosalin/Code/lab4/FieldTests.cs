@@ -73,8 +73,10 @@ namespace Field.Tests
             Assert.AreEqual(expected, actual);
         }
 
+     /*
         [TestMethod]
-        public void Attack_Test()
+     
+      public void Attack_Test()
         {
             MyField field1 = new MyField();
             MyField field2 = new MyField();
@@ -82,7 +84,18 @@ namespace Field.Tests
             field2.init();
             field2.Install_One(wr2, 1, 1);
             bool expected = true;
-            bool actual = field1.Attack(field2, wr2, 1, 1);
+            bool actual = field1.Attack(field2, wr2);
+            Assert.AreEqual(expected, actual);
+        }
+     */
+        [TestMethod]
+        public void win_Test()
+        {
+            int a = 0;
+            MyField field1 = new MyField();
+            field1.fin = 10;
+            int expected = 1;
+            int actual = field1.win(a);
             Assert.AreEqual(expected, actual);
         }
     }
