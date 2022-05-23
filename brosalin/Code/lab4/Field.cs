@@ -47,6 +47,46 @@ namespace lab4
 
     public class Warships
     {
+        private int one = 4;  // Катер
+        private int two = 3;  // Эсминец
+        private int three = 2;// Крейсер
+        private int four = 1; // Линкор
 
+        public int get_one()
+        {
+            return one;
+        }
+
+        public int get_two()
+        {
+            return two;
+        }
+
+        public int get_three()
+        {
+            return three;
+        }
+
+        public int get_four()
+        {
+            return four;
+        }
+
+        public void minus_one()
+        {
+            one = one - 1;
+        }
+        public void minus_two()
+        {
+            two = two - 1;
+        }
+        public void minus_three()
+        {
+            three = three - 1;
+        }
+        public void minus_four()
+        {
+            four = four - 1;
+        }
     }
 }

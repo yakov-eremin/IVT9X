@@ -14,6 +14,7 @@ namespace Field.Tests
             Assert.IsNotNull(field1);
         }
 
+        [TestMethod]
         public void init_Test()
         {
             MyField field1 = new MyField();
@@ -21,6 +22,7 @@ namespace Field.Tests
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++)
                     expected[i, j] = 'o';
+            field1.init();
             char[,] actual = new char[10, 10];
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++)
@@ -30,10 +32,13 @@ namespace Field.Tests
                     Assert.AreEqual(expected[i,j], actual[i,j]);
         }
 
+        [TestMethod]
         public void Display_Test()
         {
 
         }
+
+
     }
 
     [TestClass]
@@ -45,5 +50,18 @@ namespace Field.Tests
             Warships warship1 = new Warships();
             Assert.IsNotNull(warship1);
         }
+
+        [TestMethod]
+        public void minus_Test()
+        {
+            Warships wr1 = new Warships();
+            int expected;
+            expected = 4 - 1;
+            int actual;
+            wr1.minus_one();
+            actual = wr1.get_one();
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
