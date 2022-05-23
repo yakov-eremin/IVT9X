@@ -51,6 +51,25 @@ namespace lab4
             Console.WriteLine();
         }
 
+        public void Display_Attack() //вывод поля атаки
+        {
+            Console.WriteLine("      1   2   3   4   5   6   7   8   9   10");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.Write(i + 1);
+                if (i == 9)
+                    Console.Write("    ");
+                else
+                    Console.Write("     ");
+                for (int j = 0; j < 10; j++)
+                    Console.Write(fire[i, j] + "   ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
         public void Install_Warships(Warships ws) //установка кораблей
         {
             String s;
