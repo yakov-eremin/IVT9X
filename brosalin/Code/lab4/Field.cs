@@ -169,11 +169,9 @@ namespace lab4
         }
 
         public void Install_One(Warships ws, int x1, int y1) //Для установки кораблей, занимающих одну клетку
-        {
-            
-            mas[y1 - 1, x1 - 1] = '*';
-            ws.minus_one();
-
+        {  
+                mas[y1 - 1, x1 - 1] = '*';
+                ws.minus_one();
         }
 
         public void Install_Two(Warships ws) //Для установки кораблей, занимающих 2 клетки
@@ -261,19 +259,28 @@ namespace lab4
                 }
             }
 
-            if ((x1 - x2) == 0 && y1 > y2)
-                for (int i = y2; i < y1 + 1; i++)
-                    mas[i - 1, x1 - 1] = '*';
-            if ((x1 - x2) == 0 && y1 < y2)
-                for (int i = y1; i < y2 + 1; i++)
-                    mas[i - 1, x1 - 1] = '*';
-            if ((y1 - y2) == 0 && x1 > x2)
-                for (int i = x2; i < x1 + 1; i++)
-                    mas[y1 - 1, i - 1] = '*';
-            if ((y1 - y2) == 0 && x1 < x2)
-                for (int i = x1; i < x2 + 1; i++)
-                    mas[y1 - 1, i - 1] = '*';
-            ws.minus_two();
+            bool f;
+            f = IsRight_Two(x1, y1, x2, y2);
+            if (f == true)
+            {
+                if ((x1 - x2) == 0 && y1 > y2)
+                    for (int i = y2; i < y1 + 1; i++)
+                        mas[i - 1, x1 - 1] = '*';
+                if ((x1 - x2) == 0 && y1 < y2)
+                    for (int i = y1; i < y2 + 1; i++)
+                        mas[i - 1, x1 - 1] = '*';
+                if ((y1 - y2) == 0 && x1 > x2)
+                    for (int i = x2; i < x1 + 1; i++)
+                        mas[y1 - 1, i - 1] = '*';
+                if ((y1 - y2) == 0 && x1 < x2)
+                    for (int i = x1; i < x2 + 1; i++)
+                        mas[y1 - 1, i - 1] = '*';
+                ws.minus_two();
+            }
+            else
+            {
+                Install_Two(ws);
+            }
         }
 
         public void Install_Three(Warships ws) //Для установки кораблей, занимающих 3 клетки
@@ -360,20 +367,29 @@ namespace lab4
                     Console.WriteLine("Некорректный ввод");
                 }
             }
-
-            if ((x1 - x2) == 0 && y1 > y2)
-                for (int i = y2; i < y1 + 1; i++)
-                    mas[i - 1, x1 - 1] = '*';
-            if ((x1 - x2) == 0 && y1 < y2)
-                for (int i = y1; i < y2 + 1; i++)
-                    mas[i - 1, x1 - 1] = '*';
-            if ((y1 - y2) == 0 && x1 > x2)
-                for (int i = x2; i < x1 + 1; i++)
-                    mas[y1 - 1, i - 1] = '*';
-            if ((y1 - y2) == 0 && x1 < x2)
-                for (int i = x1; i < x2 + 1; i++)
-                    mas[y1 - 1, i - 1] = '*';
-            ws.minus_three();
+            bool f;
+            f = IsRight_Three(x1, y1, x2, y2);
+         
+            if (f == true)
+            {
+                if ((x1 - x2) == 0 && y1 > y2)
+                    for (int i = y2; i < y1 + 1; i++)
+                        mas[i - 1, x1 - 1] = '*';
+                if ((x1 - x2) == 0 && y1 < y2)
+                    for (int i = y1; i < y2 + 1; i++)
+                        mas[i - 1, x1 - 1] = '*';
+                if ((y1 - y2) == 0 && x1 > x2)
+                    for (int i = x2; i < x1 + 1; i++)
+                        mas[y1 - 1, i - 1] = '*';
+                if ((y1 - y2) == 0 && x1 < x2)
+                    for (int i = x1; i < x2 + 1; i++)
+                        mas[y1 - 1, i - 1] = '*';
+                ws.minus_three();
+            }
+            else
+            {
+                Install_Three(ws);
+            }
         }
 
         public void Install_Four(Warships ws) //Для установки кораблей, занимающих 4 клетки
@@ -460,21 +476,130 @@ namespace lab4
                     Console.WriteLine("Некорректный ввод");
                 }
             }
+            bool f;
+            f = IsRight_Four(x1, y1, x2, y2);
+            if (f == true)
+            {
+                if ((x1 - x2) == 0 && y1 > y2)
+                    for (int i = y2; i < y1 + 1; i++)
+                        mas[i - 1, x1 - 1] = '*';
+                if ((x1 - x2) == 0 && y1 < y2)
+                    for (int i = y1; i < y2 + 1; i++)
+                        mas[i - 1, x1 - 1] = '*';
+                if ((y1 - y2) == 0 && x1 > x2)
+                    for (int i = x2; i < x1 + 1; i++)
+                        mas[y1 - 1, i - 1] = '*';
+                if ((y1 - y2) == 0 && x1 < x2)
+                    for (int i = x1; i < x2 + 1; i++)
+                        mas[y1 - 1, i - 1] = '*';
+                ws.minus_four();
+            }
+            else
+            {
+                Install_Four(ws);
+            }
+        }
 
-            if ((x1 - x2) == 0 && y1 > y2)
-                for (int i = y2; i < y1 + 1; i++)
-                    mas[i - 1, x1 - 1] = '*';
-            if ((x1 - x2) == 0 && y1 < y2)
-                for (int i = y1; i < y2 + 1; i++)
-                    mas[i - 1, x1 - 1] = '*';
-            if ((y1 - y2) == 0 && x1 > x2)
-                for (int i = x2; i < x1 + 1; i++)
-                    mas[y1 - 1, i - 1] = '*';
-            if ((y1 - y2) == 0 && x1 < x2)
-                for (int i = x1; i < x2 + 1; i++)
-                    mas[y1 - 1, i - 1] = '*';
-            ws.minus_four();
 
+        public bool IsRight_Two(int x1, int y1, int x2, int y2)//проверка размерности корабля
+        {
+            if ((x1 - x2) == 1 || (x2 - x1) == 1)
+            {
+                if ((y1 - y2) == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Выбран неправильный размер корабля!");
+                    return false;
+                }
+            }
+
+            else if ((y1 - y2) == 1 || (y2 - y1) == 1)
+            {
+                if ((x1 - x2) == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Выбран неправильный размер корабля!");
+                    return false;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Выбран неправильный размер корабля!");
+                return false;
+            }
+        }
+        public bool IsRight_Three(int x1, int y1, int x2, int y2)//проверка размерности корабля
+        {
+            if ((x1 - x2) == 2 || (x2 - x1) == 2)
+            {
+                if ((y1 - y2) == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Выбран неправильный размер корабля!");
+                    return false;
+                }
+            }
+
+            else if ((y1 - y2) == 2 || (y2 - y1) == 2)
+            {
+                if ((x1 - x2) == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Выбран неправильный размер корабля!");
+                    return false;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Выбран неправильный размер корабля!");
+                return false;
+            }
+        }
+
+        public bool IsRight_Four(int x1, int y1, int x2, int y2)//проверка размерности корабля
+        {
+            if ((x1 - x2) == 3 || (x2 - x1) == 3)
+            {
+                if ((y1 - y2) == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Выбран неправильный размер корабля!");
+                    return false;
+                }
+            }
+
+            else if ((y1 - y2) == 3 || (y2 - y1) == 3)
+            {
+                if ((x1 - x2) == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Выбран неправильный размер корабля!");
+                    return false;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Выбран неправильный размер корабля!");
+                return false;
+            }
         }
     }
     public class Warships

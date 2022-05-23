@@ -50,6 +50,15 @@ namespace Field.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void IsRight_Test()
+        {
+            MyField field1 = new MyField();
+            bool expected = true;
+            bool actual;
+            actual = field1.IsRight_Two(1, 1, 1, 2);
+            Assert.AreEqual(expected, actual);
+        }
 
     }
 
