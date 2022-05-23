@@ -1211,4 +1211,100 @@ namespace lab4
             four = four - 1;
         }
     }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool f;
+            Console.WriteLine("Расстановка кораблей для игрока №1");
+            Console.WriteLine();
+            MyField field1 = new MyField();
+            field1.init();
+            field1.Display();
+            Warships wr1 = new Warships();
+            wr1.Init();
+            for (int i = 0; i < 1; i++)
+            {
+                field1.Install_Warships(wr1);
+                field1.Display();
+            }
+            Console.WriteLine("Корабли успешно расставлены!");
+            Console.WriteLine("Для передачи хода игроку №2 нажмите любую клавишу");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Расстановка кораблей для игрока №2");
+            MyField field2 = new MyField();
+            field2.init();
+            field2.Display();
+            Warships wr2 = new Warships();
+            wr2.Init();
+            for (int i = 0; i < 1; i++)
+            {
+                field2.Install_Warships(wr2);
+                field2.Display();
+            }
+            Console.WriteLine("Корабли успешно расставлены!");
+            Console.WriteLine("Для начала игры нажмите любую клавишу");
+            Console.ReadKey();
+            Console.Clear();
+            int a = 0;
+            while (a == 0)
+            {
+                Console.WriteLine("Ход игрока №1, для продолжения нажмите любую клавишу");
+                Console.ReadKey();
+                Console.WriteLine("Ваше поле");
+                field1.Display();
+                Console.WriteLine("Поле атаки");
+                field1.Display_Attack();
+                f = field1.Attack(field2, wr2);
+                a = field1.win(a);
+                if (a == 1)
+                    goto Win1;
+                while (f == true)
+                {
+                    Console.WriteLine("Поле атаки");
+                    field1.Display_Attack();
+                    f = field1.Attack(field2, wr2);
+                    a = field1.win(a);
+                    if (a == 1)
+                        goto Win1;
+                }
+                Console.WriteLine("Для передачи хода нажмите любую клавишу");
+                Console.ReadKey();
+                Console.Clear();
+                Console.WriteLine("Ход игрока №2, для продолжения нажмите любую клавишу");
+                Console.ReadKey();
+                Console.WriteLine("Ваше поле");
+                field2.Display();
+                Console.WriteLine("Поле атаки");
+                field2.Display_Attack();
+                f = field2.Attack(field1, wr1);
+                a = field2.win(a);
+                if (a == 1)
+                    goto Win2;
+                while (f == true)
+                {
+                    Console.WriteLine("Поле атаки");
+                    field2.Display_Attack();
+                    f = field2.Attack(field1, wr1);
+                    a = field2.win(a);
+                    if (a == 1)
+                        goto Win2;
+                }
+                Console.WriteLine("Для передачи хода нажмите любую клавишу");
+                Console.ReadKey();
+                Console.Clear();
+            }
+        Win1:
+            Console.WriteLine("Игра окончена, победил игрок №1!!!");
+            Console.ReadKey();
+            goto endgame;
+        Win2:
+            Console.WriteLine("Игра окончена, победил игрок №2!!!");
+            Console.ReadKey();
+        endgame:
+            Console.Write("");
+        }
+    }
 }
