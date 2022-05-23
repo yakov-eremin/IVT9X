@@ -95,5 +95,19 @@ namespace Field.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void Loc_Test()
+        {
+            Warships wr1 = new Warships();
+            wr1.Loc1(0, 0);
+            int[,] expected = new int[1, 2];
+            expected[0, 0] = 0;
+            expected[0, 1] = 0;
+            int[,] actual = new int[1, 2];
+            actual[0,0] = wr1.coord1[0, 0];
+            actual[0, 1] = wr1.coord1[0, 1];
+            Assert.AreEqual(expected[0, 0],actual[0,0]);
+            Assert.AreEqual(expected[0, 1], actual[0, 1]);
+        }
     }
 }

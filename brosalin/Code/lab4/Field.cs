@@ -176,7 +176,7 @@ namespace lab4
             {
                 mas[y1 - 1, x1 - 1] = '*';
                 ws.minus_one();
-
+                ws.Loc1(x1 - 1, y1 - 1);
             }
             else
             {
@@ -288,6 +288,7 @@ namespace lab4
                     for (int i = x1; i < x2 + 1; i++)
                         mas[y1 - 1, i - 1] = '*';
                 ws.minus_two();
+                ws.Loc2(x1 - 1, y1 - 1, x2 - 1, y2 - 1);
             }
             else
             {
@@ -399,6 +400,7 @@ namespace lab4
                     for (int i = x1; i < x2 + 1; i++)
                         mas[y1 - 1, i - 1] = '*';
                 ws.minus_three();
+                ws.Loc3(x1 - 1, y1 - 1, x2 - 1, y2 - 1);
             }
             else
             {
@@ -510,12 +512,14 @@ namespace lab4
                     for (int i = x1; i < x2 + 1; i++)
                         mas[y1 - 1, i - 1] = '*';
                 ws.minus_four();
+                ws.Loc4(x1 - 1, y1 - 1, x2 - 1, y2 - 1);
             }
             else
             {
                 if (f2 == false)
                     Console.WriteLine("Корабль расположен слишком близком к остальным!!!");
                 Install_Four(ws);
+
             }
         }
 
@@ -750,7 +754,77 @@ namespace lab4
         private int two = 3;  // Эсминец
         private int three = 2;// Крейсер
         private int four = 1; // Линкор
+        public int[,] coord1 = new int[4, 2];
+        private int[,] coord2 = new int[3, 4];
+        private int[,] coord3 = new int[2, 4];
+        private int[,] coord4 = new int[1, 4];
+        private int i1 = 0, j1 = 0;
+        private int i2 = 0, j2 = 0;
+        private int i3 = 0, j3 = 0;
+        private int i4 = 0, j4 = 0;
 
+        public void Init()
+        {
+            for (int i = 0; i < 4; i++)
+                for (int j = 0; j < 2; j++)
+                    coord1[i, j] = -1;
+            for (int i = 0; i < 3; i++)
+                for (int j = 0; j < 4; j++)
+                    coord2[i, j] = -1;
+            for (int i = 0; i < 2; i++)
+                for (int j = 0; j < 4; j++)
+                    coord3[i, j] = -1;
+            for (int i = 0; i < 1; i++)
+                for (int j = 0; j < 4; j++)
+                    coord4[i, j] = -1;
+        }
+        public void Loc1(int x, int y)
+        {
+            j1 = 0;
+            coord1[i1, j1] = x;
+            j1 = 1;
+            coord1[i1, j1] = y;
+            if (i1 < 3)
+                i1++;
+        }
+
+        public void Loc2(int x1, int y1, int x2, int y2)
+        {
+            j2 = 0;
+            coord2[i2, j2] = x1;
+            j2 = 1;
+            coord2[i2, j2] = y1;
+            j2 = 2;
+            coord2[i2, j2] = x2;
+            j2 = 3;
+            coord2[i2, j2] = y2;
+            if (i2 < 2)
+                i2++;
+        }
+        public void Loc3(int x1, int y1, int x2, int y2)
+        {
+            j3 = 0;
+            coord3[i3, j3] = x1;
+            j3 = 1;
+            coord3[i3, j3] = y1;
+            j3 = 2;
+            coord3[i3, j3] = x2;
+            j3 = 3;
+            coord3[i3, j3] = y2;
+            if (i3 < 1)
+                i3++;
+        }
+        public void Loc4(int x1, int y1, int x2, int y2)
+        {
+            j4 = 0;
+            coord4[i4, j4] = x1;
+            j4 = 1;
+            coord4[i4, j4] = y1;
+            j4 = 2;
+            coord4[i4, j4] = x2;
+            j4 = 3;
+            coord4[i4, j4] = y2;
+        }
         public int get_one()
         {
             return one;
