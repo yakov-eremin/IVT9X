@@ -776,6 +776,7 @@ namespace lab4
 
         public bool Attack(MyField field, Warships wr, int x1, int y1)
         {
+            bool f;
             char A;
             x1 = x1 - 1;
             y1 = y1 - 1;
@@ -795,7 +796,13 @@ namespace lab4
             {
                 fire[y1, x1] = 'X';
                 field.set(x1, y1);
-                Console.WriteLine("Попал");
+                f = wr.compare_Loc(x1, y1, field);
+                if (f == true)
+                {
+                    Console.WriteLine("Корабль уничтожен!");
+                }
+                else
+                    Console.WriteLine("Попал!");
                 return true;
             }
 
@@ -884,6 +891,235 @@ namespace lab4
             j4 = 3;
             coord4[i4, j4] = y2;
         }
+
+        public bool compare_Loc(int x, int y, MyField mf)
+        {
+            int check_x, check_y;
+            for (int i = 0; i < 4; i++)
+                if (x == coord1[i, 0] && y == coord1[i, 1])
+                    return true;
+            for (int i = 0; i < 3; i++)
+            {
+                check_x = coord2[i, 0] - coord2[i, 2];
+                check_y = coord2[i, 1] - coord2[i, 3];
+                if (check_x == 0)
+                {
+                    if (x == coord2[i, 0] & y == coord2[i, 1])
+                        if (mf.get(coord2[i, 3], coord2[i, 2]) == 'X')
+                            return true;
+                    if (x == coord2[i, 2] && y == coord2[i, 3])
+                        if (mf.get(coord2[i, 1], coord2[i, 0]) == 'X')
+                            return true;
+                }
+                if (check_y == 0)
+                {
+                    if (x == coord2[i, 0] && y == coord2[i, 1])
+                        if (mf.get(coord2[i, 1], coord2[i, 2]) == 'X')
+                            return true;
+                    if (x == coord2[i, 2] && y == coord2[i, 3])
+                        if (mf.get(coord2[i, 3], coord2[i, 0]) == 'X')
+                            return true;
+                }
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                check_x = coord3[i, 0] - coord3[i, 2];
+                check_y = coord3[i, 1] - coord3[i, 3];
+                if (check_x == 0)
+                {
+                    if (check_y < 0)
+                    {
+                        if (x == coord3[i, 0] && y == coord3[i, 1])
+                            if (mf.get(coord3[i, 1] + 1, coord3[i, 0]) == 'X')
+                                if (mf.get(coord3[i, 3], coord3[i, 0]) == 'X')
+                                    return true;
+
+                        if (x == coord3[i, 0] && y == coord3[i, 3])
+                            if (mf.get(coord3[i, 1] + 1, coord3[i, 0]) == 'X')
+                                if (mf.get(coord3[i, 1], coord3[i, 0]) == 'X')
+                                    return true;
+
+                        if (x == coord3[i, 0] && y == (coord3[i, 1] + 1))
+                            if (mf.get(coord3[i, 1], coord3[i, 0]) == 'X')
+                                if (mf.get(coord3[i, 3], coord3[i, 0]) == 'X')
+                                    return true;
+                    }
+                    if (check_y > 0)
+                    {
+                        if (x == coord3[i, 0] && y == coord3[i, 1])
+                            if (mf.get(coord3[i, 1] - 1, coord3[i, 0]) == 'X')
+                                if (mf.get(coord3[i, 3], coord3[i, 0]) == 'X')
+                                    return true;
+
+                        if (x == coord3[i, 0] && y == (coord3[i, 1] - 1))
+                            if (mf.get(coord3[i, 1], coord3[i, 0]) == 'X')
+                                if (mf.get(coord3[i, 3], coord3[i, 0]) == 'X')
+                                    return true;
+
+                        if (x == coord3[i, 0] && y == coord3[i, 3])
+                            if (mf.get(coord3[i, 1] - 1, coord3[i, 0]) == 'X')
+                                if (mf.get(coord3[i, 1], coord3[i, 0]) == 'X')
+                                    return true;
+                    }
+                }
+                if (check_y == 0)
+                {
+                    if (check_y < 0)
+                    {
+                        if (x == coord3[i, 0] && y == coord3[i, 1])
+                            if (mf.get(coord3[i, 1], coord3[i, 0] + 1) == 'X')
+                                if (mf.get(coord3[i, 1], coord3[i, 2]) == 'X')
+                                    return true;
+
+                        if (x == coord3[i, 0] + 1 && y == coord3[i, 1])
+                            if (mf.get(coord3[i, 1], coord3[i, 0]) == 'X')
+                                if (mf.get(coord3[i, 2], coord3[i, 1]) == 'X')
+                                    return true;
+
+                        if (x == coord3[i, 2] && y == (coord3[i, 1]))
+                            if (mf.get(coord3[i, 1], coord3[i, 0] + 1) == 'X')
+                                if (mf.get(coord3[i, 1], coord3[i, 0]) == 'X')
+                                    return true;
+                    }
+                    if (check_y > 0)
+                    {
+                        if (x == coord3[i, 0] && y == coord3[i, 1])
+                            if (mf.get(coord3[i, 0] - 1, coord3[i, 1]) == 'X')
+                                if (mf.get(coord3[i, 2], coord3[i, 1]) == 'X')
+                                    return true;
+
+                        if (x == coord3[i, 0] - 1 && y == (coord3[i, 1]))
+                            if (mf.get(coord3[i, 1], coord3[i, 0]) == 'X')
+                                if (mf.get(coord3[i, 1], coord3[i, 2]) == 'X')
+                                    return true;
+
+                        if (x == coord3[i, 2] && y == coord3[i, 1])
+                            if (mf.get(coord3[i, 1], coord3[i, 0] - 1) == 'X')
+                                if (mf.get(coord3[i, 1], coord3[i, 0]) == 'X')
+                                    return true;
+                    }
+                }
+            }
+
+            check_x = coord4[0, 0] - coord4[0, 2];
+            check_y = coord4[0, 1] - coord4[0, 3];
+            if (check_x == 0)
+            {
+                if (check_y < 0)
+                {
+                    if (x == coord4[0, 0] && y == coord4[0, 1])
+                        if (mf.get(coord4[0, 1] + 1, coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1] + 2, coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 3], coord4[0, 0]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 0] && y == coord4[0, 3])
+                        if (mf.get(coord4[0, 1] + 1, coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1] + 2, coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 0] && y == (coord4[0, 1] + 1))
+                        if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1] + 2, coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 3], coord4[0, 0]) == 'X')
+                                    return true;
+                    if (x == coord4[0, 0] && y == coord4[0, 1] + 2)
+                        if (mf.get(coord4[0, 1] + 1, coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 3], coord4[0, 0]) == 'X')
+                                    return true;
+                }
+
+                if (check_y > 0)
+                {
+                    if (x == coord4[0, 0] && y == coord4[0, 1])
+                        if (mf.get(coord4[0, 1] - 1, coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1] - 2, coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 3], coord4[0, 0]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 0] && y == (coord4[0, 1] - 1))
+                        if (mf.get(coord4[0, 1] - 2, coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 3], coord4[0, 0]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 0] && y == coord4[0, 3])
+                        if (mf.get(coord4[0, 1] - 1, coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1] - 2, coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 0] && y == coord4[0, 1] - 2)
+                        if (mf.get(coord4[0, 1] - 1, coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 3], coord4[0, 0]) == 'X')
+                                    return true;
+                }
+            }
+
+            if (check_y == 0)
+            {
+                if (check_y < 0)
+                {
+                    if (x == coord4[0, 0] && y == coord4[0, 1])
+                        if (mf.get(coord4[0, 1], coord4[0, 0] + 1) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0] + 2) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 2]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 0] + 1 && y == coord4[0, 1])
+                        if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0] + 2) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 2]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 2] && y == (coord4[0, 1]))
+                        if (mf.get(coord4[0, 1], coord4[0, 0] + 1) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0] + 2) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 0] + 2 && y == (coord4[0, 1]))
+                        if (mf.get(coord4[0, 1], coord4[0, 0] + 1) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 2]) == 'X')
+                                    return true;
+                }
+
+                if (check_y > 0)
+                {
+                    if (x == coord4[0, 0] && y == coord4[0, 1])
+                        if (mf.get(coord4[0, 1], coord4[0, 0] - 1) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0] - 2) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 2]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 0] - 1 && y == coord4[0, 1])
+                        if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0] - 2) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 2]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 2] && y == (coord4[0, 1]))
+                        if (mf.get(coord4[0, 1], coord4[0, 0] - 1) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0] - 2) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                                    return true;
+
+                    if (x == coord4[0, 0] - 2 && y == (coord4[0, 1]))
+                        if (mf.get(coord4[0, 1], coord4[0, 0] - 1) == 'X')
+                            if (mf.get(coord4[0, 1], coord4[0, 0]) == 'X')
+                                if (mf.get(coord4[0, 1], coord4[0, 2]) == 'X')
+                                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public int get_one()
         {
             return one;

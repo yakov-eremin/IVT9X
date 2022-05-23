@@ -122,5 +122,17 @@ namespace Field.Tests
             Assert.AreEqual(expected[0, 0],actual[0,0]);
             Assert.AreEqual(expected[0, 1], actual[0, 1]);
         }
+
+        [TestMethod]
+        public void Compare_Loc_Test()
+        {
+            MyField field1 = new MyField();
+            Warships wr1 = new Warships();
+            wr1.Loc1(0, 0);
+            bool expected = true;
+            bool actual;
+            actual = wr1.compare_Loc(0, 0, field1);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
