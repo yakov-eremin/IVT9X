@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lab4
 {
-    
+
     public class MyField
     {
         private char[,] mas = new char[10, 10];
@@ -43,8 +43,440 @@ namespace lab4
             Console.WriteLine();
             Console.WriteLine();
         }
-    }
 
+        public void Install_Warships(Warships ws) //установка кораблей
+        {
+            String s;
+            int a = 0;
+            int count;
+            Console.WriteLine("Выберите тип кораблей для установки");
+            count = ws.get_one();
+            Console.WriteLine("1) Катер (занимает 1 клетку, доступно: " + count + ")");
+            count = ws.get_two();
+            Console.WriteLine("2) Эсминец (занимает 2 клетки, доступно: " + count + ")");
+            count = ws.get_three();
+            Console.WriteLine("3) Крейсер (занимает 3 клетки, доступно: " + count + ")");
+            count = ws.get_four();
+            Console.WriteLine("4) Линкор (занимает 4 клетки, доступно: " + count + ")");
+
+            while (a == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out a))
+                {
+                    if (a < 0 || a > 4)
+                    {
+                        a = 0;
+                        Console.WriteLine("Введите число от 1 до 4");
+                    }
+
+                    if (a == 1)
+                    {
+                        count = ws.get_one();
+                        if (count == 0)
+                        {
+                            a = 0;
+                            Console.WriteLine("Установленно максимальное количество кораблей такого типа");
+                        }
+                    }
+                    if (a == 2)
+                    {
+                        count = ws.get_two();
+                        if (count == 0)
+                        {
+                            a = 0;
+                            Console.WriteLine("Установленно максимальное количество кораблей такого типа");
+                        }
+                    }
+                    if (a == 3)
+                    {
+                        count = ws.get_three();
+                        if (count == 0)
+                        {
+                            a = 0;
+                            Console.WriteLine("Установленно максимальное количество кораблей такого типа");
+                        }
+                    }
+                    if (a == 4)
+                    {
+                        count = ws.get_four();
+                        if (count == 0)
+                        {
+                            a = 0;
+                            Console.WriteLine("Установленно максимальное количество кораблей такого типа");
+                        }
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            if (a == 1)
+            {
+                int x1 = 0, y1 = 0;
+                Console.WriteLine("Выберите позицию для установки");
+                Console.WriteLine("Введите цифру по горизонтали (сверху)");
+                while (x1 == 0)
+                {
+                    s = Console.ReadLine();
+
+                    if (int.TryParse(s, out x1))
+                    {
+                        if (x1 < 1 || x1 > 10)
+                        {
+                            x1 = 0;
+                            Console.WriteLine("Введите число от 1 до 10");
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Некорректный ввод");
+                    }
+                }
+
+                Console.WriteLine("Введите цифру по вертикали(слева)");
+                while (y1 == 0)
+                {
+                    s = Console.ReadLine();
+
+                    if (int.TryParse(s, out y1))
+                    {
+                        if (y1 < 1 || y1 > 10)
+                        {
+                            y1 = 0;
+                            Console.WriteLine("Введите число от 1 до 10");
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Некорректный ввод");
+                    }
+                }
+                Install_One(ws,x1,y1);
+            }
+            if (a == 2)
+                Install_Two(ws);
+            if (a == 3)
+                Install_Three(ws);
+            if (a == 4)
+                Install_Four(ws);
+        }
+
+        public void Install_One(Warships ws, int x1, int y1) //Для установки кораблей, занимающих одну клетку
+        {
+            
+            mas[y1 - 1, x1 - 1] = '*';
+            ws.minus_one();
+
+        }
+
+        public void Install_Two(Warships ws) //Для установки кораблей, занимающих 2 клетки
+        {
+            String s;
+            int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
+            Console.WriteLine("Выберите начальную позицию для установки");
+            Console.WriteLine("Введите цифру по горизонтали (сверху)");
+            while (x1 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out x1))
+                {
+                    if (x1 < 1 || x1 > 10)
+                    {
+                        x1 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            Console.WriteLine("Введите цифру по вертикали(слева)");
+            while (y1 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out y1))
+                {
+                    if (y1 < 1 || y1 > 10)
+                    {
+                        y1 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+            Console.WriteLine("Выберите конечную позицию для установки");
+            Console.WriteLine("Введите цифру по горизонтали (сверху)");
+            while (x2 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out x2))
+                {
+                    if (x2 < 1 || x2 > 10)
+                    {
+                        x2 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            Console.WriteLine("Введите цифру по вертикали(слева)");
+            while (y2 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out y2))
+                {
+                    if (y2 < 1 || y2 > 10)
+                    {
+                        y2 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            if ((x1 - x2) == 0 && y1 > y2)
+                for (int i = y2; i < y1 + 1; i++)
+                    mas[i - 1, x1 - 1] = '*';
+            if ((x1 - x2) == 0 && y1 < y2)
+                for (int i = y1; i < y2 + 1; i++)
+                    mas[i - 1, x1 - 1] = '*';
+            if ((y1 - y2) == 0 && x1 > x2)
+                for (int i = x2; i < x1 + 1; i++)
+                    mas[y1 - 1, i - 1] = '*';
+            if ((y1 - y2) == 0 && x1 < x2)
+                for (int i = x1; i < x2 + 1; i++)
+                    mas[y1 - 1, i - 1] = '*';
+            ws.minus_two();
+        }
+
+        public void Install_Three(Warships ws) //Для установки кораблей, занимающих 3 клетки
+        {
+            String s;
+            int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
+            Console.WriteLine("Выберите начальную позицию для установки");
+            Console.WriteLine("Введите цифру по горизонтали (сверху)");
+            while (x1 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out x1))
+                {
+                    if (x1 < 1 || x1 > 10)
+                    {
+                        x1 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            Console.WriteLine("Введите цифру по вертикали(слева)");
+            while (y1 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out y1))
+                {
+                    if (y1 < 1 || y1 > 10)
+                    {
+                        y1 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+            Console.WriteLine("Выберите конечную позицию для установки");
+            Console.WriteLine("Введите цифру по горизонтали (сверху)");
+            while (x2 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out x2))
+                {
+                    if (x2 < 1 || x2 > 10)
+                    {
+                        x2 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            Console.WriteLine("Введите цифру по вертикали(слева)");
+            while (y2 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out y2))
+                {
+                    if (y2 < 1 || y2 > 10)
+                    {
+                        y2 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            if ((x1 - x2) == 0 && y1 > y2)
+                for (int i = y2; i < y1 + 1; i++)
+                    mas[i - 1, x1 - 1] = '*';
+            if ((x1 - x2) == 0 && y1 < y2)
+                for (int i = y1; i < y2 + 1; i++)
+                    mas[i - 1, x1 - 1] = '*';
+            if ((y1 - y2) == 0 && x1 > x2)
+                for (int i = x2; i < x1 + 1; i++)
+                    mas[y1 - 1, i - 1] = '*';
+            if ((y1 - y2) == 0 && x1 < x2)
+                for (int i = x1; i < x2 + 1; i++)
+                    mas[y1 - 1, i - 1] = '*';
+            ws.minus_three();
+        }
+
+        public void Install_Four(Warships ws) //Для установки кораблей, занимающих 4 клетки
+        {
+            String s;
+            int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
+            Console.WriteLine("Выберите начальную позицию для установки");
+            Console.WriteLine("Введите цифру по горизонтали (сверху)");
+            while (x1 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out x1))
+                {
+                    if (x1 < 1 || x1 > 10)
+                    {
+                        x1 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            Console.WriteLine("Введите цифру по вертикали(слева)");
+            while (y1 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out y1))
+                {
+                    if (y1 < 1 || y1 > 10)
+                    {
+                        y1 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+            Console.WriteLine("Выберите конечную позицию для установки");
+            Console.WriteLine("Введите цифру по горизонтали (сверху)");
+            while (x2 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out x2))
+                {
+                    if (x2 < 1 || x2 > 10)
+                    {
+                        x2 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            Console.WriteLine("Введите цифру по вертикали(слева)");
+            while (y2 == 0)
+            {
+                s = Console.ReadLine();
+
+                if (int.TryParse(s, out y2))
+                {
+                    if (y2 < 1 || y2 > 10)
+                    {
+                        y2 = 0;
+                        Console.WriteLine("Введите число от 1 до 10");
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Некорректный ввод");
+                }
+            }
+
+            if ((x1 - x2) == 0 && y1 > y2)
+                for (int i = y2; i < y1 + 1; i++)
+                    mas[i - 1, x1 - 1] = '*';
+            if ((x1 - x2) == 0 && y1 < y2)
+                for (int i = y1; i < y2 + 1; i++)
+                    mas[i - 1, x1 - 1] = '*';
+            if ((y1 - y2) == 0 && x1 > x2)
+                for (int i = x2; i < x1 + 1; i++)
+                    mas[y1 - 1, i - 1] = '*';
+            if ((y1 - y2) == 0 && x1 < x2)
+                for (int i = x1; i < x2 + 1; i++)
+                    mas[y1 - 1, i - 1] = '*';
+            ws.minus_four();
+
+        }
+    }
     public class Warships
     {
         private int one = 4;  // Катер

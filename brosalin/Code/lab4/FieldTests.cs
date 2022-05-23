@@ -38,6 +38,18 @@ namespace Field.Tests
 
         }
 
+        [TestMethod]
+        public void Install_Test()
+        {
+            Warships wr1 = new Warships();
+            MyField field1 = new MyField();
+            field1.Install_One(wr1,1,1);
+            char expected = '*';
+            char actual;
+            actual = field1.get(0, 0);
+            Assert.AreEqual(expected, actual);
+        }
+
 
     }
 
