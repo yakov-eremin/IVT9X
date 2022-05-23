@@ -169,9 +169,20 @@ namespace lab4
         }
 
         public void Install_One(Warships ws, int x1, int y1) //Для установки кораблей, занимающих одну клетку
-        {  
+        {
+            bool f;
+            f = Location_One(x1, y1);
+            if (f == true)
+            {
                 mas[y1 - 1, x1 - 1] = '*';
                 ws.minus_one();
+
+            }
+            else
+            {
+                Console.WriteLine("Корабль расположен слишком близком к остальным!!!");
+                Install_One(ws,x1,y1);
+            }
         }
 
         public void Install_Two(Warships ws) //Для установки кораблей, занимающих 2 клетки
@@ -259,9 +270,10 @@ namespace lab4
                 }
             }
 
-            bool f;
+            bool f, f2;
             f = IsRight_Two(x1, y1, x2, y2);
-            if (f == true)
+            f2 = Location_many(x1, y1, x2, y2);
+            if (f == true && f2 == true)
             {
                 if ((x1 - x2) == 0 && y1 > y2)
                     for (int i = y2; i < y1 + 1; i++)
@@ -279,6 +291,8 @@ namespace lab4
             }
             else
             {
+                if (f2 == false)
+                    Console.WriteLine("Корабль расположен слишком близком к остальным!!!");
                 Install_Two(ws);
             }
         }
@@ -367,10 +381,10 @@ namespace lab4
                     Console.WriteLine("Некорректный ввод");
                 }
             }
-            bool f;
+            bool f, f2;
             f = IsRight_Three(x1, y1, x2, y2);
-         
-            if (f == true)
+            f2 = Location_many(x1, y1, x2, y2);
+            if (f == true && f2 == true)
             {
                 if ((x1 - x2) == 0 && y1 > y2)
                     for (int i = y2; i < y1 + 1; i++)
@@ -388,6 +402,8 @@ namespace lab4
             }
             else
             {
+                if (f2 == false)
+                    Console.WriteLine("Корабль расположен слишком близком к остальным!!!");
                 Install_Three(ws);
             }
         }
@@ -476,9 +492,10 @@ namespace lab4
                     Console.WriteLine("Некорректный ввод");
                 }
             }
-            bool f;
+            bool f, f2;
             f = IsRight_Four(x1, y1, x2, y2);
-            if (f == true)
+            f2 = Location_many(x1, y1, x2, y2);
+            if (f == true && f2 == true)
             {
                 if ((x1 - x2) == 0 && y1 > y2)
                     for (int i = y2; i < y1 + 1; i++)
@@ -496,6 +513,8 @@ namespace lab4
             }
             else
             {
+                if (f2 == false)
+                    Console.WriteLine("Корабль расположен слишком близком к остальным!!!");
                 Install_Four(ws);
             }
         }
@@ -600,6 +619,129 @@ namespace lab4
                 Console.WriteLine("Выбран неправильный размер корабля!");
                 return false;
             }
+        }
+
+        public bool Location_One(int x1, int y1)//Проверка правильности размещения (между кораблями должно быть свободное пространство - 1 клетка)
+        {
+
+            x1 = x1 - 1;
+            y1 = y1 - 1;
+
+            if (y1 - 1 >= 0 && x1 - 1 >= 0)
+                if (mas[y1 - 1, x1 - 1] == '*')
+                    return false;
+            if (x1 - 1 >= 0)
+                if (mas[y1, x1 - 1] == '*')
+                    return false;
+            if (y1 + 1 <= 9 && x1 - 1 >= 0)
+                if (mas[y1 + 1, x1 - 1] == '*')
+                    return false;
+
+            if (y1 - 1 >= 0 && x1 + 1 <= 9)
+                if (mas[y1 - 1, x1 + 1] == '*')
+                    return false;
+            if (x1 + 1 <= 9)
+                if (mas[y1, x1 + 1] == '*')
+                    return false;
+            if (y1 + 1 <= 9 && x1 + 1 <= 9)
+                if (mas[y1 + 1, x1 + 1] == '*')
+                    return false;
+            if (y1 - 1 >= 0)
+                if (mas[y1 - 1, x1] == '*')
+                    return false;
+            if (y1 + 1 <= 9)
+                if (mas[y1 + 1, x1] == '*')
+                    return false;
+            return true;
+
+        }
+
+        public bool Location_many(int x1, int y1, int x2, int y2) //Проверка правильности размещения (между кораблями должно быть свободное пространство - 1 клетка)
+        {
+            int checkx;
+            int checky;
+
+            checkx = x1 - x2;
+            checky = y1 - y2;
+
+            x1 = x1 - 1;
+            x2 = x2 - 1;
+            y1 = y1 - 1;
+            y2 = y2 - 1;
+
+
+            if (y1 - 1 >= 0 && x1 - 1 >= 0)
+                if (mas[y1 - 1, x1 - 1] == '*')
+                    return false;
+            if (x1 - 1 >= 0)
+                if (mas[y1, x1 - 1] == '*')
+                    return false;
+            if (y1 + 1 <= 9 && x1 - 1 >= 0)
+                if (mas[y1 + 1, x1 - 1] == '*')
+                    return false;
+
+            if (y2 - 1 >= 0 && x2 - 1 >= 0)
+                if (mas[y2 - 1, x2 - 1] == '*')
+                    return false;
+            if (x2 - 1 >= 0)
+                if (mas[y2, x2 - 1] == '*')
+                    return false;
+            if (y2 + 1 <= 9 && x2 - 1 >= 0)
+                if (mas[y2 + 1, x2 - 1] == '*')
+                    return false;
+
+            if (y1 - 1 >= 0 && x1 + 1 <= 9)
+                if (mas[y1 - 1, x1 + 1] == '*')
+                    return false;
+            if (x1 + 1 <= 9)
+                if (mas[y1, x1 + 1] == '*')
+                    return false;
+            if (y1 + 1 <= 9 && x1 + 1 <= 9)
+                if (mas[y1 + 1, x1 + 1] == '*')
+                    return false;
+
+            if (y2 - 1 >= 0 && x2 + 1 <= 9)
+                if (mas[y2 - 1, x2 + 1] == '*')
+                    return false;
+            if (x2 + 1 <= 9)
+                if (mas[y2, x2 + 1] == '*')
+                    return false;
+            if (y2 + 1 <= 9 && x2 + 1 <= 9)
+                if (mas[y2 + 1, x2 + 1] == '*')
+                    return false;
+            if (checkx == 0)
+            {
+                if (y1 - 1 >= 0)
+                    if (mas[y1 - 1, x1] == '*')
+                        return false;
+                if (y1 + 1 <= 9)
+                    if (mas[y1 + 1, x1] == '*')
+                        return false;
+                if (y2 - 1 >= 0)
+                    if (mas[y2 - 1, x2] == '*')
+                        return false;
+                if (y2 + 1 <= 9)
+                    if (mas[y2 + 1, x2] == '*')
+                        return false;
+            }
+
+            if (checky == 0)
+            {
+                if (x1 - 1 >= 0)
+                    if (mas[y1, x1 - 1] == '*')
+                        return false;
+                if (x1 + 1 <= 9)
+                    if (mas[y1, x1 + 1] == '*')
+                        return false;
+                if (x2 - 1 >= 0)
+                    if (mas[y2, x2 - 1] == '*')
+                        return false;
+                if (x2 + 1 <= 9)
+                    if (mas[y2, x2 + 1] == '*')
+                        return false;
+            }
+            return true;
+
         }
     }
     public class Warships

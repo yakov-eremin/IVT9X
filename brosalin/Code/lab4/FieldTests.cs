@@ -18,7 +18,7 @@ namespace Field.Tests
         public void init_Test()
         {
             MyField field1 = new MyField();
-            char [,] expected = new char[10,10];
+            char[,] expected = new char[10, 10];
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++)
                     expected[i, j] = 'o';
@@ -29,7 +29,7 @@ namespace Field.Tests
                     actual[i, j] = field1.get(i, j);
             for (int i = 0; i < 10; i++)
                 for (int j = 0; j < 10; j++)
-                    Assert.AreEqual(expected[i,j], actual[i,j]);
+                    Assert.AreEqual(expected[i, j], actual[i, j]);
         }
 
         [TestMethod]
@@ -43,7 +43,7 @@ namespace Field.Tests
         {
             Warships wr1 = new Warships();
             MyField field1 = new MyField();
-            field1.Install_One(wr1,1,1);
+            field1.Install_One(wr1, 1, 1);
             char expected = '*';
             char actual;
             actual = field1.get(0, 0);
@@ -60,8 +60,19 @@ namespace Field.Tests
             Assert.AreEqual(expected, actual);
         }
 
+        [TestMethod]
+        public void Location_Test()
+        {
+            MyField field1 = new MyField();
+            Warships wr1 = new Warships();
+            bool expected = false;
+            bool actual;
+            field1.init();
+            field1.Install_One(wr1, 1, 1);
+            actual = field1.Location_One(2, 2);
+            Assert.AreEqual(expected, actual);
+        }
     }
-
     [TestClass]
     public class WarshipsTests
     {
