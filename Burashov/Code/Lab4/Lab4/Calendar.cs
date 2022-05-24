@@ -21,5 +21,15 @@ namespace Lab4
             }
             reader.Close();
         }
+
+        public static void Save(string path)
+        {
+            StreamWriter writer = new StreamWriter(path);
+            for (int i = 0; i < list.Count; i++)
+            {
+                writer.WriteLine(String.Join(";", list[i].name, list[i].date));
+            }
+            writer.Close();
+        }
     }
 }

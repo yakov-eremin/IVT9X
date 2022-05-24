@@ -46,5 +46,11 @@ namespace Lab4Tests
         {
             Calendar.Load("calendar.data");
         }
+
+        [TestMethod]
+        public void CalendarSaveTest()
+        {
+            Calendar.Save("calendar.data");
+        }
     }
 }
