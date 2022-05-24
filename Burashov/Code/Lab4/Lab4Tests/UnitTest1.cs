@@ -40,5 +40,11 @@ namespace Lab4Tests
             Person p = new Person("Test", new DateTime(1990, 1, 1));
             Assert.AreEqual("Test (01.01.1990)", p.ToString());
         }
+
+        [TestMethod]
+        public void CalendarLoadTest()
+        {
+            Calendar.Load("calendar.data");
+        }
     }
 }
