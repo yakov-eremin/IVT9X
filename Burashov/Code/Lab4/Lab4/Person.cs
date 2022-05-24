@@ -12,5 +12,10 @@ namespace Lab4
             this.name = name;
             this.date = date;
         }
+
+        public int GetAge(DateTime dt)
+        {
+            return dt.Year - date.Year;
+        }
     }
 }
