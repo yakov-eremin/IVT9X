@@ -74,5 +74,12 @@ namespace Lab4Tests
             Calendar.Add(new Person("Test", new DateTime(1999, 1, 1)));
             Calendar.Remove(0);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        public void CalendarRemoveTest2()
+        {
+            Calendar.Remove(-1);
+        }
     }
 }
