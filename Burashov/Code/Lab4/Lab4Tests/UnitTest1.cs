@@ -52,5 +52,12 @@ namespace Lab4Tests
         {
             Calendar.Save("calendar.data");
         }
+
+        [TestMethod]
+        public void CalendarAddTest()
+        {
+            Person p = new Person("Ivan Ivanov", new DateTime(1998, 4, 7));
+            Calendar.Add(p);
+        }
     }
 }

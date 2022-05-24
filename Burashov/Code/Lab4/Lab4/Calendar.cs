@@ -31,5 +31,10 @@ namespace Lab4
             }
             writer.Close();
         }
+
+        public static void Add(Person person)
+        {
+            list.Add(person);
+        }
     }
 }
