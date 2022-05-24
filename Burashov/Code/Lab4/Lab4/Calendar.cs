@@ -47,5 +47,10 @@ namespace Lab4
         {
             return list;
         }
+
+        public static List<Person> Check(DateTime date)
+        {
+            return list.FindAll(d => (d.date.Month == date.Month && d.date.Day == date.Day));
+        }
     }
 }

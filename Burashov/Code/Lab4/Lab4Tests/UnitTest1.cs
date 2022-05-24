@@ -89,5 +89,22 @@ namespace Lab4Tests
             List<Person> list = Calendar.GetCalendar();
             Assert.IsNotNull(list);
         }
+
+        [TestMethod]
+        public void CalendarCheckMethodTest()
+        {
+            Person p1 = new Person("Test 1", new DateTime(2000, 1, 1));
+            Person p2 = new Person("Test 2", new DateTime(2000, 2, 3));
+            Person p3 = new Person("Test 3", new DateTime(2000, 1, 1));
+
+            Calendar.Add(p1);
+            Calendar.Add(p2);
+            Calendar.Add(p3);
+
+            List<Person> expected = Calendar.Check(new DateTime(2000, 1, 1));
+            List<Person> result = new List<Person>() { p1, p3 };
+
+            CollectionAssert.AreEqual(expected, result);
+        }
     }
 }
