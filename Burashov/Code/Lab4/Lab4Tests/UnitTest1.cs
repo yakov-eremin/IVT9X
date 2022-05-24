@@ -67,5 +67,12 @@ namespace Lab4Tests
             Person p = null;
             Calendar.Add(p);
         }
+
+        [TestMethod]
+        public void CalendarRemoveTest()
+        {
+            Calendar.Add(new Person("Test", new DateTime(1999, 1, 1)));
+            Calendar.Remove(0);
+        }
     }
 }

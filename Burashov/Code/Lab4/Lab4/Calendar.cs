@@ -37,5 +37,10 @@ namespace Lab4
             if (person == null) throw new ArgumentNullException("Person is null");
             list.Add(person);
         }
+
+        public static void Remove(int index)
+        {
+            list.RemoveAt(index);
+        }
     }
 }
