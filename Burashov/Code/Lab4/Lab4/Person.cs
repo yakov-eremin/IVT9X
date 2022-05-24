@@ -15,7 +15,9 @@ namespace Lab4
 
         public int GetAge(DateTime dt)
         {
-            return dt.Year - date.Year;
+            if (dt.Year <= date.Year)
+                return 0;
+            return (date.DayOfYear > dt.DayOfYear) ? (dt.Year - date.Year - 1) : (dt.Year - date.Year);
         }
     }
 }

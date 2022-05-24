@@ -19,5 +19,19 @@ namespace Lab4Tests
             Person p = new Person("Ivan Ivanov", new DateTime(2000, 1, 1));
             Assert.AreEqual(20, p.GetAge(new DateTime(2020, 2, 2)));
         }
+
+        [TestMethod]
+        public void PersonGetAgeTest2()
+        {
+            Person p = new Person("Petr Petrov", new DateTime(1990, 4, 4));
+            Assert.AreEqual(29, p.GetAge(new DateTime(2020, 1, 2)));
+        }
+
+        [TestMethod]
+        public void PersonGetAgeTest3()
+        {
+            Person p = new Person("Fedor Fedorov", new DateTime(1995, 7, 7));
+            Assert.AreEqual(0, p.GetAge(new DateTime(1990, 1, 1)));
+        }
     }
 }
