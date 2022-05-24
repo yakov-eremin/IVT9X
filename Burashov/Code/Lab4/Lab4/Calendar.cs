@@ -34,6 +34,7 @@ namespace Lab4
 
         public static void Add(Person person)
         {
+            if (person == null) throw new ArgumentNullException("Person is null");
             list.Add(person);
         }
     }

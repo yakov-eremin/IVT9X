@@ -59,5 +59,13 @@ namespace Lab4Tests
             Person p = new Person("Ivan Ivanov", new DateTime(1998, 4, 7));
             Calendar.Add(p);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void CalendarAddTest2()
+        {
+            Person p = null;
+            Calendar.Add(p);
+        }
     }
 }
