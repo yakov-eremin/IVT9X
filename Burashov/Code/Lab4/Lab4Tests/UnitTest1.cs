@@ -1,5 +1,6 @@
 ﻿using Lab4;
 using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Lab4Tests
@@ -80,6 +81,13 @@ namespace Lab4Tests
         public void CalendarRemoveTest2()
         {
             Calendar.Remove(-1);
+        }
+
+        [TestMethod]
+        public void CalendarGetMethodTest()
+        {
+            List<Person> list = Calendar.GetCalendar();
+            Assert.IsNotNull(list);
         }
     }
 }

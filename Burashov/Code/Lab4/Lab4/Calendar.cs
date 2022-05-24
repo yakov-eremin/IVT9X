@@ -42,5 +42,10 @@ namespace Lab4
         {
             list.RemoveAt(index);
         }
+
+        public static List<Person> GetCalendar()
+        {
+            return list;
+        }
     }
 }
