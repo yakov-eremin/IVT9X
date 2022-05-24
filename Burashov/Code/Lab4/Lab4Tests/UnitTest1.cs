@@ -33,5 +33,12 @@ namespace Lab4Tests
             Person p = new Person("Fedor Fedorov", new DateTime(1995, 7, 7));
             Assert.AreEqual(0, p.GetAge(new DateTime(1990, 1, 1)));
         }
+
+        [TestMethod]
+        public void PersonToStringTest()
+        {
+            Person p = new Person("Test", new DateTime(1990, 1, 1));
+            Assert.AreEqual("Test (01.01.1990)", p.ToString());
+        }
     }
 }

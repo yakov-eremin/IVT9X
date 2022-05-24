@@ -19,5 +19,10 @@ namespace Lab4
                 return 0;
             return (date.DayOfYear > dt.DayOfYear) ? (dt.Year - date.Year - 1) : (dt.Year - date.Year);
         }
+
+        public override string ToString()
+        {
+            return this.name + " (" + this.date.ToShortDateString() + ")";
+        }
     }
 }
