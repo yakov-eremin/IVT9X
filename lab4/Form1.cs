@@ -33,6 +33,35 @@ namespace QA_lab4
             double _value = 0;
             _value = Convert.ToDouble(textBox1.Text);
             num.SetCurrent(_value);
+            if ((listBox1.SelectedIndex == 0) && (listBox2.SelectedIndex == 2))
+            {
+                label2.Text = "Новое значение - " + (num.From0To2()).ToString();
+            }
+            if ((listBox1.SelectedIndex == 1) && (listBox2.SelectedIndex == 2))
+            {
+                label2.Text = "Новое значение - " + (num.From1To2()).ToString();
+            }
+            if ((listBox1.SelectedIndex == 0) && (listBox2.SelectedIndex == 1))
+            {
+                label2.Text = "Новое значение - " + (num.From0To1()).ToString();
+            }
+            if ((listBox1.SelectedIndex == 1) && (listBox2.SelectedIndex == 0))
+            {
+                label2.Text = "Новое значение - " + (num.From1To0()).ToString();
+            }
+            if ((listBox1.SelectedIndex == 2) && (listBox2.SelectedIndex == 0))
+            {
+                label2.Text = "Новое значение - " + (num.From2To0()).ToString();
+            }
+            if ((listBox1.SelectedIndex == 2) && (listBox2.SelectedIndex == 1))
+            {
+                label2.Text = "Новое значение - " + (num.From2To1()).ToString();
+            }
+
+            if (((listBox1.SelectedIndex == 0) && (listBox2.SelectedIndex == 0)) || ((listBox1.SelectedIndex == 1) && (listBox2.SelectedIndex == 1)) || ((listBox1.SelectedIndex == 2) && (listBox2.SelectedIndex == 2)))
+            {
+                label2.Text = "Новое значение - " + (num.GetCurrent()).ToString();
+            }
         }
     }
 
