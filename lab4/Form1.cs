@@ -30,7 +30,9 @@ namespace QA_lab4
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            double _value = 0;
+            _value = Convert.ToDouble(textBox1.Text);
+            num.SetCurrent(_value);
         }
     }
 
