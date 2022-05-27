@@ -27,6 +27,11 @@ namespace QA_lab4
                 listBox2.Items.Add(list[i]);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class Number
