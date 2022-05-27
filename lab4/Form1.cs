@@ -20,7 +20,12 @@ namespace QA_lab4
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            List<string> list = new List<string>() { "Старорусская (аршин)", "Американская (ярд)", "СИ (метр)" };
+            for (int i = 0; i < list.Count; i++)
+            {
+                listBox1.Items.Add(list[i]);
+                listBox2.Items.Add(list[i]);
+            }
         }
     }
 
