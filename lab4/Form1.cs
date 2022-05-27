@@ -12,6 +12,7 @@ namespace QA_lab4
 {
     public partial class Form1 : Form
     {
+        Number num = new Number();
         public Form1()
         {
             InitializeComponent();
@@ -25,6 +26,6 @@ namespace QA_lab4
 
     public class Number
     {
-
+        private double _current;
     }
  }
