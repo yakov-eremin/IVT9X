@@ -23,5 +23,15 @@ namespace QA_Lab4_Tests
             double actual = number.GetCurrent();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void From0To2Test()
+        {
+            Number number = new Number();
+            double expected = 0.7112;
+            number.SetCurrent(1);
+            double actual = number.From0To2();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
