@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace QA_Lab4_Form
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            List<string> list = new List<string>() { "Старорусская (аршин)", "Американская (ярд)", "СИ (метр)" };
+            for (int i = 0; i < list.Count; i++)
+            {
+                listBox1.Items.Add(list[i]);
+                listBox2.Items.Add(list[i]);
+            }
         }
     }
 
