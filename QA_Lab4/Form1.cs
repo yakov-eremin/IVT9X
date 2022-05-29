@@ -47,5 +47,29 @@ namespace QA_Lab4_Form
             return 0.7112 * GetCurrent();
         }
 
+        public double From1To2()
+        {
+            return 0.9114 * GetCurrent();
+        }
+
+        public double From1To0()
+        {
+            return 1.2857 * GetCurrent();
+        }
+
+        public double From0To1()
+        {
+            return 0.7778 * GetCurrent();
+        }
+
+        public double From2To0()
+        {
+            return 1.4061 * GetCurrent();
+        }
+
+        public double From2To1()
+        {
+            return 1.0936 * GetCurrent();
+        }
     }
 }
