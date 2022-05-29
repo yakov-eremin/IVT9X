@@ -20,6 +20,17 @@ namespace QA_Lab4_Form
 
     public class Number
     {
-        
+        private double _current;
+
+        public double GetCurrent()
+        {
+            return _current;
+        }
+
+        public void SetCurrent(double _value)
+        {
+            _current = _value;
+        }
+
     }
 }
