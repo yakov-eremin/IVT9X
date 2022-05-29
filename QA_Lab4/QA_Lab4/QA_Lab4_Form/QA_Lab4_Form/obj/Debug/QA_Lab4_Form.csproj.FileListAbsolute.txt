@@ -1,0 +1,11 @@
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\bin\Debug\QA_Lab4_Form.exe.config
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\bin\Debug\QA_Lab4_Form.exe
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\bin\Debug\QA_Lab4_Form.pdb
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\obj\Debug\QA_Lab4_Form.csproj.AssemblyReference.cache
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\obj\Debug\QA_Lab4_Form.csproj.SuggestedBindingRedirects.cache
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\obj\Debug\QA_Lab4_Form.MainForm.resources
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\obj\Debug\QA_Lab4_Form.Properties.Resources.resources
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\obj\Debug\QA_Lab4_Form.csproj.GenerateResource.cache
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\obj\Debug\QA_Lab4_Form.csproj.CoreCompileInputs.cache
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\obj\Debug\QA_Lab4_Form.exe
+D:\Desktop\QA_Lab4\QA_Lab4_Form\QA_Lab4_Form\obj\Debug\QA_Lab4_Form.pdb

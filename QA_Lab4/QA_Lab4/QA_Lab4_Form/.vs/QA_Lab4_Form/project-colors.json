@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a3893625-cb10-4d81-b191-24f73bde140f": {
+      "ProjectGuid": "a3893625-cb10-4d81-b191-24f73bde140f",
+      "DisplayName": "QA_Lab4_Form",
+      "ColorIndex": 0
+    },
+    "cd484b39-ab85-475f-a47a-516d8774c4f1": {
+      "ProjectGuid": "cd484b39-ab85-475f-a47a-516d8774c4f1",
+      "DisplayName": "QA_Lab4_Tests",
+      "ColorIndex": 1
+    },
+    "8c43bc47-3fd9-495e-940c-26d20f9b4bd3": {
+      "ProjectGuid": "8c43bc47-3fd9-495e-940c-26d20f9b4bd3",
+      "DisplayName": "ClassLibrary1",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
