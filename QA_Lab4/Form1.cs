@@ -12,6 +12,7 @@ namespace QA_Lab4_Form
 {
     public partial class MainForm : Form
     {
+        Number num = new Number();
         public MainForm()
         {
             InitializeComponent();
@@ -24,6 +25,43 @@ namespace QA_Lab4_Form
             {
                 listBox1.Items.Add(list[i]);
                 listBox2.Items.Add(list[i]);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int FirstIndex, SecondIndex;
+            FirstIndex = listBox1.SelectedIndex;
+            SecondIndex = listBox2.SelectedIndex;
+            double _value;
+            _value = Convert.ToDouble(textBox1.Text);
+            num.SetCurrent(_value);
+            switch (FirstIndex)
+            {
+                case 0:
+                    if (SecondIndex == 0)
+                        label2.Text = "Новое значение - " + num.GetCurrent().ToString();
+                    else if (SecondIndex == 1)
+                        label2.Text = "Новое значение - " + num.From0To1().ToString();
+                    else if (SecondIndex == 2)
+                        label2.Text = "Новое значение - " + num.From0To2().ToString();
+                    break;
+                case 1:
+                    if (SecondIndex == 0)
+                        label2.Text = "Новое значение - " + num.From1To0().ToString();
+                    else if (SecondIndex == 1)
+                        label2.Text = "Новое значение - " + num.GetCurrent().ToString();
+                    else if (SecondIndex == 2)
+                        label2.Text = "Новое значение - " + num.From1To2().ToString();
+                    break;
+                case 2:
+                    if (SecondIndex == 0)
+                        label2.Text = "Новое значение - " + num.From2To0().ToString();
+                    else if (SecondIndex == 1)
+                        label2.Text = "Новое значение - " + num.From2To1().ToString();
+                    else if (SecondIndex == 2)
+                        label2.Text = "Новое значение - " + num.GetCurrent().ToString();
+                    break;
             }
         }
     }
