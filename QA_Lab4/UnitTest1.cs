@@ -18,7 +18,7 @@ namespace QA_Lab4_Tests
         {
             Number number = new Number();
             double expected = 1;
-            double actual = number._current;
+            double actual = number.GetCurrent();
             Assert.AreEqual(expected, actual);
         }
     }
