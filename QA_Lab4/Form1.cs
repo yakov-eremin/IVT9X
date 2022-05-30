@@ -39,5 +39,10 @@ namespace QA_Lab4_Form
         {
             return 1.2857 * GetCurrent();
         }
+
+        public double FromOldRussianToAmerican()
+        {
+            return 0.7778 * GetCurrent();
+        }
     }
 }
