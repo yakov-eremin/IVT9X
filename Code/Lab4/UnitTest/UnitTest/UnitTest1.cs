@@ -17,7 +17,11 @@ namespace UnitTest
             string line;
             CheckString checkstring = new CheckString();
             string check = checkstring.vopros1("a");
-
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[1], check);
+            }
         }
         [Test]
         public void TestStringVopros2()
@@ -35,7 +39,11 @@ namespace UnitTest
             string line;
             CheckString checkstring = new CheckString();
             string check = checkstring.vopros3("b");
-
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[3], check);
+            }
         }
         [Test]
         public void TestStringVopros4()
@@ -53,6 +61,11 @@ namespace UnitTest
             string line;
             CheckString checkstring = new CheckString();
             string check = checkstring.vopros5("a");
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[5], check);
+            }
         }
         [Test]
         public void TestStringVopros6()
@@ -69,7 +82,11 @@ namespace UnitTest
             string line;
             CheckString checkstring = new CheckString();
             string check = checkstring.vopros7("d");
-
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[7], check);
+            }
         }
         [Test]
         public void TestStringVopros8()
@@ -87,7 +104,11 @@ namespace UnitTest
             string line;
             CheckString checkstring = new CheckString();
             string check = checkstring.vopros9("a");
-
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[9], check);
+            }
         }
         [Test]
         public void TestStringVopros10()
