@@ -24,5 +24,10 @@ namespace QA_Lab4_Form
         {
             _current = _value;
         }
+
+        public double FromOldRussianToSI()
+        {
+            return 0.7112 * GetCurrent();
+        }
     }
 }
