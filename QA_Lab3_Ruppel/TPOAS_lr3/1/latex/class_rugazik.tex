@@ -1,0 +1,201 @@
+\hypertarget{class_rugazik}{}\doxysection{Rugazik Class Reference}
+\label{class_rugazik}\index{Rugazik@{Rugazik}}
+
+
+Вспомогательный класс  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_iskop}{Iskop}} \mbox{\hyperlink{class_rugazik_a82b02c263c81f8a0699901260183f3b9}{maxprofit}} ()
+\begin{DoxyCompactList}\small\item\em Самое ценное полезное ископаемое \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rugazik_a6513340bdf5d902ceb534ac505e6a12f}{proc}} ()
+\begin{DoxyCompactList}\small\item\em Эта функция выводит в консоль затраты каждого ископаемого (уголь, газ, торф) \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_rugazik_acdc81a4264b900b3ae0b2405cfe1d6f1}{realprofit}} ()
+\item 
+void \mbox{\hyperlink{class_rugazik_a6f899c5d8d4b17704be95138f0d95078}{init}} (double v1, double c1, double v2, double c2, double v3, double c3, double z1, double z2, double z3)
+\begin{DoxyCompactList}\small\item\em Эта функция инициализирует входящие данные \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_rugazik_aed018d82fcdf4649420126c1df1f83a7}{getname}} ()
+\item 
+void \mbox{\hyperlink{class_rugazik_a4b3e2a4e35dd0a4fbe7cc2a84ff9f17e}{pugolname}} (char $\ast$s)
+\begin{DoxyCompactList}\small\item\em Эта функция получает название рудника и копирует в новую переменную \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_rugazik_a389688e33a6077204fde4f2ad5651e99}{average}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Вспомогательный класс 
+
+Имеет объекты основного класса для определения суммы денег за конкретное ископаемое. Имеет методы, определяющие самое ценное полезное ископаемого, доходность рудника и затраты ископаемых. 
+
+Definition at line \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source}{TPOAS\+\_\+lr3.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rugazik_a389688e33a6077204fde4f2ad5651e99}\label{class_rugazik_a389688e33a6077204fde4f2ad5651e99}} 
+\index{Rugazik@{Rugazik}!average@{average}}
+\index{average@{average}!Rugazik@{Rugazik}}
+\doxysubsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily double Rugazik\+::average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+средняя сумма денег 3 ископаемых
+\end{DoxyReturn}
+\[
+    Средняя.сумма = \frac{{Сумма.угля + Сумма.газа + Сумма.торфа} - {Затраты.угля + Затраты.газа + Затраты.торфа}{3}
+\] 
+
+Definition at line \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source_l00181}{181}} of file \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source}{TPOAS\+\_\+lr3.\+cpp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{class_rugazik_a389688e33a6077204fde4f2ad5651e99_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_rugazik_aed018d82fcdf4649420126c1df1f83a7}\label{class_rugazik_aed018d82fcdf4649420126c1df1f83a7}} 
+\index{Rugazik@{Rugazik}!getname@{getname}}
+\index{getname@{getname}!Rugazik@{Rugazik}}
+\doxysubsubsection{\texorpdfstring{getname()}{getname()}}
+{\footnotesize\ttfamily char $\ast$ Rugazik\+::getname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Название рудника n 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source_l00157}{157}} of file \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source}{TPOAS\+\_\+lr3.\+cpp}}.
+
+\mbox{\Hypertarget{class_rugazik_a6f899c5d8d4b17704be95138f0d95078}\label{class_rugazik_a6f899c5d8d4b17704be95138f0d95078}} 
+\index{Rugazik@{Rugazik}!init@{init}}
+\index{init@{init}!Rugazik@{Rugazik}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Rugazik\+::init (\begin{DoxyParamCaption}\item[{double}]{v1,  }\item[{double}]{c1,  }\item[{double}]{v2,  }\item[{double}]{c2,  }\item[{double}]{v3,  }\item[{double}]{c3,  }\item[{double}]{z1,  }\item[{double}]{z2,  }\item[{double}]{z3 }\end{DoxyParamCaption})}
+
+
+
+Эта функция инициализирует входящие данные 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em v1} & вес угля \\
+\hline
+\mbox{\texttt{ in}}  & {\em c1} & цена грамма угля \\
+\hline
+\mbox{\texttt{ in}}  & {\em v2} & вес газа \\
+\hline
+\mbox{\texttt{ in}}  & {\em c2} & цена грамма газа \\
+\hline
+\mbox{\texttt{ in}}  & {\em v3} & вес торфа \\
+\hline
+\mbox{\texttt{ in}}  & {\em c3} & цена грамма торфа \\
+\hline
+\mbox{\texttt{ in}}  & {\em z1} & затраты угля \\
+\hline
+\mbox{\texttt{ in}}  & {\em z2} & затраты газа \\
+\hline
+\mbox{\texttt{ in}}  & {\em z3} & затраты торфа \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source_l00123}{123}} of file \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source}{TPOAS\+\_\+lr3.\+cpp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_rugazik_a6f899c5d8d4b17704be95138f0d95078_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_rugazik_a82b02c263c81f8a0699901260183f3b9}\label{class_rugazik_a82b02c263c81f8a0699901260183f3b9}} 
+\index{Rugazik@{Rugazik}!maxprofit@{maxprofit}}
+\index{maxprofit@{maxprofit}!Rugazik@{Rugazik}}
+\doxysubsubsection{\texorpdfstring{maxprofit()}{maxprofit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_iskop}{Iskop}} Rugazik\+::maxprofit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Самое ценное полезное ископаемое 
+
+
+
+Метод сравнивает самое ценное ископаемое из 3-\/х ископаемых (уголь, газ, торф) \begin{DoxyReturn}{Returns}
+объект с самым ценным полезным ископаемым 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source_l00086}{86}} of file \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source}{TPOAS\+\_\+lr3.\+cpp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_rugazik_a82b02c263c81f8a0699901260183f3b9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_rugazik_a6513340bdf5d902ceb534ac505e6a12f}\label{class_rugazik_a6513340bdf5d902ceb534ac505e6a12f}} 
+\index{Rugazik@{Rugazik}!proc@{proc}}
+\index{proc@{proc}!Rugazik@{Rugazik}}
+\doxysubsubsection{\texorpdfstring{proc()}{proc()}}
+{\footnotesize\ttfamily void Rugazik\+::proc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Эта функция выводит в консоль затраты каждого ископаемого (уголь, газ, торф) 
+
+
+
+Definition at line \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source_l00146}{146}} of file \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source}{TPOAS\+\_\+lr3.\+cpp}}.
+
+\mbox{\Hypertarget{class_rugazik_a4b3e2a4e35dd0a4fbe7cc2a84ff9f17e}\label{class_rugazik_a4b3e2a4e35dd0a4fbe7cc2a84ff9f17e}} 
+\index{Rugazik@{Rugazik}!pugolname@{pugolname}}
+\index{pugolname@{pugolname}!Rugazik@{Rugazik}}
+\doxysubsubsection{\texorpdfstring{pugolname()}{pugolname()}}
+{\footnotesize\ttfamily void Rugazik\+::pugolname (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+
+Эта функция получает название рудника и копирует в новую переменную 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em s} & название рудника \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source_l00168}{168}} of file \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source}{TPOAS\+\_\+lr3.\+cpp}}.
+
+\mbox{\Hypertarget{class_rugazik_acdc81a4264b900b3ae0b2405cfe1d6f1}\label{class_rugazik_acdc81a4264b900b3ae0b2405cfe1d6f1}} 
+\index{Rugazik@{Rugazik}!realprofit@{realprofit}}
+\index{realprofit@{realprofit}!Rugazik@{Rugazik}}
+\doxysubsubsection{\texorpdfstring{realprofit()}{realprofit()}}
+{\footnotesize\ttfamily double Rugazik\+::realprofit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+доходность рудника (уголь, газ, торф) 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source_l00139}{139}} of file \mbox{\hyperlink{_t_p_o_a_s__lr3_8cpp_source}{TPOAS\+\_\+lr3.\+cpp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{class_rugazik_acdc81a4264b900b3ae0b2405cfe1d6f1_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+TPOAS\+\_\+lr3/\+TPOAS\+\_\+lr3/TPOAS\+\_\+lr3.\+cpp\end{DoxyCompactItemize}

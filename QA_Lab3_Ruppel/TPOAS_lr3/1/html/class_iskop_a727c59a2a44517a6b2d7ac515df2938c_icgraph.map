@@ -1,0 +1,4 @@
+<map id="Iskop::init" name="Iskop::init">
+<area shape="rect" id="node1" title="Эта функция присваивает начальное значение для веса ископаемого и цены грамма ископаемого" alt="" coords="148,5,227,32"/>
+<area shape="rect" id="node2" href="$class_rugazik.html#a6f899c5d8d4b17704be95138f0d95078" title="Эта функция инициализирует входящие данные" alt="" coords="5,5,100,32"/>
+</map>
