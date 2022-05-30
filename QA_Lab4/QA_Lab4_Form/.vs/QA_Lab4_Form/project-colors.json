@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3f9e42fc-8e55-42ee-a86b-efbe58a4b0c9": {
+      "ProjectGuid": "3f9e42fc-8e55-42ee-a86b-efbe58a4b0c9",
+      "DisplayName": "QA_Lab4_Form",
+      "ColorIndex": 0
+    },
+    "f46e3886-8dea-46b1-9d37-a7b5e65e90d7": {
+      "ProjectGuid": "f46e3886-8dea-46b1-9d37-a7b5e65e90d7",
+      "DisplayName": "QA_Lab4_Tests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
