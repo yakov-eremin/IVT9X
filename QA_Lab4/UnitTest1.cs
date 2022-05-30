@@ -11,5 +11,15 @@ namespace QA_Lab4_Tests
             Number number = new Number();
             Assert.IsNotNull(number);
         }
+
+        [TestMethod]
+
+        public void CurrentTest()
+        {
+            Number number = new Number();
+            double expected = 1;
+            double actual = number._current;
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
