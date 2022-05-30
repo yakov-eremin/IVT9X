@@ -13,6 +13,11 @@ namespace QA_Lab4_Form
 
     public class Number
     {
-        public double _current = 1;
+        private double _current = 1;
+
+        public double GetCurrent()
+        {
+            return _current;
+        }
     }
 }
