@@ -1,13 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace QA_Lab4_Form
 {
+    enum Systems : int
+    {
+        OldRussian = 0,
+        American = 1,
+        SI = 2
+    }
     public partial class MainForm : Form
     {
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            List<string> list = new List<string>() { "Старорусская (аршин)", "Американская (ярд)", "СИ (метр)" };
+            for (int i = 0; i < list.Count; i++)
+            {
+                listBox1.Items.Add(list[i]);
+                listBox2.Items.Add(list[i]);
+            }
         }
     }
 
