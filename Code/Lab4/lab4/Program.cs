@@ -1,21 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
+using lab4;
+using System.IO;
 
-namespace lab4
+namespace UnitTest
 {
-    public class CheckString
+    public class Tests
     {
-
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
+        [SetUp]
+        public void Setup()
         {
+        }
 
+        [Test]
+        public void TestStringVopros1()
+        {
+            CheckString checkstring = new CheckString();
         }
     }
 }
