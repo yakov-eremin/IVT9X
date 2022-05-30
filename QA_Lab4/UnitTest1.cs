@@ -77,5 +77,16 @@ namespace QA_Lab4_Tests
             double actual = number.FromSIToOldRussian();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+
+        public void SIToAmericanTest()
+        {
+            Number number = new Number();
+            double expected = 1.0936;
+            number.SetCurrent(1);
+            double actual = number.FromSIToAmerican();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
