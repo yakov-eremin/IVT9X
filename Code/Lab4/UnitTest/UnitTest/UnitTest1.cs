@@ -24,7 +24,7 @@ namespace UnitTest
         {
             CheckString checkstring = new CheckString();
             string check = checkstring.vopros2("c");
-            string x = "Правильно!!! Вы выиграли 2 000 рублей! ";
+            string x = "Правильно! Вы выиграли 2 000 рублей! ";
             Assert.AreEqual(x, check);
 
         }
