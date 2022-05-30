@@ -12,6 +12,7 @@ namespace QA_Lab4_Form
     }
     public partial class MainForm : Form
     {
+        Number num = new Number();
         public MainForm()
         {
             InitializeComponent();
@@ -24,6 +25,43 @@ namespace QA_Lab4_Form
             {
                 listBox1.Items.Add(list[i]);
                 listBox2.Items.Add(list[i]);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int FirstIndex, SecondIndex;
+            FirstIndex = listBox1.SelectedIndex;
+            SecondIndex = listBox2.SelectedIndex;
+            double _value;
+            _value = Convert.ToDouble(textBox1.Text);
+            num.SetCurrent(_value);
+            switch (FirstIndex)
+            {
+                case (int)Systems.OldRussian:
+                    if (SecondIndex == ((int)Systems.OldRussian))
+                        label2.Text = "Новое значение - " + num.GetCurrent().ToString();
+                    else if (SecondIndex == ((int)Systems.American))
+                        label2.Text = "Новое значение - " + num.FromOldRussianToAmerican().ToString();
+                    else if (SecondIndex == ((int)Systems.SI))
+                        label2.Text = "Новое значение - " + num.FromOldRussianToSI().ToString();
+                    break;
+                case 1:
+                    if (SecondIndex == ((int)Systems.OldRussian))
+                        label2.Text = "Новое значение - " + num.FromAmericanToOldRussian().ToString();
+                    else if (SecondIndex == ((int)Systems.American))
+                        label2.Text = "Новое значение - " + num.GetCurrent().ToString();
+                    else if (SecondIndex == ((int)Systems.SI))
+                        label2.Text = "Новое значение - " + num.FromAmericanToSI().ToString();
+                    break;
+                case 2:
+                    if (SecondIndex == ((int)Systems.OldRussian))
+                        label2.Text = "Новое значение - " + num.FromSIToOldRussian().ToString();
+                    else if (SecondIndex == ((int)Systems.American))
+                        label2.Text = "Новое значение - " + num.FromSIToAmerican().ToString();
+                    else if (SecondIndex == ((int)Systems.SI))
+                        label2.Text = "Новое значение - " + num.GetCurrent().ToString();
+                    break;
             }
         }
     }
