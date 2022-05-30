@@ -22,5 +22,16 @@ namespace QA_Lab4_Tests
             double actual = number.GetCurrent();
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+
+        public void OldRussianToSiTest()
+        {
+            Number number = new Number();
+            double expected = 0.7112;
+            number.SetCurrent(1);
+            double actual = number.FromOldRussianToSI();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
