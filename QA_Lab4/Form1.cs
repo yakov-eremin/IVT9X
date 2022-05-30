@@ -29,5 +29,10 @@ namespace QA_Lab4_Form
         {
             return 0.7112 * GetCurrent();
         }
+
+        public double FromAmericanToSI()
+        {
+            return 0.9114 * GetCurrent();
+        }
     }
 }
