@@ -32,5 +32,14 @@ namespace TestProject1
             }
         }
 
+        [Test]
+        public void TestStringBack2()
+        {
+            CheckString checkstring = new CheckString();
+            string check = checkstring.back(9, "3");
+            string x = "Мазь Индометацин на пораженный участок 3-4 раза в сутки. ";
+            Assert.AreEqual(x, check);
+        }
+
     }
 }
