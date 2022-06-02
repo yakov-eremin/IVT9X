@@ -1,0 +1,15 @@
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\lab4t.csproj.AssemblyReference.cache
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\lab4t.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\lab4t.AssemblyInfoInputs.cache
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\lab4t.AssemblyInfo.cs
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\lab4t.csproj.CoreCompileInputs.cache
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\bin\Debug\net6.0\lab4t.exe
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\bin\Debug\net6.0\lab4t.deps.json
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\bin\Debug\net6.0\lab4t.runtimeconfig.json
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\bin\Debug\net6.0\lab4t.dll
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\bin\Debug\net6.0\lab4t.pdb
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\lab4t.dll
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\refint\lab4t.dll
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\lab4t.pdb
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\lab4t.genruntimeconfig.cache
+C:\Users\gerge\Desktop\IVT9X\lab4t\lab4t\obj\Debug\net6.0\ref\lab4t.dll
