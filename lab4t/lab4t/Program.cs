@@ -33,6 +33,19 @@ namespace lab4
             double konvert = kurseuro * amounteuro;
             return konvert;
         }
+
+
+        public double euroindollar(double ratio, double amounteuro)
+        {
+            double konvert = ratio * amounteuro;
+            return konvert;
+        }
+
+        public double dollarineuro(double ratio, double amountdollar)
+        {
+            double konvert = amountdollar / ratio;
+            return konvert;
+        }
     }
     public class Program
     {
