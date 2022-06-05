@@ -22,7 +22,17 @@ namespace lab4
             return konvert;
         }
 
-        
+        public double rubineuro(double amountrub, double kurseuro)
+        {
+            double konvert = amountrub / kurseuro;
+            return konvert;
+        }
+
+        public double euroinrub(double kurseuro, double amounteuro)
+        {
+            double konvert = kurseuro * amounteuro;
+            return konvert;
+        }
     }
     public class Program
     {
