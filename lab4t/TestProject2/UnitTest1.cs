@@ -16,5 +16,12 @@ namespace TestProject2
             Calculate calc = new Calculate(); 
             Assert.IsNotNull(calc);
         }
+
+        [Test]
+        public void Test_Method_dollar_in_rub()
+        {
+            Calculate calc = new Calculate();
+            Assert.AreEqual(6300, calc.dollarinrub(63, 100));
+        }
     }
 }
