@@ -44,5 +44,19 @@ namespace TestProject2
             Calculate calc = new Calculate();
             Assert.AreEqual(7500, calc.euroinrub(75, 100));
         }
+
+        [Test]
+        public void Test_Method_euro_in_dollar()
+        {
+            Calculate calc = new Calculate();
+            Assert.AreEqual(106, calc.euroindollar(1.06, 100));
+        }
+
+        [Test]
+        public void Test_Method_dollar_in_euro()
+        {
+            Calculate calc = new Calculate();
+            Assert.AreEqual(100, calc.dollarineuro(1.06, 106));
+        }
     }
 }
