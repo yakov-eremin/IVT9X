@@ -15,6 +15,12 @@ namespace lab4
             double konvert = kursdollar * amountdollar;
             return konvert;
         }
+
+        public double rubindollar(double amountrub, double kursdollar)
+        {
+            double konvert = amountrub / kursdollar;
+            return konvert;
+        }
     }
     public class Program
     {
