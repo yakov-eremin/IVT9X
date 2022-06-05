@@ -30,5 +30,19 @@ namespace TestProject2
             Calculate calc = new Calculate();
             Assert.AreEqual(100, calc.rubindollar(6300, 63));
         }
+
+        [Test]
+        public void Test_Method_rub_in_euro()
+        {
+            Calculate calc = new Calculate();
+            Assert.AreEqual(100, calc.rubineuro(7500, 75));
+        }
+
+        [Test]
+        public void Test_Method_euro_in_rub()
+        {
+            Calculate calc = new Calculate();
+            Assert.AreEqual(7500, calc.euroinrub(75, 100));
+        }
     }
 }

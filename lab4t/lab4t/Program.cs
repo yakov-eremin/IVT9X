@@ -21,6 +21,8 @@ namespace lab4
             double konvert = amountrub / kursdollar;
             return konvert;
         }
+
+        
     }
     public class Program
     {
