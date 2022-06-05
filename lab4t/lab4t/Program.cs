@@ -10,7 +10,11 @@ namespace lab4
 {
     public class Calculate
     {
-       
+        public double dollarinrub(double kursdollar, double amountdollar)
+        {
+            double konvert = kursdollar * amountdollar;
+            return konvert;
+        }
     }
     public class Program
     {
