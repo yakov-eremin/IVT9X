@@ -8,7 +8,7 @@ namespace Lab4
 {
     public class CheckString
     {
-        public string back()
+        public string back(int years, string command)
         {
             string b = "qwerty";
             return b;

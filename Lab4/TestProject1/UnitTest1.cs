@@ -21,18 +21,26 @@ namespace TestProject1
         [Test]
         public void TestStringBack1()
         {
-            CheckString check = new CheckString();
-            string a = "qwerty";
-            Assert.AreEqual(a, check.back());
+            StreamReader sr = new StreamReader(@"D:\test_po\man\therapist.txt");
+            string line;
+            CheckString checkstring = new CheckString();
+            string check = checkstring.back(20, "1");
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[1], check);
+            }
         }
 
 
         [Test]
         public void TestStringBack2()
         {
+            int years = 0;
+            string command = "qw";
             CheckString check = new CheckString();
             string a = "qwerty";
-            Assert.AreEqual(a, check.back());
+            Assert.AreEqual(a, check.back(years, command));
         }
         [Test]
         public void TestStringHead1()
