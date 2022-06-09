@@ -86,16 +86,23 @@ namespace TestProject1
         [Test]
         public void TestStringArm1()
         {
-            CheckString check = new CheckString();
-            string a = "qwerty321";
-            Assert.AreEqual(a, check.arm());
+            StreamReader sr = new StreamReader(@"D:\therapist.txt");
+            string line;
+            CheckString checkstring = new CheckString();
+            string check = checkstring.arm(55, "1");
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[9], check);
+            }
         }
         [Test]
         public void TestStringArm2()
         {
-            CheckString check = new CheckString();
-            string a = "qwerty321";
-            Assert.AreEqual(a, check.arm());
+            CheckString checkstring = new CheckString();
+            string check = checkstring.arm(9, "2");
+            string x = "После лечения Анальгин максимальная суточная доза - 2 таблетки в день. ";
+            Assert.AreEqual(x, check);
         }
         [Test]
         public void TestStringBellyrm1()
