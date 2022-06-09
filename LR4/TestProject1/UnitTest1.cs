@@ -21,13 +21,15 @@ namespace TestProject1
         public void TestGet_score()
         {
 
+
             int expected = -10;
 
-
             word_pole word1 = new word_pole();
+            word1.fl();
             int actual = word1.get_score();
 
             Assert.AreEqual(expected, actual);
+
 
 
         }

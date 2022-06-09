@@ -19,10 +19,12 @@ namespace LR4
     public class word_pole
     {
         public List<string> words = new List<string>() { "буква", "цифра", "число", "знак", "представление" };
+        public Random rand = new Random();
+        public int score;
 
         public int get_score()
         {
-            return -10;
+            return score;
         }
 
         public string set_word()
@@ -43,7 +45,7 @@ namespace LR4
 
         public void fl()
         {
-            throw new NotImplementedException();
+            score -= 10;
         }
     }
 }
