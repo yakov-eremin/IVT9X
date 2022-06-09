@@ -65,16 +65,23 @@ namespace TestProject1
         [Test]
         public void TestStringLeg1()
         {
-            CheckString check = new CheckString();
-            string a = "qwerty132";
-            Assert.AreEqual(a, check.leg());
+            StreamReader sr = new StreamReader(@"D:\therapist.txt");
+            string line;
+            CheckString checkstring = new CheckString();
+            string check = checkstring.leg(15, "2");
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[11], check);
+            }
         }
         [Test]
         public void TestStringLeg2()
         {
-            CheckString check = new CheckString();
-            string a = "qwerty132";
-            Assert.AreEqual(a, check.leg());
+            CheckString checkstring = new CheckString();
+            string check = checkstring.leg(24, "3");
+            string x = "Мазь Диклофенак 2 раза в сутки. ";
+            Assert.AreEqual(x, check);
         }
         [Test]
         public void TestStringArm1()
