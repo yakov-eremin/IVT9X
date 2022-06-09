@@ -116,10 +116,35 @@ namespace Lab4
             return "0";
         }
 
-        public string belly()
+        public string belly(int years, string command)
         {
-            string a = "qwerty123";
-            return a;
+            while ((line = sr.ReadLine()) != null)
+            {
+                if (command == "1")
+                {
+                    string[] text = line.Split('*');
+                    return text[13];
+                }
+                else if (command == "2")
+                {
+                    string[] text = line.Split('*');
+                    return text[14];
+                }
+                else if (command == "3")
+                {
+                    if (years >= 10)
+                    {
+                        string[] text = line.Split('*');
+                        return text[16];
+                    }
+                    if (years < 10)
+                    {
+                        string[] text = line.Split('*');
+                        return text[15];
+                    }
+                }
+            }
+            return "0";
         }
     }
 

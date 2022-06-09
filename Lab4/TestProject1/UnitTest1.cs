@@ -107,16 +107,23 @@ namespace TestProject1
         [Test]
         public void TestStringBellyrm1()
         {
-            CheckString check = new CheckString();
-            string a = "qwerty123";
-            Assert.AreEqual(a, check.belly());
+            StreamReader sr = new StreamReader(@"D:\therapist.txt");
+            string line;
+            CheckString checkstring = new CheckString();
+            string check = checkstring.belly(43, "1");
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[13], check);
+            }
         }
         [Test]
         public void TestStringBellyrm2()
         {
-            CheckString check = new CheckString();
-            string a = "qwerty123";
-            Assert.AreEqual(a, check.belly());
+            CheckString checkstring = new CheckString();
+            string check = checkstring.belly(5, "3");
+            string x = "Таблетки Папаверин по 20 мг 3-4 раза в сутки. ";
+            Assert.AreEqual(x, check);
         }
 
 
