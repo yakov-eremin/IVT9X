@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\123\\Desktop\\6semak\\Тестирование програмного обеспечения АС\\4\\LR4\\LR4\\LR4.csproj": {}
+    "C:\\Users\\123\\hello\\IVT9X\\LR4\\LR4\\LR4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\123\\Desktop\\6semak\\Тестирование програмного обеспечения АС\\4\\LR4\\LR4\\LR4.csproj": {
+    "C:\\Users\\123\\hello\\IVT9X\\LR4\\LR4\\LR4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\123\\Desktop\\6semak\\Тестирование програмного обеспечения АС\\4\\LR4\\LR4\\LR4.csproj",
+        "projectUniqueName": "C:\\Users\\123\\hello\\IVT9X\\LR4\\LR4\\LR4.csproj",
         "projectName": "LR4",
-        "projectPath": "C:\\Users\\123\\Desktop\\6semak\\Тестирование програмного обеспечения АС\\4\\LR4\\LR4\\LR4.csproj",
+        "projectPath": "C:\\Users\\123\\hello\\IVT9X\\LR4\\LR4\\LR4.csproj",
         "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\123\\Desktop\\6semak\\Тестирование програмного обеспечения АС\\4\\LR4\\LR4\\obj\\",
+        "outputPath": "C:\\Users\\123\\hello\\IVT9X\\LR4\\LR4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
