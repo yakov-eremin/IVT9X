@@ -36,11 +36,10 @@ namespace TestProject1
         [Test]
         public void TestStringBack2()
         {
-            int years = 0;
-            string command = "qw";
-            CheckString check = new CheckString();
-            string a = "qwerty";
-            Assert.AreEqual(a, check.back(years, command));
+            CheckString checkstring = new CheckString();
+            string check = checkstring.back(9, "3");
+            string x = "Мазь Индометацин на пораженный участок 3-4 раза в сутки. ";
+            Assert.AreEqual(x, check);
         }
         [Test]
         public void TestStringHead1()
