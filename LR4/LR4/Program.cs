@@ -30,9 +30,10 @@ namespace LR4
             return "word";
         }
 
-        public string set_secret(string expected)
+        public string set_secret(string word)
         {
-            return "tt";
+            string secret = new String('*', word.Length);
+            return secret;
         }
 
         public void DW(string word)
