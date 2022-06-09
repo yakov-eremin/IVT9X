@@ -29,7 +29,8 @@ namespace LR4
 
         public string set_word()
         {
-            return "word";
+            string word = words[rand.Next(words.Count)];
+            return word;
         }
 
         public string set_secret(string word)

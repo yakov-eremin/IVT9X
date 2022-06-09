@@ -40,10 +40,8 @@ namespace TestProject1
         {
             string expected = "";
             string actual = "";
-
             word_pole word1 = new word_pole();
             actual = word1.set_word();
-
             Assert.AreNotEqual(expected, actual);
 
         }
