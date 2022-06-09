@@ -44,16 +44,23 @@ namespace TestProject1
         [Test]
         public void TestStringHead1()
         {
-            CheckString check = new CheckString();
-            string a = "qwerty";
-            Assert.AreEqual(a, check.head());
+            StreamReader sr = new StreamReader(@"D:\therapist.txt");
+            string line;
+            CheckString checkstring = new CheckString();
+            string check = checkstring.head(13, "1");
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] text = line.Split('*');
+                Assert.AreEqual(text[6], check);
+            }
         }
         [Test]
         public void TestStringHead2()
         {
-            CheckString check = new CheckString();
-            string a = "qwerty";
-            Assert.AreEqual(a, check.head());
+            CheckString checkstring = new CheckString();
+            string check = checkstring.head(8, "2");
+            string x = "Таблетки Но-шпа 40 г 1-2 раза в сутки. ";
+            Assert.AreEqual(x, check);
         }
         [Test]
         public void TestStringLeg1()

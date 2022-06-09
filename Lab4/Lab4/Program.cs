@@ -39,10 +39,28 @@ namespace Lab4
             return "0";
         }
 
-        public string head()
+        public string head(int years, string command)
         {
-            string a = "qwerty";
-            return a;
+            while ((line = sr.ReadLine()) != null)
+            {
+                if (command == "1")
+                {
+                    string[] text = line.Split('*');
+                    if (years >= 12)
+                        return text[6];
+                    if (years < 12)
+                        return text[5];
+                }
+                else if (command == "2")
+                {
+                    string[] text = line.Split('*');
+                    if (years >= 12)
+                        return text[8];
+                    if (years < 12)
+                        return text[7];
+                }
+            }
+            return "0";
         }
 
         public string leg()
