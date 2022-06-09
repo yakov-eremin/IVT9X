@@ -8,10 +8,35 @@ namespace Lab4
 {
     public class CheckString
     {
+        StreamReader sr = new StreamReader(@"D:\therapist.txt");
+        string line;
         public string back(int years, string command)
         {
-            string b = "qwerty";
-            return b;
+            while ((line = sr.ReadLine()) != null)
+            {
+                if (command == "1")
+                {
+                    string[] text = line.Split('*');
+                    if (years >= 12)
+                        return text[1];
+                    if (years < 12)
+                        return text[0];
+                }
+                else if (command == "2")
+                {
+                    string[] text = line.Split('*');
+                    return text[2];
+                }
+                else if (command == "3")
+                {
+                    string[] text = line.Split('*');
+                    if (years > 14)
+                        return text[4];
+                    if (years < 14)
+                        return text[3];
+                }
+            }
+            return "0";
         }
 
         public string head()

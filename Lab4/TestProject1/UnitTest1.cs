@@ -21,7 +21,7 @@ namespace TestProject1
         [Test]
         public void TestStringBack1()
         {
-            StreamReader sr = new StreamReader(@"D:\test_po\man\therapist.txt");
+            StreamReader sr = new StreamReader(@"D:\therapist.txt");
             string line;
             CheckString checkstring = new CheckString();
             string check = checkstring.back(20, "1");
