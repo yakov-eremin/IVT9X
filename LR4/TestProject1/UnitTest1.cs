@@ -49,9 +49,12 @@ namespace TestProject1
         [Test]
         public void TestSet_Secret()
         {
-            string expected = "tt";
+
+            string expected = "";
+            string actual = "";
             word_pole word1 = new word_pole();
-            string actual = word1.set_secret(expected);
+            actual = word1.set_word();
+            expected = word1.set_secret(actual);
             Assert.AreEqual(expected.Length, actual.Length);
 
         }
