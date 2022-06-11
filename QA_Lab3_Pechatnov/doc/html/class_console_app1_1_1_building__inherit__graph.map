@@ -1,0 +1,4 @@
+<map id="ConsoleApp1.Building" name="ConsoleApp1.Building">
+<area shape="rect" id="node1" title="Здание" alt="" coords="28,5,177,32"/>
+<area shape="rect" id="node2" href="$class_console_app1_1_1_another_building.html" title="Здание определённого типа" alt="" coords="5,80,200,107"/>
+</map>

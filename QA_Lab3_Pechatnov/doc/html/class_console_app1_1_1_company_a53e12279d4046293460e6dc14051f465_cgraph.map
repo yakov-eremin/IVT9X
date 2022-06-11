@@ -1,0 +1,5 @@
+<map id="ConsoleApp1.Company.Display" name="ConsoleApp1.Company.Display">
+<area shape="rect" id="node1" title="Метод, выводящий основную информацию о компании и её зданиях" alt="" coords="5,42,211,69"/>
+<area shape="rect" id="node2" href="$class_console_app1_1_1_another_building.html#adcf2c7e43ccc687b922dee13030829d6" title="Метод, выводящий основную информацию о здании" alt="" coords="259,5,457,47"/>
+<area shape="rect" id="node3" href="$class_console_app1_1_1_building.html#acb82022d86bc206017faa6e2b68807d9" title="Метод, выводящий основную информацию о здании" alt="" coords="260,71,456,98"/>
+</map>

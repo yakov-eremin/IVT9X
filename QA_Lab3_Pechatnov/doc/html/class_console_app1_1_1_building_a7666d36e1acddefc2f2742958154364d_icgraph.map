@@ -1,0 +1,4 @@
+<map id="ConsoleApp1.Building.AllCost" name="ConsoleApp1.Building.AllCost">
+<area shape="rect" id="node1" title="Метод, определяющий стоимость всего здания &#160;(P &#45; стоимость здания, C &#45; цена за 1 кв...." alt="" coords="257,5,452,32"/>
+<area shape="rect" id="node2" href="$class_console_app1_1_1_company.html#ab76362b36a6d5f13ba41f79c9fce3384" title="Метод, определяющий суммарную стоимость всех зданий компании" alt="" coords="5,5,209,32"/>
+</map>
