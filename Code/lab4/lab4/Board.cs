@@ -17,5 +17,10 @@ namespace lab4
         {
             return board[number / 3, number % 3];
         }
+
+        public void Put(int number, char symbol)
+        {
+            board[number / 3, number % 3] = symbol;
+        }
     }
 }
