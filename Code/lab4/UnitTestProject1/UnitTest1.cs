@@ -29,5 +29,14 @@ namespace UnitTestProject1
             char result = b.GetSymbol(5);
             Assert.AreEqual('x', result);
         }
+
+        [TestMethod]
+        public void BoardPutSymbolTest2()
+        {
+            Board b = new Board();
+            b.Put(5, 'o');
+            char result = b.GetSymbol(5);
+            Assert.AreEqual('o', result);
+        }
     }
 }
