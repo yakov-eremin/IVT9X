@@ -54,5 +54,14 @@ namespace UnitTestProject1
             Board b = new Board();
             b.Put(-1, 'x');
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void BoardPutSymbolTest5()
+        {
+            Board b = new Board();
+            b.Put(5, 'x');
+            b.Put(5, 'x');
+        }
     }
 }

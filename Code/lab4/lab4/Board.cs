@@ -22,6 +22,8 @@ namespace lab4
         {
             if ((symbol != 'x' && symbol != 'o') || number < 0 || number > 8)
                 throw new ArgumentException("Некорректные данные");
+            if (board[number / 3, number % 3] != '-')
+                throw new ArgumentException("Этот символ уже занят");
             board[number / 3, number % 3] = symbol;
         }
     }
