@@ -8,9 +8,7 @@ namespace lab4
 
         public Board()
         {
-            for (int i = 0; i < 3; i++)
-                for (int j = 0; j < 3; j++)
-                    board[i, j] = '-';
+            ClearBoard();
         }
 
         public char GetSymbol(int number)
@@ -25,6 +23,13 @@ namespace lab4
             if (board[number / 3, number % 3] != '-')
                 throw new ArgumentException("Этот символ уже занят");
             board[number / 3, number % 3] = symbol;
+        }
+
+        public void ClearBoard()
+        {
+            for (int i = 0; i < 3; i++)
+                for (int j = 0; j < 3; j++)
+                    board[i, j] = '-';
         }
     }
 }

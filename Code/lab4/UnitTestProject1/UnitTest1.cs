@@ -63,5 +63,16 @@ namespace UnitTestProject1
             b.Put(5, 'x');
             b.Put(5, 'x');
         }
+
+        [TestMethod]
+        public void BoardClearTest()
+        {
+            Board b = new Board();
+            b.Put(0, 'x');
+            b.ClearBoard();
+
+            char result = b.GetSymbol(0);
+            Assert.AreEqual('-', result);
+        }
     }
 }
