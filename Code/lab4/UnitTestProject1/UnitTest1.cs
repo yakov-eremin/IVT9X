@@ -84,5 +84,15 @@ namespace UnitTestProject1
             b.Put(2, 'x');
             Assert.IsTrue(b.CheckWin());
         }
+
+        [TestMethod]
+        public void BoardCheckWinTest2()
+        {
+            Board b = new Board();
+            b.Put(0, 'o');
+            b.Put(1, 'o');
+            b.Put(2, 'x');
+            Assert.IsFalse(b.CheckWin());
+        }
     }
 }
