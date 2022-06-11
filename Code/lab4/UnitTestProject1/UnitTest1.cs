@@ -74,5 +74,15 @@ namespace UnitTestProject1
             char result = b.GetSymbol(0);
             Assert.AreEqual('-', result);
         }
+
+        [TestMethod]
+        public void BoardCheckWinTest()
+        {
+            Board b = new Board();
+            b.Put(0, 'x');
+            b.Put(1, 'x');
+            b.Put(2, 'x');
+            Assert.IsTrue(b.CheckWin());
+        }
     }
 }

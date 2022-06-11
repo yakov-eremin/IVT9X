@@ -31,5 +31,18 @@ namespace lab4
                 for (int j = 0; j < 3; j++)
                     board[i, j] = '-';
         }
+
+        public bool CheckWin()
+        {
+            int[,] combinations = new int[,] { { 0, 1, 2 }, { 3, 4, 5 }, { 6, 7, 8 }, { 0, 3, 6 }, { 1, 4, 7 }, { 2, 5, 8 }, { 0, 4, 8 }, { 2, 4, 6 } };
+            for (int i = 0; i < 8; i++)
+            {
+                if ((GetSymbol(combinations[i, 0]) == 'x' || GetSymbol(combinations[i, 0]) == 'o') && 
+                    GetSymbol(combinations[i, 0]) == GetSymbol(combinations[i, 1]) &&
+                    GetSymbol(combinations[i, 0]) == GetSymbol(combinations[i, 2]))
+                    return true;
+            }
+            return false;
+        }
     }
 }
