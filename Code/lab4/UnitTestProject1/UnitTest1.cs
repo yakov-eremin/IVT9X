@@ -38,5 +38,13 @@ namespace UnitTestProject1
             char result = b.GetSymbol(5);
             Assert.AreEqual('o', result);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void BoardPutSymbolTest3()
+        {
+            Board b = new Board();
+            b.Put(5, 'k');
+        }
     }
 }

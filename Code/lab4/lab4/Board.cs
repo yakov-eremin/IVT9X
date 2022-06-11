@@ -20,6 +20,8 @@ namespace lab4
 
         public void Put(int number, char symbol)
         {
+            if ((symbol != 'x' && symbol != 'o'))
+                throw new ArgumentException("Некорректные данные");
             board[number / 3, number % 3] = symbol;
         }
     }
