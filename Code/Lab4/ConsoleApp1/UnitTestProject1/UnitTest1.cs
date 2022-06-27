@@ -30,5 +30,14 @@ namespace UnitTestProject1
             TagsGame g = new TagsGame();
             g.SetBoard(array);
         }
+
+        [TestMethod]
+        public void TagsGame_get()
+        {
+            int[,] array = new int[,] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 0 } };
+            TagsGame g = new TagsGame();
+            g.SetBoard(array);
+            CollectionAssert.AreEqual(array, g.GetBoard());
+        }
     }
 }

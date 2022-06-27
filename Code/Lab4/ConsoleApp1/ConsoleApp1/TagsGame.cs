@@ -21,5 +21,10 @@ namespace ConsoleApp1
             board = new int[values.GetLength(0), values.GetLength(1)];
             board = values;
         }
+
+        public int[,] GetBoard()
+        {
+            return board;
+        }
     }
 }
