@@ -13,5 +13,11 @@ namespace ConsoleApp1
             count = 0;
             board = new int[size, size];
         }
+
+        public void SetBoard(int[,] values)
+        {
+            board = new int[values.GetLength(0), values.GetLength(1)];
+            board = values;
+        }
     }
 }
