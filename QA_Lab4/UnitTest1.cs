@@ -13,5 +13,13 @@ namespace UnitTests
             System.Timers.Timer timer = new System.Timers.Timer();
             Assert.IsNotNull(timer);
         }
+
+        [TestMethod]
+
+        public void TimerIntervalTest()
+        {
+            System.Timers.Timer timer = new System.Timers.Timer();
+            Assert.AreEqual(1000, timer.Interval);
+        }
     }
 }
