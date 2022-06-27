@@ -128,5 +128,32 @@ namespace ConsoleApp1
             board[position_i + 1, position_j] = tmp;
             count++;
         }
+
+        public void MoveBottom()
+        {
+            int position_i = 0;
+            int position_j = 0;
+            int tmp = 0;
+
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    if (board[i, j] == 0)
+                    {
+                        position_i = i;
+                        position_j = j;
+                    }
+                }
+            }
+
+            if (position_i == 0)
+                return;
+
+            tmp = board[position_i, position_j];
+            board[position_i, position_j] = board[position_i - 1, position_j];
+            board[position_i - 1, position_j] = tmp;
+            count++;
+        }
     }
 }
