@@ -15,3 +15,6 @@ C:\Users\Alexander\Desktop\sh\mishin\IVT9X\Code\Lab4\ConsoleApp1\UnitTestProject
 C:\Users\Alexander\Desktop\sh\mishin\IVT9X\Code\Lab4\ConsoleApp1\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CopyComplete
 C:\Users\Alexander\Desktop\sh\mishin\IVT9X\Code\Lab4\ConsoleApp1\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Users\Alexander\Desktop\sh\mishin\IVT9X\Code\Lab4\ConsoleApp1\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\Alexander\Desktop\sh\mishin\IVT9X\Code\Lab4\ConsoleApp1\UnitTestProject1\bin\Debug\ConsoleApp1.exe
+C:\Users\Alexander\Desktop\sh\mishin\IVT9X\Code\Lab4\ConsoleApp1\UnitTestProject1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Alexander\Desktop\sh\mishin\IVT9X\Code\Lab4\ConsoleApp1\UnitTestProject1\bin\Debug\ConsoleApp1.exe.config
