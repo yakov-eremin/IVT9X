@@ -21,6 +21,8 @@ namespace Lab4_QA
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            timer = new System.Timers.Timer();
+            timer.Interval = 1000;
         }
        
         private void button_Start_Click(object sender, EventArgs e)
