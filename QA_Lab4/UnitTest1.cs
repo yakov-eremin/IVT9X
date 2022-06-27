@@ -10,7 +10,7 @@ namespace UnitTests
         [TestMethod]
         public void TimerIsNotNullTest()
         {
-            Timer timer = new Timer();
+            System.Timers.Timer timer = new System.Timers.Timer();
             Assert.IsNotNull(timer);
         }
     }
