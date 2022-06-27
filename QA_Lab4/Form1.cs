@@ -24,7 +24,13 @@ namespace Lab4_QA
             timer = new System.Timers.Timer();
             timer.Interval = 1000;
         }
-       
+
+        delegate void UpdateLabel(Label lbl, string value);
+        void UpdateDataLabel(Label lbl, string value)
+        {
+            lbl.Text = value;
+        }
+
         private void button_Start_Click(object sender, EventArgs e)
         {
         }
