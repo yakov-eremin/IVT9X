@@ -33,10 +33,14 @@ namespace Lab4_QA
 
         private void button_Start_Click(object sender, EventArgs e)
         {
+            timer.Start();
+            label1.Text = "В процессе....";
         }
 
         private void button_Stop_Click(object sender, EventArgs e)
         {
+            timer.Stop();
+            label1.Text = "Стоп";
         }
     }
 }
