@@ -49,5 +49,31 @@ namespace ConsoleApp1
                     if ((i != size - 1 && j != size - 1) && board[i, j] != size * i + j + 1) return false;
             return true;
         }
+
+        public void MoveLeft()
+        {
+            int position_i = 0;
+            int position_j = 0;
+
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    if (board[i, j] == 0)
+                    {
+                        position_i = i;
+                        position_j = j;
+                    }
+                }
+            }
+
+            if (position_j == size - 1)
+                return;
+
+            int tmp = board[position_i, position_j];
+            board[position_i, position_j] = board[position_i, position_j + 1];
+            board[position_i, position_j + 1] = tmp;
+            count++;
+        }
     }
 }
