@@ -75,5 +75,31 @@ namespace ConsoleApp1
             board[position_i, position_j + 1] = tmp;
             count++;
         }
+
+        public void MoveRight()
+        {
+            int position_i = 0;
+            int position_j = 0;
+
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    if (board[i, j] == 0)
+                    {
+                        position_i = i;
+                        position_j = j;
+                    }
+                }
+            }
+
+            if (position_j == 0)
+                return;
+
+            int tmp = board[position_i, position_j];
+            board[position_i, position_j] = board[position_i, position_j - 1];
+            board[position_i, position_j - 1] = tmp;
+            count++;
+        }
     }
 }

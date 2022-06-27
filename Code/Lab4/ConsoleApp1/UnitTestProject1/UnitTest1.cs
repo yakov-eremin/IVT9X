@@ -75,5 +75,16 @@ namespace UnitTestProject1
             g.MoveLeft();
             CollectionAssert.AreEqual(expected, g.GetBoard());
         }
+
+        [TestMethod]
+        public void TagsGame_move_right()
+        {
+            int[,] array = new int[,] { { 1, 2, 0, 3 }, { 4, 5, 6, 7 }, { 8, 9, 10, 11 }, { 12, 13, 14, 15 } };
+            int[,] expected = new int[,] { { 1, 0, 2, 3 }, { 4, 5, 6, 7 }, { 8, 9, 10, 11 }, { 12, 13, 14, 15 } };
+            TagsGame g = new TagsGame();
+            g.SetBoard(array);
+            g.MoveRight();
+            CollectionAssert.AreEqual(expected, g.GetBoard());
+        }
     }
 }
