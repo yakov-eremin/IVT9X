@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "edc4803a-ae36-4438-bde7-fb8f0780bf0f": {
+      "ProjectGuid": "edc4803a-ae36-4438-bde7-fb8f0780bf0f",
+      "DisplayName": "Lab4_QA",
+      "ColorIndex": 0
+    },
+    "91e32c60-59c3-43ea-9120-4140d6b6e329": {
+      "ProjectGuid": "91e32c60-59c3-43ea-9120-4140d6b6e329",
+      "DisplayName": "UnitTests",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

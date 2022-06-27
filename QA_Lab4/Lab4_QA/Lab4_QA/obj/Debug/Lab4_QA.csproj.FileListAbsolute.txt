@@ -1,0 +1,11 @@
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\bin\Debug\Lab4_QA.exe.config
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\bin\Debug\Lab4_QA.exe
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\bin\Debug\Lab4_QA.pdb
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\obj\Debug\Lab4_QA.csproj.AssemblyReference.cache
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\obj\Debug\Lab4_QA.csproj.SuggestedBindingRedirects.cache
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\obj\Debug\Lab4_QA.Form1.resources
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\obj\Debug\Lab4_QA.Properties.Resources.resources
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\obj\Debug\Lab4_QA.csproj.GenerateResource.cache
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\obj\Debug\Lab4_QA.csproj.CoreCompileInputs.cache
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\obj\Debug\Lab4_QA.exe
+D:\Desktop\Lab4_QA\Lab4_QA\Lab4_QA\obj\Debug\Lab4_QA.pdb
