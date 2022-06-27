@@ -160,5 +160,18 @@ namespace ConsoleApp1
         {
             return count;
         }
+
+        public void DisplayBoard()
+        {
+            Console.WriteLine();
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    Console.Write(((board[i, j] == 0) ? (" ") : (board[i, j].ToString())) + "\t");
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
