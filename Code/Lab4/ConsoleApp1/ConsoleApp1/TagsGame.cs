@@ -41,5 +41,10 @@ namespace ConsoleApp1
                 for (int j = 0; j < size; j++)
                     board[i, j] = rndArray[size * i + j];
         }
+
+        public bool CheckBoard()
+        {
+            return true;
+        }
     }
 }
