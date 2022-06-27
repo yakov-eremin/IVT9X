@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConsoleApp1
 {
@@ -25,6 +26,20 @@ namespace ConsoleApp1
         public int[,] GetBoard()
         {
             return board;
+        }
+
+        public void FillBoard()
+        {
+            int[] rndArray = new int[size * size];
+            for (int i = 0; i < rndArray.Length; i++)
+                rndArray[i] = i;
+
+            Random rnd = new Random();
+            rndArray = rndArray.OrderBy(x => rnd.Next()).ToArray();
+
+            for (int i = 0; i < size; i++)
+                for (int j = 0; j < size; j++)
+                    board[i, j] = rndArray[size * i + j];
         }
     }
 }

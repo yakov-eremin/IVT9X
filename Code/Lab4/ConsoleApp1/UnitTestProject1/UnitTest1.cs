@@ -39,5 +39,12 @@ namespace UnitTestProject1
             g.SetBoard(array);
             CollectionAssert.AreEqual(array, g.GetBoard());
         }
+
+        [TestMethod]
+        public void TagsGame_fill()
+        {
+            TagsGame g = new TagsGame();
+            g.FillBoard();
+        }
     }
 }
