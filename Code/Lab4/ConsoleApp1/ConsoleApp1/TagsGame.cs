@@ -155,5 +155,10 @@ namespace ConsoleApp1
             board[position_i - 1, position_j] = tmp;
             count++;
         }
+
+        public int GetCount()
+        {
+            return count;
+        }
     }
 }

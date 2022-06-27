@@ -108,5 +108,15 @@ namespace UnitTestProject1
             g.MoveBottom();
             CollectionAssert.AreEqual(expected, g.GetBoard());
         }
+
+        [TestMethod]
+        public void TagsGame_count()
+        {
+            TagsGame g = new TagsGame();
+            g.SetBoard(new int[,] { { 1, 2, 0, 3 }, { 4, 5, 6, 7 }, { 8, 9, 10, 11 }, { 12, 13, 14, 15 } });
+            g.MoveTop();
+            g.MoveBottom();
+            Assert.AreEqual(2, g.GetCount());
+        }
     }
 }
