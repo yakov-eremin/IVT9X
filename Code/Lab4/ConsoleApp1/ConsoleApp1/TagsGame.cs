@@ -44,6 +44,9 @@ namespace ConsoleApp1
 
         public bool CheckBoard()
         {
+            for (int i = 0; i < size; i++)
+                for (int j = 0; j < size; j++)
+                    if ((i != size - 1 && j != size - 1) && board[i, j] != size * i + j + 1) return false;
             return true;
         }
     }
