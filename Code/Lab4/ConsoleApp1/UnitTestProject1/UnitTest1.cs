@@ -21,5 +21,14 @@ namespace UnitTestProject1
             TagsGame g = new TagsGame();
             g.SetBoard(array);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TagsGame_set2()
+        {
+            int[,] array = new int[,] { { 1, 2, 3, 4 } };
+            TagsGame g = new TagsGame();
+            g.SetBoard(array);
+        }
     }
 }
