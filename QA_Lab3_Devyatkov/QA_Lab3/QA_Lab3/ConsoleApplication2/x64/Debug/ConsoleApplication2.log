@@ -1,0 +1,6 @@
+﻿  ConsoleApplication2.cpp
+C:\Users\Karlson\Desktop\все тлен\6 семестр\ТПОАС\QA_Lab3_Devyatkov\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(61,17): warning C4473: "scanf_s": передано недостаточно аргументов для строки формата
+C:\Users\Karlson\Desktop\все тлен\6 семестр\ТПОАС\QA_Lab3_Devyatkov\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(61,17): message : заполнители и их параметры ожидают переменное число аргументов в количестве 2, но было предоставлено 1
+C:\Users\Karlson\Desktop\все тлен\6 семестр\ТПОАС\QA_Lab3_Devyatkov\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(61,17): message : отсутствующий вариативный аргумент "2" требуется для строки форматирования "%s"
+C:\Users\Karlson\Desktop\все тлен\6 семестр\ТПОАС\QA_Lab3_Devyatkov\ConsoleApplication2\ConsoleApplication2\ConsoleApplication2.cpp(61,17): message : этот аргумент используется в качестве размера буфера
+  ConsoleApplication2.vcxproj -> C:\Users\Karlson\Desktop\все тлен\6 семестр\ТПОАС\QA_Lab3_Devyatkov\ConsoleApplication2\x64\Debug\ConsoleApplication2.exe
