@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4fe5a53f-beec-45c6-9c9f-b410862fd960": {
+      "ProjectGuid": "4fe5a53f-beec-45c6-9c9f-b410862fd960",
+      "DisplayName": "Lab_2_QA",
+      "ColorIndex": 0
+    },
+    "45efec2d-1c5d-4f17-835a-54d83568c0e9": {
+      "ProjectGuid": "45efec2d-1c5d-4f17-835a-54d83568c0e9",
+      "DisplayName": "Lab_2_QA_UnitTests",
+      "ColorIndex": 1
+    },
+    "77424205-5a6f-40b5-a45b-4e8d0bd568b7": {
+      "ProjectGuid": "77424205-5a6f-40b5-a45b-4e8d0bd568b7",
+      "DisplayName": "UnitTests",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

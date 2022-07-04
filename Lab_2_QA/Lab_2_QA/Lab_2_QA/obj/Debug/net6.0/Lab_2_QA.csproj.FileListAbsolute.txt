@@ -1,0 +1,15 @@
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\obj\Debug\net6.0\Lab_2_QA.csproj.AssemblyReference.cache
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\obj\Debug\net6.0\Lab_2_QA.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\obj\Debug\net6.0\Lab_2_QA.AssemblyInfoInputs.cache
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\obj\Debug\net6.0\Lab_2_QA.AssemblyInfo.cs
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\obj\Debug\net6.0\Lab_2_QA.csproj.CoreCompileInputs.cache
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\bin\Debug\net6.0\Lab_2_QA.exe
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\bin\Debug\net6.0\Lab_2_QA.deps.json
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\bin\Debug\net6.0\Lab_2_QA.runtimeconfig.json
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\bin\Debug\net6.0\Lab_2_QA.dll
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\bin\Debug\net6.0\ref\Lab_2_QA.dll
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\bin\Debug\net6.0\Lab_2_QA.pdb
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\obj\Debug\net6.0\Lab_2_QA.dll
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\obj\Debug\net6.0\ref\Lab_2_QA.dll
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\obj\Debug\net6.0\Lab_2_QA.pdb
+D:\Desktop\Тестирование ПО АС\Lab_2_QA\Lab_2_QA\Lab_2_QA\obj\Debug\net6.0\Lab_2_QA.genruntimeconfig.cache
