@@ -1,0 +1,30 @@
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.exe
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.deps.json
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.runtimeconfig.json
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.dll
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\ref\Lab_3_QA.dll
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.pdb
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.csproj.AssemblyReference.cache
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.AssemblyInfoInputs.cache
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.AssemblyInfo.cs
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.csproj.CoreCompileInputs.cache
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.dll
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\ref\Lab_3_QA.dll
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.pdb
+D:\Desktop\Тестирование ПО АС\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.genruntimeconfig.cache
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.exe
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.deps.json
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.runtimeconfig.json
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.dll
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\ref\Lab_3_QA.dll
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\bin\Debug\net6.0\Lab_3_QA.pdb
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.csproj.AssemblyReference.cache
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.AssemblyInfoInputs.cache
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.AssemblyInfo.cs
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.csproj.CoreCompileInputs.cache
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.dll
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\ref\Lab_3_QA.dll
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.pdb
+D:\Desktop\Lab_3_QA\Lab_3_QA\Lab_3_QA\obj\Debug\net6.0\Lab_3_QA.genruntimeconfig.cache
