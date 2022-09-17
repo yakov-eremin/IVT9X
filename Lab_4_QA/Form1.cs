@@ -15,7 +15,9 @@ namespace QA_Lab4_Form
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            dataGridView1.Rows.Clear();
+            Birthday birthday = new Birthday();
+            birthday.UploadDates(dataGridView1);
         }
     }
 
