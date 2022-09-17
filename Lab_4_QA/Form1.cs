@@ -19,6 +19,14 @@ namespace QA_Lab4_Form
             Birthday birthday = new Birthday();
             birthday.UploadDates(dataGridView1);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Birthday birthday = new Birthday();
+            birthday.AddDate(dateTimePicker1, textBox1);
+            dataGridView1.Rows.Clear();
+            birthday.UploadDates(dataGridView1);
+        }
     }
 
     public class Birthday
