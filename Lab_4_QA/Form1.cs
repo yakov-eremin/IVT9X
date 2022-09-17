@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace QA_Lab4_Form
@@ -19,7 +20,17 @@ namespace QA_Lab4_Form
     }
 
     public class Birthday
-    {        
-
+    {
+        public void AddDate(DateTimePicker dtp, TextBox tb)
+        {
+            string new_date = dtp.Text;
+            string new_name = tb.Text;
+            using (StreamWriter sw = File.AppendText("D:\\Desktop\\input.txt"))
+            {
+                sw.WriteLine(new_date);
+                sw.WriteLine(new_name);
+                sw.Close();
+            }
+        }
     }
 }
