@@ -21,6 +21,23 @@ namespace QA_Lab4_Form
 
     public class Birthday
     {
+        public void UploadDates(DataGridView obj)
+        {
+            StreamReader f = new StreamReader("D:\\Desktop\\input.txt");
+            while (!f.EndOfStream)
+            {
+                string s = f.ReadLine();
+                DateTime oDate = Convert.ToDateTime(s);
+                string n = f.ReadLine();
+                var current = DateTime.Today;
+                int year = current.Month > oDate.Month || current.Month == oDate.Month && current.Day > oDate.Day
+                   ? current.Year + 1 : current.Year;
+                var days = (new DateTime(year, oDate.Month, oDate.Day) - current).TotalDays;
+                obj.Rows.Add(oDate.Day + "." + oDate.Month + "." + oDate.Year, n, days);
+            }
+            f.Close();
+        }
+
         public void AddDate(DateTimePicker dtp, TextBox tb)
         {
             string new_date = dtp.Text;
