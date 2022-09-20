@@ -1,0 +1,84 @@
+.TH "clothes" 3 "Tue Sep 20 2022" "Version 1.1" "QA3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+clothes \- Вспомогательный класс Одежда  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBClothes_ratio\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdisplay\fP ()"
+.br
+.RI "Вывод на экран информации об одежде "
+.ti -1c
+.RI "void \fBinit\fP (double c1, int a1)"
+.br
+.ti -1c
+.RI "double \fBCost_clothes\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBcost\fP"
+.br
+.ti -1c
+.RI "int \fBquantity\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Вспомогательный класс Одежда 
+
+Класс имеет поля: Стоимость единицы ткани, количество ткани\&. В классе описаны методы инициализации, вывода данных, а также метод, вычисляющий стоимость изделия 
+.SH "Member Function Documentation"
+.PP 
+.SS "double clothes::Cost_clothes ()"
+Функция, предназначенная для стоимости одежды ${cost * quantity}$ 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcost\fP стоимость 
+.br
+\fIquantity\fP количество 
+.PP
+\fBReturns\fP
+.RS 4
+Стоимость одежды 
+.RE
+.PP
+.RE
+.PP
+
+.SS "void clothes::display ()"
+
+.PP
+Вывод на экран информации об одежде 
+.SS "void clothes::init (double с1, int q1)"
+Метод для инициализации полей класс 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc1\fP Стоимость 
+.br
+\fIq1\fP Количество 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "double clothes::cost\fC [protected]\fP"
+
+.SS "int clothes::quantity\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for QA3 from the source code\&.

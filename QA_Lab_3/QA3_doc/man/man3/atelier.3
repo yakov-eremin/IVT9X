@@ -1,0 +1,117 @@
+.TH "atelier" 3 "Tue Sep 20 2022" "Version 1.1" "QA3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+atelier \- Основной класс: Ателье  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBtotal_cost\fP ()"
+.br
+.RI "Метод для подсчета суммарной стоимости одежды "
+.ti -1c
+.RI "void \fBinit\fP (\fBclothes\fP a, \fBclothes\fP b, \fBclothes\fP c, double z1)"
+.br
+.ti -1c
+.RI "void \fBset_name\fP (string n)"
+.br
+.ti -1c
+.RI "string \fBget_name\fP ()"
+.br
+.RI "
+.PP
+\fBReturns\fP
+.RS 4
+name 
+.RE
+.PP
+"
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBname\fP"
+.br
+.ti -1c
+.RI "double \fBz\fP"
+.br
+.ti -1c
+.RI "\fBclothes\fP \fBp1\fP"
+.br
+.ti -1c
+.RI "\fBclothes\fP \fBp2\fP"
+.br
+.ti -1c
+.RI "\fBclothes\fP \fBp3\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Основной класс: Ателье 
+
+Этот класс имеет поля: название ателье, три объекта вспомогательного класса, стоимость затрат\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "string atelier::get_name ()"
+
+.PP
+
+.PP
+\fBReturns\fP
+.RS 4
+name 
+.RE
+.PP
+Метод для получения наименования ателье 
+.SS "void atelier::init (\fBclothes\fP a, \fBclothes\fP b, \fBclothes\fP c, double z1)"
+Метод для инициализации полей класс 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp1\fP Одежда 1 
+.br
+\fIp2\fP Одежда 2 
+.br
+\fIp3\fP Одежда 3 
+.br
+\fIz\fP Стоимость затрат 
+.RE
+.PP
+
+.SS "void atelier::set_name (string n)"
+Метод для установки наименования ателье
+.PP
+\fBParameters\fP
+.RS 4
+\fIname\fP Наименование 
+.RE
+.PP
+
+.SS "double atelier::total_cost ()"
+
+.PP
+Метод для подсчета суммарной стоимости одежды Пример использования картинок в документации:
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "string atelier::name\fC [protected]\fP"
+
+.SS "\fBclothes\fP atelier::p1\fC [protected]\fP"
+
+.SS "\fBclothes\fP atelier::p2\fC [protected]\fP"
+
+.SS "\fBclothes\fP atelier::p3\fC [protected]\fP"
+
+.SS "double atelier::z\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for QA3 from the source code\&.

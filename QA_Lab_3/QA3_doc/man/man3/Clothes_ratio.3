@@ -1,0 +1,73 @@
+.TH "Clothes_ratio" 3 "Tue Sep 20 2022" "Version 1.1" "QA3" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Clothes_ratio \- Производный класс Коэффициент мастерства пошива одежды  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBclothes\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDisplay\fP ()"
+.br
+.RI "Вывод на экран информации об одежде "
+.ti -1c
+.RI "void \fBinit\fP (int c, int q, int m)"
+.br
+.ti -1c
+.RI "double \fBCost_clothes\fP ()"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Производный класс Коэффициент мастерства пошива одежды 
+
+Этот класс имеет поле - коэффициент мастерства пошивщика\&. В классе описаны методы инициализации, вывода данных, а также метод, вычисляющий стоимость изделия 
+.SH "Member Function Documentation"
+.PP 
+.SS "double Clothes_ratio::Cost_clothes ()"
+Функция, предназначенная для стоимости одежды ${cost * quantity}$ 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcost\fP стоимость 
+.br
+\fIquantity\fP количество 
+.br
+\fIKm\fP коэффициент мастерства 
+.PP
+\fBReturns\fP
+.RS 4
+Стоимость одежды 
+.RE
+.PP
+.RE
+.PP
+
+.SS "void Clothes_ratio::Display ()"
+
+.PP
+Вывод на экран информации об одежде 
+.SS "void Clothes_ratio::init (int c, int q, int m)"
+Метод для инициализации полей класс 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP Стоимость 
+.br
+\fIq\fP Количество 
+.br
+\fIm\fP Коэффициент мастерства 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for QA3 from the source code\&.
