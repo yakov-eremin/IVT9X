@@ -26,14 +26,15 @@ namespace budilnik
         public void Form1_Load(object sender, EventArgs e)
         {
             button2.Enabled = false;
-            timer.Interval = 1000;
+            Get_Interval(timer);
             timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
         }
 
         public static int Get_Interval(Timer timer)
         {
-            throw new NotImplementedException();
+            timer.Interval = 1000;
+            return timer.Interval;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
