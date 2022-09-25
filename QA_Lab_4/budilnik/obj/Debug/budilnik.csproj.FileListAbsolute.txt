@@ -18,3 +18,14 @@ C:\Users\Admin\Desktop\ЙФ\budilnik\obj\Debug\budilnik.csproj.GenerateResource.
 C:\Users\Admin\Desktop\ЙФ\budilnik\obj\Debug\budilnik.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\ЙФ\budilnik\obj\Debug\budilnik.exe
 C:\Users\Admin\Desktop\ЙФ\budilnik\obj\Debug\budilnik.pdb
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\bin\Debug\budilnik.exe.config
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\bin\Debug\budilnik.exe
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\bin\Debug\budilnik.pdb
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\obj\Debug\Budilnik.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\obj\Debug\Budilnik.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\obj\Debug\budilnik.Form1.resources
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\obj\Debug\budilnik.Properties.Resources.resources
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\obj\Debug\Budilnik.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\obj\Debug\Budilnik.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\obj\Debug\budilnik.exe
+C:\Users\Admin\Desktop\Git\IVT9X\QA_Lab_4\budilnik\obj\Debug\budilnik.pdb
