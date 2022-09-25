@@ -31,7 +31,10 @@ namespace budilnik
             timer.Start();
         }
 
-        
+        public static int Get_Interval(Timer timer)
+        {
+            throw new NotImplementedException();
+        }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
