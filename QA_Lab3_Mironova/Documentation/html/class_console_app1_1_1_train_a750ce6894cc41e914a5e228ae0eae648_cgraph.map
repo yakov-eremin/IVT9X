@@ -1,0 +1,5 @@
+<map id="ConsoleApp1.Train.Income" name="ConsoleApp1.Train.Income">
+<area shape="rect" id="node1" title="Реальный доход с маршрута" alt="" coords="5,31,183,57"/>
+<area shape="rect" id="node2" href="$class_console_app1_1_1_van.html#a8940651874c3eea157e4a90fd8f9e222" title="Метод, вычисляющий общую ожидаемую сумму от продаж билетов в вагоне по формуле &#160;(I &#45; сумма,..." alt="" coords="248,5,420,32"/>
+<area shape="rect" id="node3" href="$class_console_app1_1_1_van___type.html#ab2039d6a487402ec56ac11ec67b21477" title="Метод, возвращающий вагон с наименьшей ожидаемой суммой продаж" alt="" coords="231,56,437,83"/>
+</map>
