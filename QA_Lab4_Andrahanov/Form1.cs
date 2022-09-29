@@ -201,13 +201,29 @@ namespace Lab_4_QA
         }
 
         private void MovePic(int x, int y, int h, int w)
-        { 
+        {
+            map[x, y] = 1;
+            map[x + h, y + w] = 0;
 
+            tiles[x, y] = tiles[x + h, y + w];
+            tiles[x + h, y + w] = null;
+
+            tiles[x, y].Pic.Location = new Point(tiles[x, y].Pic.Location.X + w * -1 * 56, tiles[x, y].Pic.Location.Y + h * -1 * 56);
         }
 
         private void UnitePic(int sum, int x, int y, int h, int w)
         {
-           
+            map[x + h, y + w] = 0;
+
+            tiles[x, y].Label.Text = sum.ToString();
+            score = tiles[x, y].SumScore(sum, score);
+            tiles[x, y].ChangeColor(sum);
+            label1.Text = "Score: " + score;
+
+            this.Controls.Remove(tiles[x + h, y + w].Pic);
+            this.Controls.Remove(tiles[x + h, y + w].Label);
+
+            tiles[x + h, y + w] = null;
         }
 
             private void OnKeyboardPressed(object sender, KeyEventArgs e)
@@ -228,7 +244,5 @@ namespace Lab_4_QA
                     break;
             }
         }
-
-
     }
 }

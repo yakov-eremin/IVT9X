@@ -39,5 +39,18 @@ namespace Lab_4_QA
         {
             return score + sum;
         }
+
+        public void ChangeColor(int sum)
+        {
+            if (sum % 1024 == 0) pic.BackColor = Color.Pink;
+            else if (sum % 512 == 0) pic.BackColor = Color.Red;
+            else if (sum % 256 == 0) pic.BackColor = Color.DarkViolet;
+            else if (sum % 128 == 0) pic.BackColor = Color.Blue;
+            else if (sum % 64 == 0) pic.BackColor = Color.Brown;
+            else if (sum % 32 == 0) pic.BackColor = Color.Coral;
+            else if (sum % 16 == 0) pic.BackColor = Color.Cyan;
+            else if (sum % 8 == 0) pic.BackColor = Color.Maroon;
+            else pic.BackColor = Color.Green;
+        }
     }
 }
