@@ -21,5 +21,10 @@ namespace Lab_4_QA
             label = new Label();
             pic = new PictureBox();
         }
+
+        public Tile(int x, int y)
+        {
+            
+        }
     }
 }

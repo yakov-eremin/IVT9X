@@ -42,5 +42,27 @@ namespace Lab_4_QA
             map[x, y] = 0;
             return pic;
         }
+
+        private void CreateStartPics()
+        {
+            Random rnd = new Random();
+            int x, y;
+            for (int i = 0; i < 2; i++)
+            {
+                x = rnd.Next(0, 4);
+                y = rnd.Next(0, 4);
+                CreatePic(x, y);
+            }
+        }
+
+        public void CreatePic(int x, int y)
+        {
+            map[x, y] = 1;
+            tiles[x, y] = new Tile(x, y);
+            tiles[x, y].Pic.Controls.Add(tiles[x, y].Label);
+            this.Controls.Add(tiles[x, y].Pic);
+            tiles[x, y].Pic.BringToFront();
+        }
+
     }
 }
