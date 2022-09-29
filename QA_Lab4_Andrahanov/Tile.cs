@@ -24,7 +24,15 @@ namespace Lab_4_QA
 
         public Tile(int x, int y)
         {
-            
+            label = new Label();
+            pic = new PictureBox();
+            label.Text = "2";
+            label.Size = new Size(50, 50);
+            label.TextAlign = ContentAlignment.MiddleCenter;
+            label.Font = new Font(new FontFamily("Microsoft Sans Serif"), 15);
+            pic.Location = new Point(12 + (y * 56), 73 + (56 * x));
+            pic.Size = new Size(50, 50);
+            pic.BackColor = Color.Yellow;
         }
     }
 }

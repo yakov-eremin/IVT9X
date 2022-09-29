@@ -18,8 +18,10 @@ namespace Lab_4_QA
 
         public Form1()
         {
-            CreateMap();
             InitializeComponent();
+            this.KeyDown += new KeyEventHandler(OnKeyboardPressed);
+            CreateMap();
+            CreateStartPics();
         }
 
         private void CreateMap()
@@ -63,6 +65,46 @@ namespace Lab_4_QA
             this.Controls.Add(tiles[x, y].Pic);
             tiles[x, y].Pic.BringToFront();
         }
+
+        private void RightKey()
+        {
+
+        }
+
+        private void LeftKey()
+        {
+
+        }
+
+        private void UpKey()
+        {
+
+        }
+
+        private void DownKey()
+        {
+
+        }
+
+        private void OnKeyboardPressed(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode.ToString())
+            {
+                case "Right":
+                    RightKey();
+                    break;
+                case "Left":
+                    LeftKey();
+                    break;
+                case "Up":
+                    UpKey();
+                    break;
+                case "Down":
+                    DownKey();
+                    break;
+            }
+        }
+
 
     }
 }
