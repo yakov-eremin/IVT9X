@@ -24,6 +24,23 @@ namespace Lab_4_QA
 
         private void CreateMap()
         {
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    this.Controls.Add(GenerateNullPic(i, j));
+                }
+            }
+        }
+
+        private PictureBox GenerateNullPic(int x, int y)
+        {
+            PictureBox pic = new PictureBox();
+            pic.Location = new Point(12 + 56 * y, 73 + 56 * x);
+            pic.Size = new Size(50, 50);
+            pic.BackColor = Color.Gray;
+            map[x, y] = 0;
+            return pic;
         }
     }
 }
