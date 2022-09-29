@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Lab_4_QA
@@ -45,6 +39,19 @@ namespace Lab_4_QA
             return pic;
         }
 
+        private void GenerateNewPic()
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(0, 4);
+            int y = rnd.Next(0, 4);
+            while (tiles[x, y] != null)
+            {
+                x = rnd.Next(0, 4);
+                y = rnd.Next(0, 4);
+            }
+            CreatePic(x, y);
+        }
+
         private void CreateStartPics()
         {
             Random rnd = new Random();
@@ -68,25 +75,142 @@ namespace Lab_4_QA
 
         private void RightKey()
         {
-
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 2; j >= 0; j--)
+                {
+                    if (map[i, j] == 1)
+                    {
+                        for (int k = j + 1; k < 4; k++)
+                        {
+                            if (map[i, k] == 0)
+                            {
+                                MovePic(i, k, 0, -1);
+                            }
+                            else
+                            {
+                                int a = int.Parse(tiles[i, k].Label.Text);
+                                int b = int.Parse(tiles[i, k - 1].Label.Text);
+                                if (a == b)
+                                {
+                                    UnitePic(a + b, i, k, 0, -1);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            GenerateNewPic();
         }
 
         private void LeftKey()
         {
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 1; j < 4; j++)
+                {
+                    if (map[i, j] == 1)
+                    {
+                        for (int k = j - 1; k >= 0; k--)
+                        {
+                            if (map[i, k] == 0)
+                            {
+                                MovePic(i, k, 0, 1);
+                            }
+                            else
+                            {
+                                int a = int.Parse(tiles[i, k].Label.Text);
+                                int b = int.Parse(tiles[i, k + 1].Label.Text);
+                                if (a == b)
+                                {
+                                    UnitePic(a + b, i, k, 0, 1);
+                                    break;
+                                }
+                            }
+                        }
+                    }
 
+                }
+            }
+            GenerateNewPic();
         }
 
         private void UpKey()
         {
+            for (int i = 1; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    if (map[i, j] == 1)
+                    {
+                        for (int k = i - 1; k >= 0; k--)
+                        {
+                            if (map[k, j] == 0)
+                            {
+                                MovePic(k, j, 1, 0);
+                            }
+                            else
+                            {
+                                int a = int.Parse(tiles[k, j].Label.Text);
+                                int b = int.Parse(tiles[k + 1, j].Label.Text);
+                                if (a == b)
+                                {
+                                    UnitePic(a + b, k, j, 1, 0);
+                                    break;
+                                }
+                            }
+                        }
+                    }
 
+                }
+            }
+            GenerateNewPic();
         }
 
         private void DownKey()
         {
+            for (int i = 2; i >= 0; i--)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    if (map[i, j] == 1)
+                    {
+                        for (int k = i + 1; k < 4; k++)
+                        {
+                            if (map[k, j] == 0)
+                            {
+                                MovePic(k, j, -1, 0);
+                            }
+                            else
+                            {
+                                int a = int.Parse(tiles[k, j].Label.Text);
+                                int b = int.Parse(tiles[k - 1, j].Label.Text);
+                                if (a == b)
+                                {
+                                    UnitePic(a + b, k, j, -1, 0);
+                                    break;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            GenerateNewPic();
+        }
+
+        private void MovePic(int x, int y, int h, int w)
+        { 
 
         }
 
-        private void OnKeyboardPressed(object sender, KeyEventArgs e)
+        private void UnitePic(int sum, int x, int y, int h, int w)
+        {
+           
+        }
+
+            private void OnKeyboardPressed(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode.ToString())
             {

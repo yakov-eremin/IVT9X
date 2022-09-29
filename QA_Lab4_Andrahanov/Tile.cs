@@ -18,8 +18,8 @@ namespace Lab_4_QA
 
         public Tile()
         {
-            label = new Label();
-            pic = new PictureBox();
+            Label = new Label();
+            Pic = new PictureBox();
         }
 
         public Tile(int x, int y)
@@ -33,6 +33,11 @@ namespace Lab_4_QA
             pic.Location = new Point(12 + (y * 56), 73 + (56 * x));
             pic.Size = new Size(50, 50);
             pic.BackColor = Color.Yellow;
+        }
+
+        public int SumScore(int sum, int score)
+        {
+            return score + sum;
         }
     }
 }
