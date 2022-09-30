@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 namespace lr4
 {
@@ -10,7 +6,8 @@ namespace lr4
     {
         public static int CountFiles(string path, string mask)
         {
-            return 2;
+            FileInfo[] p = new DirectoryInfo(path).GetFiles(mask, SearchOption.AllDirectories);
+            return p.Length;
         }
     }
 }
