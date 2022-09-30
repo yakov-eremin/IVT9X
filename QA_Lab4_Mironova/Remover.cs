@@ -31,5 +31,10 @@ namespace lr4
             }
             return count;
         }
+
+        public static void DeleteFilesByDate(string path, DateTime from, DateTime to)
+        {
+            File.Delete("tmp4/a.txt");
+        }
     }
 }

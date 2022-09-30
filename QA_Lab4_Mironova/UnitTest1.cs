@@ -71,8 +71,8 @@ namespace lr4test
             Directory.Delete("tmp3", true);
             Assert.AreEqual(expected, result);
         }
-		
-		[TestMethod]
+
+        [TestMethod]
         public void Count_files_date_test2()
         {
             Directory.CreateDirectory("tmp3");
@@ -86,6 +86,20 @@ namespace lr4test
             int result = Remover.CountFilesByDate("tmp3", new System.DateTime(2021, 01, 01), new System.DateTime(2022, 12, 31));
             Directory.Delete("tmp3", true);
             Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void Delete_files_date_test()
+        {
+            Directory.CreateDirectory("tmp4");
+            File.Create("tmp4/a.txt").Close();
+            File.Create("tmp4/b.txt").Close();
+            File.SetCreationTime("tmp4/a.txt", new System.DateTime(2020, 01, 01));
+            File.SetCreationTime("tmp4/b.txt", new System.DateTime(2022, 01, 01));
+            Remover.DeleteFilesByDate("tmp4", new System.DateTime(2000, 01, 01), new System.DateTime(2020, 03, 03));
+            bool result = (!File.Exists("tmp4/a.txt") && File.Exists("tmp4/b.txt"));
+            Directory.Delete("tmp4", true);
+            Assert.IsTrue(result);
         }
     }
 }
