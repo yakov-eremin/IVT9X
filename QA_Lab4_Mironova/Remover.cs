@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace lr4
 {
@@ -17,6 +18,11 @@ namespace lr4
             {
                 File.Delete(file.FullName);
             }
+        }
+
+        public static int CountFilesByDate(string path, DateTime from, DateTime to)
+        {
+            return 1;
         }
     }
 }
