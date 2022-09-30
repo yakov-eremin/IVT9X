@@ -19,5 +19,19 @@ namespace lr4test
             Directory.Delete("tmp", true);
             Assert.AreEqual(expected, result);
         }
+		
+		[TestMethod]
+        public void Count_files_test2()
+        {
+            Directory.CreateDirectory("tmp");
+            File.Create("tmp/1.txt").Close();
+            File.Create("tmp/2.txt").Close();
+            File.Create("tmp/3.ini").Close();
+            File.Create("tmp/4.txt").Close();
+            int expected = 3;
+            int result = Remover.CountFiles("tmp", "*.txt");
+            Directory.Delete("tmp", true);
+            Assert.AreEqual(expected, result);
+        }
     }
 }
