@@ -8,5 +8,9 @@ namespace lr4
 {
     public class Remover
     {
+        public static int CountFiles(string path, string mask)
+        {
+            return 2;
+        }
     }
 }
