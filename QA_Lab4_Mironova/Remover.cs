@@ -22,7 +22,14 @@ namespace lr4
 
         public static int CountFilesByDate(string path, DateTime from, DateTime to)
         {
-            return 1;
+            int count = 0;
+            FileInfo[] p = new DirectoryInfo(path).GetFiles("*.*", SearchOption.AllDirectories);
+            foreach (FileInfo file in p)
+            {
+                if (file.CreationTime >= from && file.CreationTime <= to)
+                    count++;
+            }
+            return count;
         }
     }
 }
