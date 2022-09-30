@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dima\\Documents\\GitHub\\IVT9X\\Generator\\Generator\\Generator.csproj",
+      "projectUniqueName": "C:\\Users\\Dima\\Documents\\GitHub\\IVT9X\\Code\\Lab 4\\Generator\\Generator\\Generator.csproj",
       "projectName": "Generator",
-      "projectPath": "C:\\Users\\Dima\\Documents\\GitHub\\IVT9X\\Generator\\Generator\\Generator.csproj",
+      "projectPath": "C:\\Users\\Dima\\Documents\\GitHub\\IVT9X\\Code\\Lab 4\\Generator\\Generator\\Generator.csproj",
       "packagesPath": "C:\\Users\\Dima\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dima\\Documents\\GitHub\\IVT9X\\Generator\\Generator\\obj\\",
+      "outputPath": "C:\\Users\\Dima\\Documents\\GitHub\\IVT9X\\Code\\Lab 4\\Generator\\Generator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dima\\AppData\\Roaming\\NuGet\\NuGet.Config",

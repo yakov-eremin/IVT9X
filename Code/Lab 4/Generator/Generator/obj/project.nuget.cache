@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TSlYdgWD1liPvI0+9WkCk0Tv8hzGyD1OhDbmtXiNyvWeP20soXRZiU09pbF9RuAm5ZhZMw8mYn5b6BbjBcLq2g==",
+  "dgSpecHash": "sni7WaohtqoaC3tOiuXSW4gv8Si6pljlQTP1HnyaawH/v9cUoPU4dK/pvHu75MOPKkAhyvAVSJV2oSxgpazidw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dima\\Documents\\GitHub\\IVT9X\\Generator\\Generator\\Generator.csproj",
+  "projectFilePath": "C:\\Users\\Dima\\Documents\\GitHub\\IVT9X\\Code\\Lab 4\\Generator\\Generator\\Generator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dima\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
