@@ -101,5 +101,19 @@ namespace lr4test
             Directory.Delete("tmp4", true);
             Assert.IsTrue(result);
         }
+		
+		[TestMethod]
+        public void Delete_files_date_test2()
+        {
+            Directory.CreateDirectory("tmp4");
+            File.Create("tmp4/c.txt").Close();
+            File.Create("tmp4/d.txt").Close();
+            File.SetCreationTime("tmp4/c.txt", new System.DateTime(2019, 01, 01));
+            File.SetCreationTime("tmp4/d.txt", new System.DateTime(2020, 01, 01));
+            Remover.DeleteFilesByDate("tmp4", new System.DateTime(2000, 01, 01), new System.DateTime(2020, 03, 03));
+            bool result = (!File.Exists("tmp4/c.txt") && !File.Exists("tmp4/d.txt"));
+            Directory.Delete("tmp4", true);
+            Assert.IsTrue(result);
+        }
     }
 }
