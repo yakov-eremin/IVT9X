@@ -19,8 +19,8 @@ namespace lr4test
             Directory.Delete("tmp", true);
             Assert.AreEqual(expected, result);
         }
-		
-		[TestMethod]
+
+        [TestMethod]
         public void Count_files_test2()
         {
             Directory.CreateDirectory("tmp");
@@ -32,6 +32,18 @@ namespace lr4test
             int result = Remover.CountFiles("tmp", "*.txt");
             Directory.Delete("tmp", true);
             Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void Delete_files_test()
+        {
+            Directory.CreateDirectory("tmp2");
+            File.Create("tmp2/a.txt").Close();
+            File.Create("tmp2/b.pdf").Close();
+            Remover.DeleteFiles("tmp2", "*.txt");
+            bool result = (!File.Exists("tmp2/a.txt") && File.Exists("tmp2/b.pdf"));
+            Directory.Delete("tmp2", true);
+            Assert.IsTrue(result);
         }
     }
 }

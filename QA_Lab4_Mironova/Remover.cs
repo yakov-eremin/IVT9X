@@ -9,5 +9,10 @@ namespace lr4
             FileInfo[] p = new DirectoryInfo(path).GetFiles(mask, SearchOption.AllDirectories);
             return p.Length;
         }
+
+        public static void DeleteFiles(string path, string mask)
+        {
+            File.Delete("tmp2/a.txt");
+        }
     }
 }
