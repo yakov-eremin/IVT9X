@@ -34,7 +34,12 @@ namespace lr4
 
         public static void DeleteFilesByDate(string path, DateTime from, DateTime to)
         {
-            File.Delete("tmp4/a.txt");
+            FileInfo[] p = new DirectoryInfo(path).GetFiles("*.*", SearchOption.AllDirectories);
+            foreach (FileInfo file in p)
+            {
+                if (file.CreationTime >= from && file.CreationTime <= to)
+                    file.Delete();
+            }
         }
     }
 }
