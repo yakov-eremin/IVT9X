@@ -71,5 +71,21 @@ namespace lr4test
             Directory.Delete("tmp3", true);
             Assert.AreEqual(expected, result);
         }
+		
+		[TestMethod]
+        public void Count_files_date_test2()
+        {
+            Directory.CreateDirectory("tmp3");
+            File.Create("tmp3/1.txt").Close();
+            File.Create("tmp3/2.txt").Close();
+            File.Create("tmp3/3.txt").Close();
+            File.SetCreationTime("tmp3/1.txt", new System.DateTime(2020, 01, 01));
+            File.SetCreationTime("tmp3/2.txt", new System.DateTime(2022, 01, 01));
+            File.SetCreationTime("tmp3/3.txt", new System.DateTime(2021, 02, 02));
+            int expected = 2;
+            int result = Remover.CountFilesByDate("tmp3", new System.DateTime(2021, 01, 01), new System.DateTime(2022, 12, 31));
+            Directory.Delete("tmp3", true);
+            Assert.AreEqual(expected, result);
+        }
     }
 }
