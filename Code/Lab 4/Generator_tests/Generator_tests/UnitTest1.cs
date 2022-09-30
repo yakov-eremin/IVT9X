@@ -20,6 +20,20 @@ namespace Generator_tests
 
             Assert.AreEqual(expected, actual);
         }
-      
+        [TestMethod]
+        public void getch_test2()
+        {
+            string c1 = "B";
+            string c2 = "C";
+            string c3 = "G#";
+            string c4 = "D#";
+            string expected = "";
+
+            Accords s = new Accords();
+            Melody ff = new Melody();
+            string actual = ff.getm(c1, c2, c3, c4);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
