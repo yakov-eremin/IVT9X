@@ -164,7 +164,14 @@ namespace Generator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string r1 = "", r2 = "", r3 = "", r4 = "", nab3 = "";
+            Accords chords = new Accords();
+            chords.getch(r1, r2, r3, r4, nab3);
+            Console.WriteLine("Ваши аккорды: " + Accords.nab);
+            Melody melody1 = new Melody();
+            melody1.getm(Accords.c1, Accords.c2, Accords.c3, Accords.c4);
+            Console.WriteLine("Ваша мелодия: " + melody1.mm);
+
         }
     }
 }

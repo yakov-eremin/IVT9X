@@ -1,0 +1,13 @@
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\bin\Debug\netcoreapp3.1\Generator.exe
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\bin\Debug\netcoreapp3.1\Generator.deps.json
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\bin\Debug\netcoreapp3.1\Generator.runtimeconfig.json
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\bin\Debug\netcoreapp3.1\Generator.runtimeconfig.dev.json
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\bin\Debug\netcoreapp3.1\Generator.dll
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\bin\Debug\netcoreapp3.1\Generator.pdb
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\obj\Debug\netcoreapp3.1\Generator.csprojAssemblyReference.cache
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\obj\Debug\netcoreapp3.1\Generator.AssemblyInfoInputs.cache
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\obj\Debug\netcoreapp3.1\Generator.AssemblyInfo.cs
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\obj\Debug\netcoreapp3.1\Generator.csproj.CoreCompileInputs.cache
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\obj\Debug\netcoreapp3.1\Generator.dll
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\obj\Debug\netcoreapp3.1\Generator.pdb
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator\Generator\obj\Debug\netcoreapp3.1\Generator.genruntimeconfig.cache
