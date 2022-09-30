@@ -1,0 +1,4 @@
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator_tests\Generator_tests\obj\Debug\netcoreapp3.1\Generator_tests.csprojAssemblyReference.cache
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator_tests\Generator_tests\obj\Debug\netcoreapp3.1\Generator_tests.AssemblyInfoInputs.cache
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator_tests\Generator_tests\obj\Debug\netcoreapp3.1\Generator_tests.AssemblyInfo.cs
+C:\Users\Dima\Documents\GitHub\IVT9X\Code\Lab 4\Generator_tests\Generator_tests\obj\Debug\netcoreapp3.1\Generator_tests.csproj.CoreCompileInputs.cache
