@@ -12,7 +12,11 @@ namespace lr4
 
         public static void DeleteFiles(string path, string mask)
         {
-            File.Delete("tmp2/a.txt");
+            FileInfo[] p = new DirectoryInfo(path).GetFiles(mask, SearchOption.AllDirectories);
+            foreach (FileInfo file in p)
+            {
+                File.Delete(file.FullName);
+            }
         }
     }
 }
