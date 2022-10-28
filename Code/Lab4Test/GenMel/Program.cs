@@ -161,9 +161,15 @@ namespace GenMel
     }
     class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            
+            string r1 = "", r2 = "", r3 = "", r4 = "", nab3 = "";
+            Accord chords = new Accord();
+            chords.Vvod(r1, r2, r3, r4, nab3);
+            Console.WriteLine("Введенные аккорды: " + Accord.nab);
+            MelodyGen melody1 = new MelodyGen();
+            melody1.getm(Accord.c1, Accord.c2, Accord.c3, Accord.c4);
+            Console.WriteLine("Получившаяся мелодия: " + melody1.mm);
 
         }
 
