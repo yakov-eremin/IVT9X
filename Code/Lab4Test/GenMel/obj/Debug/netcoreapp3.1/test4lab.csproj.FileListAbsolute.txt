@@ -1,0 +1,14 @@
+C:\Users\Vladislove\source\repos\test4lab\bin\Debug\netcoreapp3.1\test4lab.exe
+C:\Users\Vladislove\source\repos\test4lab\bin\Debug\netcoreapp3.1\test4lab.deps.json
+C:\Users\Vladislove\source\repos\test4lab\bin\Debug\netcoreapp3.1\test4lab.runtimeconfig.json
+C:\Users\Vladislove\source\repos\test4lab\bin\Debug\netcoreapp3.1\test4lab.runtimeconfig.dev.json
+C:\Users\Vladislove\source\repos\test4lab\bin\Debug\netcoreapp3.1\test4lab.dll
+C:\Users\Vladislove\source\repos\test4lab\bin\Debug\netcoreapp3.1\test4lab.pdb
+C:\Users\Vladislove\source\repos\test4lab\obj\Debug\netcoreapp3.1\test4lab.csproj.AssemblyReference.cache
+C:\Users\Vladislove\source\repos\test4lab\obj\Debug\netcoreapp3.1\test4lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vladislove\source\repos\test4lab\obj\Debug\netcoreapp3.1\test4lab.AssemblyInfoInputs.cache
+C:\Users\Vladislove\source\repos\test4lab\obj\Debug\netcoreapp3.1\test4lab.AssemblyInfo.cs
+C:\Users\Vladislove\source\repos\test4lab\obj\Debug\netcoreapp3.1\test4lab.csproj.CoreCompileInputs.cache
+C:\Users\Vladislove\source\repos\test4lab\obj\Debug\netcoreapp3.1\test4lab.dll
+C:\Users\Vladislove\source\repos\test4lab\obj\Debug\netcoreapp3.1\test4lab.pdb
+C:\Users\Vladislove\source\repos\test4lab\obj\Debug\netcoreapp3.1\test4lab.genruntimeconfig.cache
